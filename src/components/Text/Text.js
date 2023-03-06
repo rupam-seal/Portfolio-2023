@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import {
   staggerContainer,
   textContainer,
+  textVariant,
   textVariant2,
 } from '../../utils/motion';
 
@@ -24,7 +25,7 @@ export const Text = ({
 }) => {
   return (
     <motion.Component
-      variants={textVariant2}
+      variants={textVariant}
       className={classes(styles.text, className)}
       data-size={size}
       data-weight={weight}

@@ -3,7 +3,7 @@ import { classes } from '../../utils/styles';
 import styles from './Heading.module.css';
 
 import { motion } from 'framer-motion';
-import { textVariant, textVariant2 } from '../../utils/motion';
+import { textVariant } from '../../utils/motion';
 
 export const Heading = ({
   children,
@@ -20,7 +20,7 @@ export const Heading = ({
   return (
     <Fragment>
       <motion.Component
-        variants={textVariant2}
+        variants={textVariant}
         className={classes(styles.heading, className)}
         data-align={align}
         data-weight={weight}

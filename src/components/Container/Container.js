@@ -4,7 +4,7 @@ import { classes } from '../../utils/styles';
 import styles from './Container.module.css';
 
 import { motion } from 'framer-motion';
-import { staggerContainer, textContainer } from '../../utils/motion';
+import { staggerContainer } from '../../utils/motion';
 
 export const Container = ({
   as: Component = 'div',
@@ -16,7 +16,7 @@ export const Container = ({
 }) => {
   return (
     <motion.Component
-      variants={staggerContainer(0.1, 0.1 * 2)}
+      variants={staggerContainer(0.1, 0.1 * 1)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}

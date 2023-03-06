@@ -11,11 +11,7 @@ import { Section } from '../../components/Section';
 import { VisuallyHidden } from '../../components/VisuallyHidden';
 
 import { motion } from 'framer-motion';
-import {
-  staggerContainer,
-  textContainer,
-  textVariant2,
-} from '../../utils/motion';
+import { textVariant } from '../../utils/motion';
 
 import Spline from '@splinetool/react-spline';
 
@@ -28,7 +24,7 @@ export const Hero = () => {
       justify={'center'}
     >
       <Container className={classes(styles.intro)} direction="column">
-        <motion.h1 className={styles.name} variants={textVariant2}>
+        <motion.h1 className={styles.name} variants={textVariant}>
           <DecoderText text="Nilax Seal" delay={300}></DecoderText>
         </motion.h1>
         <Heading
