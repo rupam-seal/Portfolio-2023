@@ -1,0 +1,20 @@
+.section {
+  display: flex;
+}
+
+.section:focus {
+  outline: none;
+}
+
+.section[data-fullscreen='true'] {
+  width: var(--viewPortWidth);
+  height: var(--viewPortHeight);
+}
+
+.section[data-align='center'] {
+  align-items: center;
+}
+
+.section[data-justify='center'] {
+  justify-content: center;
+}

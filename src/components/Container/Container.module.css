@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+
+.container[data-direction='column'] {
+  flex-direction: column;
+}
+
+.container[data-align='center'] {
+  align-items: center;
+}
+
+.container[data-justify='center'] {
+  justify-content: center;
+}

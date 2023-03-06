@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 400;
+  src: url('./assets/fonts/gotham-book.woff2') format('woff2');
+  font-display: block;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: 500;
+  src: url('./assets//fonts/gotham-medium.woff2') format('woff2');
+  font-display: block;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 700;
+  src: url('./assets//fonts/gotham-bold.woff2') format('woff2');
+  font-display: block;
+  font-style: italic;
+}
+/*
+1rem = 16px || 100%
+1px = 16/100 = 6.25%
+10px = 6.25%*10 = 62.5%
+Now
+1rem = 10px || 62.5%
+*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+body {
+  font-family: var(--fontStack);
+  background-color: var(--rgbBackground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/* NOTE: 1rem = 10px and 0.1rem = 1px */
+:root {
+  --rgbBlack: rgb(0, 0, 0);
+  --rgbWhite: rgb(255, 255, 255);
+
+  --bezierFastoutSlowin: cubic-bezier(0.4, 0, 0.2, 1);
+  --durationXS: '200ms';
+  --durationS: '300ms';
+  --durationM: '400ms';
+  --durationL: '600ms';
+  --durationXL: '800ms';
+
+  --systemFontStack: 'system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif';
+  --fontStack: 'Gotham', var(--systemFontStack);
+
+  --fontWeightRegular: 400;
+  --fontWeightMedium: 500;
+  --fontWeightBold: 700;
+
+  --fontSizeH0: 14rem;
+  --fontSizeH1: 10rem;
+  --fontSizeH2: 5.8rem;
+  --fontSizeH3: 3.8rem;
+  --fontSizeH4: 2.8rem;
+  --fontSizeH5: 2.4rem;
+  --fontSizeBodyXL: 2.2rem;
+  --fontSizeBodyL: 2rem;
+  --fontSizeBodyM: 1.8rem;
+  --fontSizeBodyS: 1.6rem;
+  --fontSizeBodyXS: 1.4rem;
+
+  --lineHeightTitle: 1.1;
+  --lineHeightBody: 1.6;
+
+  --viewPortWidth: 100vw;
+  --viewPortHeight: 100vh;
+  --maxWidthS: 54rem;
+  --maxWidthM: 72rem;
+  --maxWidthXM: 90rem;
+  --maxWidthL: 109.6rem;
+  --maxWidthXL: 168rem;
+
+  --spaceOuter: 6.4rem;
+  --spaceXS: 0.4rem;
+  --spaceS: 0.8rem;
+  --spaceM: 1.6rem;
+  --spaceL: 2.4rem;
+  --spaceXL: 3.2rem;
+  --space2XL: 4.8rem;
+  --space3XL: 6.4rem;
+  --space4XL: 9.6rem;
+  --space5XL: 12.8rem;
+
+  --zIndex0: 0;
+  --zIndex1: 4;
+  --zIndex2: 8;
+  --zIndex3: 16;
+  --zIndex4: 32;
+  --zIndex5: 64;
+}
+
+body.dark {
+  --themeId: 'dark';
+  --rgbBackground: rgb(17, 17, 17);
+  --rgbBackgroundLight: rgb(26, 26, 26);
+  --rgbPrimary: rgb(0, 229, 255);
+  --rgbAccent: rgb(0, 229, 255);
+  --rgbText: rgb(255, 255, 255);
+  --rgbError: rgb(255, 55, 102);
+  --colorTextTitle: rgb(255, 255, 255, 1);
+  --colorTextBody: rgb(255, 255, 255, 0.8);
+  --colorTextLight: rgb(255, 255, 255, 0.6);
+}
+
+body.light {
+  --themeId: 'light';
+  --rgbBackground: rgb(242, 242, 242);
+  --rgbBackgroundLight: rgb(255, 255, 255);
+  --rgbPrimary: rgb(0, 0, 0);
+  --rgbAccent: rgb(0, 229, 255);
+  --rgbText: rgb(0, 0, 0);
+  --rgbError: rgb(255, 0, 60);
+  --colorTextTitle: rgb(0, 0, 0, 1);
+  --colorTextBody: rgb(0, 0, 0, 0.8);
+  --colorTextLight: rgb(0, 0, 0, 0.6);
+}
