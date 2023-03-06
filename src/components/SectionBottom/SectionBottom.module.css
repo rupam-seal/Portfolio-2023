@@ -1,0 +1,8 @@
+.section {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: var(--space3XL);
+    left: var(--space5XL);
+    right: var(--space5XL);
+}

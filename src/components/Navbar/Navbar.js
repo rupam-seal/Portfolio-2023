@@ -4,7 +4,6 @@ import styles from './Navbar.module.css';
 
 import { Container } from '../Container';
 import { Heading } from '../Heading';
-import { Section } from '../Section';
 import { navLinks } from './navData';
 import { A } from '../A';
 import { NavLink } from 'react-router-dom';

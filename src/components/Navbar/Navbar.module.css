@@ -1,6 +1,6 @@
 .navbar {
     position: fixed;
-    top: var(--spaceL);
+    top: var(--spaceXL);
     left: var(--space3XL);
     right: var(--space3XL);
 }
