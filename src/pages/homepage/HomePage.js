@@ -6,12 +6,10 @@ import styles from './HomePage.module.css';
 import { Section } from '../../components/Section';
 import { Hero } from './Hero';
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <Section className={classes(styles.homepage)}>
       <Hero />
     </Section>
   );
 };
-
-export default HomePage;

@@ -4,7 +4,6 @@ import { classes } from '../../utils/styles';
 import styles from './Container.module.css';
 
 import { motion } from 'framer-motion';
-import { staggerContainer } from '../../utils/motion';
 
 export const Container = ({
   as: Component = 'div',
@@ -13,17 +12,23 @@ export const Container = ({
   direction,
   align = 'auto',
   justify = 'auto',
+  variants,
+  zIndex,
 }) => {
+  const MotionComponent = motion(Component);
   return (
-    <motion.Component
-      variants={staggerContainer(0.1, 0.1 * 1)}
+    <MotionComponent
+      variants={variants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       className={classes(styles.container, className)}
       data-direction={direction}
+      data-justify={justify}
+      data-align={align}
+      data-z={zIndex}
     >
       {children}
-    </motion.Component>
+    </MotionComponent>
   );
 };

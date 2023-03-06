@@ -1,14 +1,7 @@
 import React from 'react';
-import { Fragment } from 'react';
 import { classes } from '../../utils/styles';
 
 import { motion } from 'framer-motion';
-import {
-  staggerContainer,
-  textContainer,
-  textVariant,
-  textVariant2,
-} from '../../utils/motion';
 
 import styles from './Text.module.css';
 
@@ -21,11 +14,13 @@ export const Text = ({
   secondary,
   className,
   width = 'auto',
+  variants,
   ...rest
 }) => {
+  const MotionComponent = motion(Component);
   return (
-    <motion.Component
-      variants={textVariant}
+    <MotionComponent
+      variants={variants}
       className={classes(styles.text, className)}
       data-size={size}
       data-weight={weight}
@@ -35,6 +30,6 @@ export const Text = ({
       {...rest}
     >
       {children}
-    </motion.Component>
+    </MotionComponent>
   );
 };

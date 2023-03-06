@@ -3,7 +3,6 @@ import { classes } from '../../utils/styles';
 import styles from './Heading.module.css';
 
 import { motion } from 'framer-motion';
-import { textVariant } from '../../utils/motion';
 
 export const Heading = ({
   children,
@@ -12,23 +11,22 @@ export const Heading = ({
   align = 'auto',
   weight = 'medium',
   className,
+  variants,
   ...rest
 }) => {
   const clampedLevel = Math.min(Math.max(level, 0), 5);
   const Component = as || `h${Math.max(clampedLevel, 1)}`;
-
+  const MotionComponent = motion(Component);
   return (
-    <Fragment>
-      <motion.Component
-        variants={textVariant}
-        className={classes(styles.heading, className)}
-        data-align={align}
-        data-weight={weight}
-        data-level={clampedLevel}
-        {...rest}
-      >
-        {children}
-      </motion.Component>
-    </Fragment>
+    <MotionComponent
+      variants={variants}
+      className={classes(styles.heading, className)}
+      data-align={align}
+      data-weight={weight}
+      data-level={level}
+      {...rest}
+    >
+      <span>{children}</span>
+    </MotionComponent>
   );
 };

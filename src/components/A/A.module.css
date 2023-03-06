@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  color: var(--colorTextLight);
+}
+
+.navlink {
+  font-size: var(--fontSizeBodyS);
+  padding: var(--spaceM);
+  font-weight: var(--fontWeightRegular);
+}
+
+.active .navlink {
+  color: var(--colorTextBody);
+  font-weight: var(--fontWeightMedium);
+}

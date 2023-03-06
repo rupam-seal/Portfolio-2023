@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 
 import './global.css';
 
-import HomePage from './pages/homepage/HomePage';
+import { Navbar } from './components/Navbar';
+import { HomePage } from './pages/homepage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} exact />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );

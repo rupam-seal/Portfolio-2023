@@ -1,3 +1,18 @@
+export const navVariants = {
+  hidden: {
+    opacity: 0,
+    top: -10,
+  },
+  show: {
+    opacity: 1,
+    top: 24,
+    transition: {
+      duration: 0.6,
+      ease: 'easeInOut',
+    },
+  },
+};
+
 export const staggerContainer = (staggerChildren, delayChildren) => ({
   hidden: {},
   show: {
@@ -8,7 +23,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
   },
 });
 
-export const textVariant = {
+export const textVariant = (delay) => ({
   hidden: {
     opacity: 0,
     y: 50,
@@ -17,21 +32,9 @@ export const textVariant = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.4,
-    },
-  },
-};
-
-export const textVariant2 = (delay) => ({
-  hidden: {
-    opacity: 0,
-    y: 50,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.4,
+      duration: 0.6,
+      delay: 0.3 + delay,
+      ease: 'easeInOut',
     },
   },
 });
