@@ -10,6 +10,7 @@ import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
 import { DecoderText } from '../../components/DecoderText';
 import { Section } from '../../components/Section';
+import { A } from '../../components/A';
 
 import {
   scaleVariant,
@@ -89,7 +90,7 @@ export const Hero = () => {
           </Text>
           <Text className={styles.talk} weight="regular" size="s">
             <BsArrowDownLeftCircleFill />
-            Lets talk
+            <A link="/talk">Lets talk</A>
           </Text>
         </Container>
       </SectionBottom>
