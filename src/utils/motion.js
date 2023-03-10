@@ -1,11 +1,11 @@
 export const navVariants = {
   hidden: {
     opacity: 0,
-    top: -10,
+    top: -40,
   },
   show: {
     opacity: 1,
-    top: 32,
+    top: 0,
     transition: {
       duration: 0.6,
       ease: 'easeInOut',
@@ -52,6 +52,23 @@ export const scaleVariant = {
       stiffness: 100,
       duration: 0.5,
       delay: 1.5,
+    },
+  },
+};
+
+export const imageVariant = {
+  hidden: {
+    opacity: 0,
+    scale: 0.8,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 100,
+      duration: 1.2,
+      delay: 0.2,
     },
   },
 };

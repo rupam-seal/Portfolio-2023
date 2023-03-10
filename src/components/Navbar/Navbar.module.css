@@ -1,6 +1,14 @@
 .navbar {
-    position: fixed;
-    top: var(--spaceXL);
-    left: var(--space3XL);
-    right: var(--space3XL);
+  position: fixed;
+  padding: var(--spaceM) var(--space3XL);
+  top: 0;
+  left: 0;
+  right: 0;
+  /* backdrop-filter: blur(100px); */
+  /* background: calc(var(--rgbBackground) / 0.9); */
+  background: var(--rgbBackground);
+}
+
+.button {
+  margin-left: var(--spaceM);
 }

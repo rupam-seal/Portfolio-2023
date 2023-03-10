@@ -9,12 +9,14 @@ export const Section = ({
   fullscreen,
   align = 'auto',
   justify = 'auto',
+  direction,
   ...rest
 }) => {
   return (
     <Component
       className={classes(styles.section, className)}
       data-fullscreen={fullscreen}
+      data-direction={direction}
       data-align={align}
       data-justify={justify}
     >

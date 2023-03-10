@@ -1,8 +1,7 @@
-import React from 'react';
-import { classes } from '../../utils/styles';
 import styles from './Heading.module.css';
 
 import { motion } from 'framer-motion';
+import { classes } from '@/utils/styles';
 
 export const Heading = ({
   children,

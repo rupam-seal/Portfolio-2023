@@ -1,14 +1,15 @@
 import React from 'react';
 
+import Link from 'next/link';
+
 import styles from './Navbar.module.css';
+import { navVariants } from '@/utils/motion';
 
 import { Container } from '../Container';
 import { Heading } from '../Heading';
 import { navLinks } from './navData';
 import { A } from '../A';
-import { NavLink } from 'react-router-dom';
-
-import { navVariants } from '../../utils/motion';
+import { Button } from '../Button';
 
 export const Navbar = () => {
   const data = navLinks.map(({ label, pathname }, index) => {
@@ -24,17 +25,22 @@ export const Navbar = () => {
       className={styles.navbar}
       justify="sb"
       align="center"
-      zIndex={5}
       variants={navVariants}
+      zIndex={5}
     >
       <Container align="center">
-        <NavLink>
+        <A nav link="/">
           <Heading level={4} weight={'bold'}>
             NX
           </Heading>
-        </NavLink>
+        </A>
       </Container>
-      <Container align="center">{data}</Container>
+      <Container align="center" justify="center">
+        {data}
+        <Button href={'/'} size="s" weight="regular" className={styles.button}>
+          hello@nilax.in
+        </Button>
+      </Container>
     </Container>
   );
 };

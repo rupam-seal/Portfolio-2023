@@ -1,0 +1,30 @@
+.section {
+  margin-top: var(--space6XL);
+  padding-left: calc(var(--space6XL) + var(--space4XL));
+  padding-right: calc(var(--space6XL) + var(--space4XL));
+}
+
+.description {
+  margin-top: var(--spaceL);
+}
+
+.image {
+  margin-top: var(--space4XL);
+}
+
+.button {
+  margin-top: var(--spaceL);
+}
+
+.content {
+  gap: var(--space5XL);
+}
+
+.details {
+  flex: 1;
+}
+
+.list {
+  flex: 1;
+  gap: var(--spaceL);
+}

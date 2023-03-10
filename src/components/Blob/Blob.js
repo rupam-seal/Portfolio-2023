@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './Blob.module.css';
 
-const Blob = ({
+export const Blob = ({
   device = 'desktop',
   className,
   as: Component = 'div',
@@ -10,5 +10,3 @@ const Blob = ({
 }) => {
   return <Component>Blob</Component>;
 };
-
-export default Blob;

@@ -1,0 +1,59 @@
+.about {
+  margin-top: var(--space6XL);
+  margin-left: var(--space4XL);
+  margin-right: var(--space4XL);
+}
+
+.content {
+  margin-top: var(--space6XL);
+  gap: var(--space4XL);
+}
+
+.image {
+  max-width: var(--maxWidthS);
+  min-width: var(--minWidthM);
+}
+
+.details {
+  max-width: var(--maxWidthS);
+  min-width: var(--minWidthM);
+  flex: 1;
+  padding: var(--spaceXL);
+  gap: var(--spaceL);
+}
+
+.wave {
+  font-size: var(--fontSizeH3);
+  animation-name: wave-animation;
+  animation-duration: calc(var(--durationS) * 10);
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

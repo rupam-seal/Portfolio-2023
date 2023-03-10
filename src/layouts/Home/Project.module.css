@@ -1,0 +1,23 @@
+.project {
+  margin-top: var(--space4XL);
+  gap: var(--space4XL);
+  max-height: 1080px;
+}
+
+.image {
+  max-width: var(--maxWidthM);
+  min-width: var(--minWidthL);
+}
+
+.details {
+  min-width: var(--minWidthM);
+}
+
+.title {
+  color: var(--rgbAccent);
+  margin-bottom: var(--spaceM);
+}
+
+.description {
+  margin-bottom: var(--spaceL);
+}

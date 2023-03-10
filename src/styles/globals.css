@@ -60,6 +60,11 @@ h5 {
   padding: 0;
 }
 
+::selection {
+  color: var(--colorTextTitle);
+  background: var(--rgbAccent);
+}
+
 /* NOTE: 1rem = 10px and 0.1rem = 1px */
 :root {
   --rgbBlack: rgb(0, 0, 0);
@@ -90,12 +95,21 @@ h5 {
   --fontSizeBodyM: 1.8rem;
   --fontSizeBodyS: 1.6rem;
   --fontSizeBodyXS: 1.4rem;
+  --fontSizeBodyXXS: 1.2rem;
+
+  --borderRadius0: 0.5rem;
+  --borderRadius1: 1rem;
+  --borderRadius2: 2rem;
+  --borderRadius4: 4rem;
+  --borderRadius8: 8rem;
 
   --lineHeightTitle: 1.1;
   --lineHeightBody: 1.6;
 
   --viewPortWidth: 100vw;
   --viewPortHeight: 100vh;
+  --minWidthM: 35rem;
+  --minWidthL: 45rem;
   --maxWidthS: 54rem;
   --maxWidthM: 72rem;
   --maxWidthXM: 90rem;
@@ -112,6 +126,7 @@ h5 {
   --space3XL: 6.4rem;
   --space4XL: 9.6rem;
   --space5XL: 12.8rem;
+  --space6XL: 19.2rem;
 
   --zIndex0: 0;
   --zIndex1: 4;
@@ -125,13 +140,15 @@ body.dark {
   --themeId: 'dark';
   --rgbBackground: rgb(17, 17, 17);
   --rgbBackgroundLight: rgb(26, 26, 26);
-  --rgbPrimary: rgb(0, 229, 255);
-  --rgbAccent: rgb(0, 229, 255);
+  --rgbPrimary: rgb(255, 99, 195);
+  --rgbAccent: rgb(255, 99, 195);
   --rgbText: rgb(255, 255, 255);
   --rgbError: rgb(255, 55, 102);
   --colorTextTitle: rgb(255, 255, 255, 1);
   --colorTextBody: rgb(255, 255, 255, 0.8);
   --colorTextLight: rgb(255, 255, 255, 0.6);
+  --colorTextExtraLight: rgb(255, 255, 255, 0.1);
+  --shadowColor: rgba(255, 99, 195, 0.1);
 }
 
 body.light {
@@ -139,10 +156,12 @@ body.light {
   --rgbBackground: rgb(242, 242, 242);
   --rgbBackgroundLight: rgb(255, 255, 255);
   --rgbPrimary: rgb(0, 0, 0);
-  --rgbAccent: rgb(0, 229, 255);
+  --rgbAccent: rgb(255, 99, 195);
   --rgbText: rgb(0, 0, 0);
   --rgbError: rgb(255, 0, 60);
   --colorTextTitle: rgb(0, 0, 0, 1);
   --colorTextBody: rgb(0, 0, 0, 0.8);
   --colorTextLight: rgb(0, 0, 0, 0.6);
+  --colorTextExtraLight: rgb(0, 0, 0, 0.1);
+  --shadowColor: rgba(0, 0, 0, 0.09);
 }

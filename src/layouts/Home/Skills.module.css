@@ -1,0 +1,12 @@
+.skills {
+  margin-top: var(--space6XL);
+  margin-left: var(--space4XL);
+  margin-right: var(--space4XL);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: var(--space5XL);
+  gap: var(--space4XL);
+}

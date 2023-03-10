@@ -1,3 +1,11 @@
 .icon {
-  fill: currentColor;
+  color: var(--colorTextLight);
+
+  &[data-type='link'] {
+    color: var(--rgbAccent);
+  }
+
+  &[data-type='button'] {
+    color: var(--rgbBackground);
+  }
 }

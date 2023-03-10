@@ -36,11 +36,11 @@
 .scroll:after {
   content: '';
   display: block;
-  width: 12px;
-  height: 12px;
+  width: var(--fontSizeBodyXXS);
+  height: var(--fontSizeBodyXXS);
   transform: rotate(45deg);
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
+  border-bottom: 1px solid var(--colorTextBody);
+  border-right: 1px solid var(--colorTextBody);
   margin-right: var(--spaceM);
 }
 

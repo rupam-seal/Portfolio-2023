@@ -20,6 +20,7 @@ import {
 
 import Spline from '@splinetool/react-spline';
 import { SectionBottom } from '../../components/SectionBottom';
+import { Icon } from '@/components/Icon';
 
 export const Hero = () => {
   return (
@@ -76,21 +77,22 @@ export const Hero = () => {
         <Container align="center" variants={scaleVariant}>
           <div className={styles.scroll}></div>
           <Container direction={'column'}>
-            <Text weight="regular" size="s" secondary>
-              Keep
+            <Text weight="regular" size="s">
+              Keep —
             </Text>
-            <Text weight="regular" size="s" secondary>
+            <Text weight="regular" size="s">
               Scrolling
             </Text>
           </Container>
         </Container>
         <Container direction={'column'} variants={scaleVariant}>
           <Text weight="regular" size="s" align="end">
-            Available for freelance work
+            Available for work
           </Text>
           <Text className={styles.talk} weight="regular" size="s">
-            <BsArrowDownLeftCircleFill />
-            <A link="/talk">Lets talk</A>
+            <A icon="leftCircle" link="/talk">
+              Lets talk
+            </A>
           </Text>
         </Container>
       </SectionBottom>
