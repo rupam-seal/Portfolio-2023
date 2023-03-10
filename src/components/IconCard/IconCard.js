@@ -19,11 +19,12 @@ export const IconCard = ({ title, items, className }) => {
         variants={staggerContainer(0.2, 0.2)}
       >
         {!!items?.length &&
-          items?.map((item) => (
+          items?.map((item, index) => (
             <Container
               className={styles.item}
               variants={textVariant(0.1)}
               justify="center"
+              key={index}
             >
               <Icon icon={item} />
               <Text className={styles.text}>{item}</Text>

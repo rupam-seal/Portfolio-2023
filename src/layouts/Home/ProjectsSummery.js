@@ -10,17 +10,15 @@ import { Project } from './Project';
 import styles from './ProjectsSummery.module.css';
 
 export const ProjectsSummery = () => {
-  const project = projects.map((project, index) => {
-    return (
-      <>
-        {index % 2 === 0 ? (
-          <Project item={project} />
-        ) : (
-          <Project item={project} direction="reverse" />
-        )}
-      </>
-    );
-  });
+  const project = projects.map((project, index) => (
+    <Container key={index}>
+      {index % 2 === 0 ? (
+        <Project item={project} />
+      ) : (
+        <Project item={project} direction="reverse" />
+      )}
+    </Container>
+  ));
 
   return (
     <Section

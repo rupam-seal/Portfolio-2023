@@ -16,8 +16,6 @@ const project = () => {
 
   const item = projects[project];
 
-  console.log(item?.image);
-
   return (
     <>
       {item && (
