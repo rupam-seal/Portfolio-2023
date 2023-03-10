@@ -5,7 +5,7 @@ const index = () => {
   return (
     <>
       {projects.map((project, index) => {
-        return <Project item={project} />;
+        return <Project key={index} item={project} />;
       })}
     </>
   );

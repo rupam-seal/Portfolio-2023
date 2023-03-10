@@ -10,7 +10,7 @@ import { Container } from '../../components/Container';
 import { List } from '../../components/List';
 import { projects } from '../../../data/projects';
 
-const project = () => {
+const Project = () => {
   const router = useRouter();
   const { project } = router.query;
 
@@ -51,4 +51,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;
