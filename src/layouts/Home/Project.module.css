@@ -1,7 +1,15 @@
 .project {
   margin-top: var(--space4XL);
   gap: var(--space4XL);
-  max-height: 1080px;
+
+  @media (--mediaTablet) {
+    flex-direction: column;
+
+    &[data-fullscreen='true'] {
+      width: auto;
+      height: auto;
+    }
+  }
 }
 
 .image {
@@ -20,4 +28,8 @@
 
 .description {
   margin-bottom: var(--spaceL);
+}
+
+.buttonContainer {
+  gap: var(--spaceL);
 }

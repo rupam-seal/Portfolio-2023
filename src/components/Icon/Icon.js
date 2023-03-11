@@ -47,6 +47,8 @@ import { SiAxios } from 'react-icons/si';
 import { BsArrowDownLeftCircleFill } from 'react-icons/bs';
 import { ImArrowUpRight2 } from 'react-icons/im';
 import { RiSendPlaneFill } from 'react-icons/ri';
+import { SlGlobe } from 'react-icons/sl';
+import { CgMenuHotdog } from 'react-icons/cg';
 
 export const icons = {
   /**
@@ -95,6 +97,8 @@ export const icons = {
   leftCircle: BsArrowDownLeftCircleFill,
   arrowRight: ImArrowUpRight2,
   send: RiSendPlaneFill,
+  web: SlGlobe,
+  menu: CgMenuHotdog,
 };
 
 export const Icon = ({ icon, className, type, ...rest }) => {

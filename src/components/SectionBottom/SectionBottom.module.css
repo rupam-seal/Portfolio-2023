@@ -5,4 +5,9 @@
   bottom: var(--space3XL);
   left: var(--space5XL);
   right: var(--space5XL);
+
+  @media (--mediaMobile) {
+    left: var(--spaceM);
+    right: var(--spaceM);
+  }
 }

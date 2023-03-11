@@ -16,6 +16,6 @@
   color: var(--colorTextLight);
 
   &:last-child {
-    border-bottom: 1px solid var(--colorTextExtraLight);
+    border-bottom: 1px solid transparent !important;
   }
 }

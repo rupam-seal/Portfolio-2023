@@ -10,6 +10,8 @@ import { Heading } from '../Heading';
 import { navLinks } from './navData';
 import { A } from '../A';
 import { Button } from '../Button';
+import { Icon } from '../Icon';
+import { Text } from '../Text';
 
 export const Navbar = () => {
   const data = navLinks.map(({ label, pathname }, index) => {
@@ -35,12 +37,21 @@ export const Navbar = () => {
           </Heading>
         </A>
       </Container>
-      <Container align="center" justify="center">
+      <Container align="center" justify="center" className={styles.items}>
         {data}
-        <Button href={'/'} size="s" weight="regular" className={styles.button}>
-          hello@nilax.in
+        <Button
+          href={'https://github.com/rupam-seal'}
+          size="s"
+          weight="regular"
+          className={styles.button}
+        >
+          <Icon icon="Github" type="button" />
+          Github
         </Button>
       </Container>
+      <Heading level={3} weight={'bold'} className={styles.menu}>
+        <Icon icon="menu" />
+      </Heading>
     </Container>
   );
 };

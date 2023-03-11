@@ -54,4 +54,25 @@
   &[data-weight='bold'] {
     font-weight: var(--fontWeightBold);
   }
+
+  @media (--mediaTablet) {
+    &[data-level='1'] {
+      letter-spacing: -0.05em;
+      font-size: calc(var(--fontSizeH3) * 2);
+    }
+  }
+
+  @media (--mediaMobile) {
+    &[data-level='1'] {
+      letter-spacing: -0.05em;
+      font-size: calc(var(--fontSizeH2));
+    }
+  }
+
+  @media (--mediaMobileS) {
+    &[data-level='1'] {
+      letter-spacing: -0.05em;
+      font-size: calc(var(--fontSizeH3) + 0.4rem);
+    }
+  }
 }

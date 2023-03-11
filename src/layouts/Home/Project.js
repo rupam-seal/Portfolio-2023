@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { List } from '@/components/List';
 
-export const Project = ({ direction, item }) => {
+export const Project = ({ direction, value, item }) => {
   return (
     <Section
       className={styles.project}
@@ -24,20 +24,17 @@ export const Project = ({ direction, item }) => {
       justify={'sb'}
     >
       <Container className={styles.image} align="center" justify="center">
-        <Image src={item.image} href="/" variants={imageVariant} />
+        <Image src={item.image} href="/" variants={imageVariant(value)} />
       </Container>
       <Container className={styles.details} align="center" justify="center">
-        <Container direction="column" variants={staggerContainer(0.4, 0.4)}>
+        <Container direction="column">
           <Text
             className={styles.title}
             size="xl"
             weight="medium"
             variants={textVariant(0)}
           >
-            <DecoderText
-              text={item.title.toUpperCase()}
-              delay={3000}
-            ></DecoderText>
+            {item.title.toUpperCase()}
           </Text>
           <Text
             variants={textVariant(0.1)}
@@ -54,14 +51,24 @@ export const Project = ({ direction, item }) => {
           {!!item.tags?.length && (
             <List items={item.tags} className={styles.items} />
           )}
-          <Button
-            icon="arrowRight"
-            href={`/projects/${item.id}`}
-            size="m"
-            variants={textVariant(0.1)}
-          >
-            View Project
-          </Button>
+          <Container className={styles.buttonContainer}>
+            <Button
+              icon="arrowRight"
+              href={`/projects/${item.id - 1}`}
+              size="m"
+              variants={textVariant(0.1)}
+            >
+              View Project
+            </Button>
+            <Button
+              icon="web"
+              href={`/projects/${item.id - 1}`}
+              size="m"
+              variants={textVariant(0.1)}
+            >
+              Live Site
+            </Button>
+          </Container>
         </Container>
       </Container>
     </Section>

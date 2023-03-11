@@ -9,6 +9,9 @@ module.exports = {
       features: {
         'nesting-rules': true,
         'custom-properties': true,
+        'custom-media-queries': {
+          importFrom: './src/styles/globals.css',
+        },
       },
     },
   },

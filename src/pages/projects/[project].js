@@ -9,6 +9,7 @@ import { Button } from '../../components/Button';
 import { Container } from '../../components/Container';
 import { List } from '../../components/List';
 import { projects } from '../../../data/projects';
+import { scaleVariant, textVariant } from '@/utils/motion';
 
 const Project = () => {
   const router = useRouter();
@@ -16,13 +17,19 @@ const Project = () => {
 
   const item = projects[project];
 
+  console.log(project);
+
   return (
     <>
       {item && (
         <Section className={styles.section} direction={'column'}>
           <Container className={styles.content}>
             <Container direction={'column'} className={styles.details}>
-              <Heading level={3} className={styles.title}>
+              <Heading
+                level={3}
+                className={styles.title}
+                variants={textVariant(0.1)}
+              >
                 {item.title}
               </Heading>
               <Text
@@ -30,21 +37,42 @@ const Project = () => {
                 weight="medium"
                 secondary
                 className={styles.description}
+                variants={textVariant(0.2)}
               >
                 {item.description}
               </Text>
-              <Text size="m" weight="Bold">
-                <Button className={styles.button} href={item.live}>
-                  Visit Website
-                </Button>
-              </Text>
+              <Container className={styles.buttonContainer}>
+                <Text size="m" weight="Bold" variants={textVariant(0.3)}>
+                  <Button className={styles.button} href={item.live} icon="web">
+                    Live Site
+                  </Button>
+                </Text>
+                <Text size="m" weight="Bold" variants={textVariant(0.3)}>
+                  <Button
+                    className={styles.button}
+                    href={item.live}
+                    icon="Github"
+                  >
+                    Source
+                  </Button>
+                </Text>
+              </Container>
             </Container>
-            <Container direction={'column'} className={styles.list}>
+            <Container
+              direction={'column'}
+              className={styles.list}
+              variants={textVariant(0.1)}
+            >
               <Text className={styles.tools}>Tool Used</Text>
               <List items={item.tags} />
             </Container>
           </Container>
-          <Image className={styles.image} src={item.image} href={'/'} />
+          <Image
+            className={styles.image}
+            src={item.image}
+            href={'/'}
+            variants={textVariant(0.4)}
+          />
         </Section>
       )}
     </>

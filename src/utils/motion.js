@@ -1,7 +1,7 @@
 export const navVariants = {
   hidden: {
     opacity: 0,
-    top: -40,
+    top: -70,
   },
   show: {
     opacity: 1,
@@ -23,7 +23,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
   },
 });
 
-export const textVariant = (delay) => ({
+export const textVariant = (delay, duration = 0.6) => ({
   hidden: {
     opacity: 0,
     y: 50,
@@ -32,8 +32,8 @@ export const textVariant = (delay) => ({
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
-      delay: 0.3 + delay,
+      duration: duration,
+      delay: 0.2 + delay,
       ease: 'easeInOut',
     },
   },
@@ -56,19 +56,20 @@ export const scaleVariant = {
   },
 };
 
-export const imageVariant = {
+export const imageVariant = (value) => ({
   hidden: {
     opacity: 0,
-    scale: 0.8,
+    scale: 0.9,
+    x: `${value}50`,
   },
   show: {
     opacity: 1,
     scale: 1,
+    x: 0,
     transition: {
-      type: 'spring',
-      stiffness: 100,
-      duration: 1.2,
+      duration: 0.5,
       delay: 0.2,
+      ease: 'easeInOut',
     },
   },
-};
+});

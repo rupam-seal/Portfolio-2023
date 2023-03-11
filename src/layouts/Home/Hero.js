@@ -33,7 +33,6 @@ export const Hero = () => {
       <Container
         className={classes(styles.intro)}
         direction="column"
-        variants={staggerContainer(0.4, 0.4)}
         zIndex={1}
       >
         <h1 className={styles.name}>

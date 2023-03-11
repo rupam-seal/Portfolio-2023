@@ -13,9 +13,9 @@ export const ProjectsSummery = () => {
   const project = projects.map((project, index) => (
     <Container key={index}>
       {index % 2 === 0 ? (
-        <Project item={project} />
+        <Project item={project} value="-" />
       ) : (
-        <Project item={project} direction="reverse" />
+        <Project item={project} value="" direction="reverse" />
       )}
     </Container>
   ));
@@ -27,15 +27,11 @@ export const ProjectsSummery = () => {
       align={'center'}
       justify={'center'}
     >
-      <Container
-        align="center"
-        direction={'column'}
-        variants={staggerContainer(0.4, 0.4)}
-      >
-        <Heading level={1} weight="bold" variants={textVariant(0.1)}>
+      <Container align="center" direction={'column'}>
+        <Heading level={1} weight="bold" variants={textVariant(0.3)}>
           FEATURED
         </Heading>
-        <Heading level={1} weight="bold" variants={textVariant(0)}>
+        <Heading level={1} weight="bold" variants={textVariant(0.1)}>
           WORKS
         </Heading>
       </Container>

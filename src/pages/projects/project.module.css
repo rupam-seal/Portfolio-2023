@@ -1,5 +1,5 @@
 .section {
-  margin-top: var(--space6XL);
+  margin-top: calc(var(--space5XL) + var(--space2XL));
   padding-left: calc(var(--space6XL) + var(--space4XL));
   padding-right: calc(var(--space6XL) + var(--space4XL));
 }
@@ -10,6 +10,10 @@
 
 .image {
   margin-top: var(--space4XL);
+}
+
+.buttonContainer {
+  gap: var(--spaceL);
 }
 
 .button {

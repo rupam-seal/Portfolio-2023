@@ -7,6 +7,10 @@
 .content {
   margin-top: var(--space6XL);
   gap: var(--space4XL);
+
+  @media (--mediaTablet) {
+    flex-direction: column;
+  }
 }
 
 .image {

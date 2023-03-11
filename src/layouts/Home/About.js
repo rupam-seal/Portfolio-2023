@@ -19,21 +19,16 @@ export const About = () => {
       align={'center'}
       justify={'center'}
     >
-      <Container variants={staggerContainer(0.2, 0.2)}>
+      <Container>
         <Heading level={1} weight="bold" variants={textVariant(0.1)}>
           ABOUT ME
         </Heading>
       </Container>
       <Section className={styles.content}>
         <Container className={styles.image} align="center" justify="center">
-          <Image src={'./profile.jpg'} href="/" variants={imageVariant} />
+          <Image src={'./profile.jpg'} href="/" variants={imageVariant('-')} />
         </Container>
-        <Container
-          className={styles.details}
-          align="left"
-          direction="column"
-          variants={staggerContainer(0.2, 0.2)}
-        >
+        <Container className={styles.details} align="left" direction="column">
           <Container align="center" variants={textVariant(0.1)}>
             <Heading level={3} size="m" weight="medium">
               Hi there
@@ -48,13 +43,18 @@ export const About = () => {
             are reliable and user-friendly. Skilled
           </Text>
 
-          <Text size="l" weight="regular" secondary variants={textVariant(0.2)}>
+          <Text size="l" weight="regular" secondary variants={textVariant(0.3)}>
             leader who has the proven ability to motivate, educate and manage a
             team of professionals to build software programs and effectively
             track changes. Confident <A link="/">communicator</A>, strategic
             thinker, and innovative creator <A link={'/'}>success</A>.
           </Text>
-          <Button variants={textVariant(0.3)} href={'/'} size="m" icon={'send'}>
+          <Button
+            variants={textVariant(0.35)}
+            href={'/'}
+            size="m"
+            icon={'send'}
+          >
             Send message
           </Button>
         </Container>

@@ -12,12 +12,7 @@ export const IconCard = ({ title, items, className }) => {
         {title}
       </Heading>
 
-      <Container
-        className={styles.content}
-        direction={'column'}
-        align="center"
-        variants={staggerContainer(0.2, 0.2)}
-      >
+      <Container className={styles.content} direction={'column'} align="center">
         {!!items?.length &&
           items?.map((item, index) => (
             <Container
@@ -26,7 +21,7 @@ export const IconCard = ({ title, items, className }) => {
               justify="center"
               key={index}
             >
-              <Icon icon={item} />
+              <Icon className={styles.icon} icon={item} />
               <Text className={styles.text}>{item}</Text>
             </Container>
           ))}

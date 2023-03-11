@@ -141,6 +141,7 @@ body.dark {
   --rgbBackground: rgb(17, 17, 17);
   --rgbBackgroundLight: rgb(26, 26, 26);
   --rgbPrimary: rgb(255, 99, 195);
+  --rgbSecondary: rgb(255, 99, 195);
   --rgbAccent: rgb(255, 99, 195);
   --rgbText: rgb(255, 255, 255);
   --rgbError: rgb(255, 55, 102);
@@ -156,6 +157,7 @@ body.light {
   --rgbBackground: rgb(242, 242, 242);
   --rgbBackgroundLight: rgb(255, 255, 255);
   --rgbPrimary: rgb(0, 0, 0);
+  --rgbSecondary: rgb(255, 255, 255);
   --rgbAccent: rgb(255, 99, 195);
   --rgbText: rgb(0, 0, 0);
   --rgbError: rgb(255, 0, 60);

@@ -7,8 +7,28 @@
   /* backdrop-filter: blur(100px); */
   /* background: calc(var(--rgbBackground) / 0.9); */
   background: var(--rgbBackground);
+
+  @media (--mediaMobile) {
+    padding-left: var(--spaceM);
+    padding-right: var(--spaceM);
+  }
+}
+
+.items {
+  @media (--mediaMobile) {
+    display: none;
+  }
 }
 
 .button {
   margin-left: var(--spaceM);
+}
+
+.menu {
+  display: none;
+  color: var(--colorTextBody);
+
+  @media (--mediaMobile) {
+    display: flex;
+  }
 }

@@ -29,4 +29,10 @@
   &[data-justify='sb'] {
     justify-content: space-between;
   }
+
+  @media (--mediaTablet) {
+    &[data-direction='reverse'] {
+      flex-direction: column;
+    }
+  }
 }
