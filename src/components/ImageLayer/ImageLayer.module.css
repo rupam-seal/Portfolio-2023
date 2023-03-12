@@ -1,0 +1,57 @@
+.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: var(--zIndex0);
+  border-radius: 4rem;
+  background-color: rgb(255, 99, 195);
+  cursor: pointer;
+}
+
+.year {
+  position: absolute;
+  bottom: var(--space2XL);
+  left: var(--space2XL);
+  z-index: var(--zIndex1);
+
+  @media (--mediaMobile) {
+    left: var(--spaceM);
+    bottom: var(--spaceXL);
+  }
+}
+
+.text {
+  color: var(--rgbWhite);
+}
+
+.circle {
+  position: absolute;
+  right: var(--spaceL);
+  bottom: var(--spaceL);
+  width: 9rem;
+  height: 9rem;
+  border-radius: calc(var(--borderRadius4) + var(--borderRadius0));
+  background-color: var(--rgbWhite);
+  z-index: var(--zIndex1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (--mediaTablet) {
+    width: 8rem;
+    height: 8rem;
+    border-radius: var(--borderRadius4);
+  }
+
+  @media (--mediaMobile) {
+    width: 6rem;
+    height: 6rem;
+    right: var(--spaceM);
+    bottom: var(--spaceM);
+    border-radius: calc(var(--borderRadius4) + var(--borderRadius4));
+  }
+}
+
+.icon {
+  color: #000000;
+}
