@@ -10,7 +10,7 @@ module.exports = {
         'nesting-rules': true,
         'custom-properties': true,
         'custom-media-queries': {
-          importFrom: './src/styles/globals.css',
+          importFrom: './src/styles/media.css',
         },
       },
     },
