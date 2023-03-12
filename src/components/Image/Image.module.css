@@ -7,7 +7,6 @@
   width: 100%;
   border-radius: var(--borderRadius4);
   transition: scale var(--durationS) var(--bezierFastoutSlowin);
-
   /* &:hover {
     scale: 1.02;
   } */

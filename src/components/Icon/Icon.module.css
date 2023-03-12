@@ -8,4 +8,8 @@
   &[data-type='button'] {
     color: var(--rgbBackground);
   }
+
+  &[data-type='white'] {
+    color: var(--rgbBlack);
+  }
 }

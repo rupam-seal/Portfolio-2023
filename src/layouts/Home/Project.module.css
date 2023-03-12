@@ -13,6 +13,7 @@
 }
 
 .image {
+  position: relative;
   max-width: 56rem;
 }
 
@@ -22,6 +23,10 @@
 
 .title {
   margin-bottom: var(--spaceM);
+}
+
+.no {
+  margin-bottom: var(--spaceL);
 }
 
 .status {

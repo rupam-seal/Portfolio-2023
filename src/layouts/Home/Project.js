@@ -7,8 +7,11 @@ import { Text } from '@/components/Text';
 import { Button } from '@/components/Button';
 
 import {
+  divVariants,
   hoverVariants,
+  hoverVariants2,
   imageVariant,
+  layerVariants,
   staggerContainer,
   textVariant,
 } from '@/utils/motion';
@@ -19,6 +22,9 @@ import styles from './Project.module.css';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { List } from '@/components/List';
+import { Icon } from '@/components/Icon';
+
+import ImageLayer from '@/components/ImageLayer/ImageLayer';
 
 export const Project = ({ direction, value, item }) => {
   return (
@@ -28,18 +34,29 @@ export const Project = ({ direction, value, item }) => {
       direction={direction}
       justify={'sb'}
     >
-      <motion.div
-        id="image"
-        className={styles.image}
-        align="center"
-        justify="center"
-        initial="hidden"
-        whileHover="hover"
-      >
-        <Image src={item.image} href="/" variants={imageVariant(value)} />
-      </motion.div>
+      <Container variants={imageVariant()}>
+        <motion.div
+          id="image"
+          className={styles.image}
+          align="center"
+          justify="center"
+          initial="hidden"
+          whileHover="hover"
+        >
+          <ImageLayer year={item.year} />
+          <Image src={item.image} href="/" />
+        </motion.div>
+      </Container>
       <Container className={styles.details} align="center" justify="center">
         <Container direction="column">
+          <Text
+            weight="Bold"
+            className={styles.no}
+            variants={textVariant(0.05)}
+            secondary
+          >
+            0{item.id}/05
+          </Text>
           <Heading
             level={3}
             className={styles.title}

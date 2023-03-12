@@ -42,6 +42,10 @@ import { SiSketch } from 'react-icons/si';
  **/
 import { SiAxios } from 'react-icons/si';
 /**
+ * Social
+ **/
+import { FaLinkedinIn } from 'react-icons/fa';
+/**
  * OTHERS
  **/
 import { BsArrowDownLeftCircleFill } from 'react-icons/bs';
@@ -91,6 +95,10 @@ export const icons = {
    * LIBRARY
    **/
   Axios: SiAxios,
+  /**
+   * LIBRARY
+   **/
+  Linkedin: FaLinkedinIn,
   /**
    * OTHERS
    **/

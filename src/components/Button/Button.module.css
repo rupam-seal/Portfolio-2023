@@ -66,18 +66,4 @@
   &[data-secondary='true'] {
     color: var(--colorTextLight);
   }
-
-  @media (--mediaMobile) {
-    &[data-size='s'] {
-      font-size: 1.7rem;
-    }
-
-    &[data-size='m'] {
-      font-size: 1.6rem;
-    }
-
-    &[data-size='l'] {
-      font-size: 1.4rem;
-    }
-  }
 }

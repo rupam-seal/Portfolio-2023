@@ -5,10 +5,12 @@ export const projects = [
     view: '',
     live: '',
     title: 'Imo',
-    status: 'Is in development',
+    status:
+      'This project source containes my recent react project structure and code',
     description:
       'imo is a image classification website where user can upload images and it will classify images into their respective category',
     tags: ['JavaScript', 'HTML', 'CSS'],
+    year: '2023',
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ export const projects = [
     status: 'Is in development',
     description: 'A slingshot shooting game with JavaScript 2D physics engine',
     tags: ['Django', 'JavaScript', 'HTML', 'CSS'],
+    year: '2022',
   },
   {
     id: 3,
@@ -29,6 +32,7 @@ export const projects = [
     status: 'Is in development',
     description: 'RepTok is a simple management application built with Django',
     tags: ['Django', 'JavaScript', 'HTML', 'CSS'],
+    year: '2023',
   },
   {
     id: 4,
@@ -40,6 +44,7 @@ export const projects = [
     description:
       'A cryptocurrency finance price tracker app using React Hook (useEffect, useState) and Axios',
     tags: ['JavaScript', 'HTML', 'React.js', 'Axios'],
+    year: '2020',
   },
   {
     id: 5,
@@ -51,6 +56,7 @@ export const projects = [
     description:
       'Django csv uploader can upload any csv file data to Django using pandas',
     tags: ['Django', 'JavaScript', 'HTML', 'CSS'],
+    year: '2021',
   },
   {
     id: 6,
@@ -62,6 +68,7 @@ export const projects = [
     description:
       'Live Search Weather App using React JS and React Functional Component, React Hooks, React Fetch API',
     tags: ['JavaScript', 'HTML', 'CSS'],
+    year: '2023',
   },
   {
     id: 7,
@@ -73,5 +80,6 @@ export const projects = [
     description:
       'Create read update delete view data using Django, Python, HTML and CSS',
     tags: ['JavaScript', 'HTML', 'CSS'],
+    year: '2021',
   },
 ];

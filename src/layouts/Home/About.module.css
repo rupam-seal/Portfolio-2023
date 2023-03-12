@@ -12,7 +12,21 @@
 }
 
 .image {
-  max-width: 56rem;
+  position: relative;
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceL);
+}
+
+.social {
+  position: absolute;
+  gap: var(--spaceL);
+  bottom: calc((-1 * var(--spaceM) + 3rem));
+
+  & .button {
+    box-shadow: var(--shadowColor) 0px 3px 12px;
+  }
 }
 
 .details {
