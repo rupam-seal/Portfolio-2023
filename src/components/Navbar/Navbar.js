@@ -31,11 +31,11 @@ export const Navbar = () => {
       zIndex={5}
     >
       <Container align="center">
-        <A nav link="/">
+        <Link className={styles.logo} href="/">
           <Heading level={4} weight={'bold'}>
             NX
           </Heading>
-        </A>
+        </Link>
       </Container>
 
       <Container align="center" justify="center" className={styles.items}>

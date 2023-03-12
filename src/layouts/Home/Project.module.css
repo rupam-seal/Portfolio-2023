@@ -36,7 +36,8 @@
 .buttonContainer {
   gap: var(--spaceL);
 
-  @media (--mediaMobileS) {
+  @media (--mediaMobile) {
     flex-direction: column;
+    gap: var(--spaceS);
   }
 }

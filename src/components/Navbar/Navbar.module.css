@@ -1,12 +1,17 @@
 .navbar {
   position: fixed;
-  padding: var(--spaceM) var(--spaceOuter);
+  padding: var(--spaceL) var(--spaceOuter);
   top: 0;
   left: 0;
   right: 0;
   /* backdrop-filter: blur(100px); */
   /* background: calc(var(--rgbBackground) / 0.9); */
   background: var(--rgbBackground);
+}
+
+.logo {
+  padding: 0;
+  text-decoration: none;
 }
 
 .items {

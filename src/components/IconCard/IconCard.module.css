@@ -42,7 +42,7 @@
 
 .text,
 .icon {
-  color: var(--rgbBlack);
+  color: var(--colorTextBody);
 
   @media (--mediaMobile) {
     &[data-size='m'] {

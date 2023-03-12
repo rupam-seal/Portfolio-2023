@@ -44,6 +44,7 @@ html {
 }
 
 body {
+  padding: 0;
   font-family: var(--fontStack);
   background-color: var(--rgbBackground);
 }
@@ -172,7 +173,7 @@ h5 {
     --fontSizeBodyS: 1.4rem;
     --borderRadius4: 2rem;
     --borderRadius2: 1rem;
-    --spaceOuter: 1.6rem;
+    --spaceOuter: 2.4rem;
     --space6XL: 10rem;
     --space5XL: 4rem;
   }
@@ -191,7 +192,7 @@ body.dark {
   --rgbBackground: rgb(17, 17, 17);
   --rgbBackgroundLight: rgb(26, 26, 26);
   --rgbPrimary: rgb(255, 99, 195);
-  --rgbSecondary: rgb(255, 99, 195);
+  --rgbSecondary: rgb(25, 25, 25);
   --rgbAccent: rgb(255, 99, 195);
   --rgbText: rgb(255, 255, 255);
   --rgbError: rgb(255, 55, 102);
@@ -199,7 +200,7 @@ body.dark {
   --colorTextBody: rgb(255, 255, 255, 0.8);
   --colorTextLight: rgb(255, 255, 255, 0.6);
   --colorTextExtraLight: rgb(255, 255, 255, 0.1);
-  --shadowColor: rgba(255, 99, 195, 0.1);
+  --shadowColor: rgba(25, 25, 25, 0.1);
 }
 
 body.light {
