@@ -1,7 +1,7 @@
+import { motion } from 'framer-motion';
+
 import { classes } from '../../utils/styles';
 import styles from './Container.module.css';
-
-import { motion } from 'framer-motion';
 
 export const Container = ({
   as: Component = 'div',

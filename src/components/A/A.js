@@ -1,11 +1,13 @@
 import React from 'react';
 
 import styles from './A.module.css';
-import { classes } from '../../utils/styles';
+import { classes } from '@/utils/styles';
+
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Container } from '../Container';
+
 import { Icon } from '../Icon';
+import { Container } from '../Container';
 
 export const A = ({
   nav = false,

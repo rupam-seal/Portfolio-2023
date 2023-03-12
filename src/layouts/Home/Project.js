@@ -6,7 +6,12 @@ import { Section } from '@/components/Section';
 import { Text } from '@/components/Text';
 import { Button } from '@/components/Button';
 
-import { imageVariant, staggerContainer, textVariant } from '@/utils/motion';
+import {
+  hoverVariants,
+  imageVariant,
+  staggerContainer,
+  textVariant,
+} from '@/utils/motion';
 import { classes } from '@/utils/styles';
 
 import styles from './Project.module.css';
@@ -19,23 +24,30 @@ export const Project = ({ direction, value, item }) => {
   return (
     <Section
       className={styles.project}
-      fullscreen={true}
+      align="center"
       direction={direction}
       justify={'sb'}
     >
-      <Container className={styles.image} align="center" justify="center">
+      <motion.div
+        id="image"
+        className={styles.image}
+        align="center"
+        justify="center"
+        initial="hidden"
+        whileHover="hover"
+      >
         <Image src={item.image} href="/" variants={imageVariant(value)} />
-      </Container>
+      </motion.div>
       <Container className={styles.details} align="center" justify="center">
         <Container direction="column">
-          <Text
+          <Heading
+            level={3}
             className={styles.title}
-            size="xl"
             weight="medium"
             variants={textVariant(0)}
           >
-            {item.title.toUpperCase()}
-          </Text>
+            {item.title}
+          </Heading>
           <Text
             variants={textVariant(0.1)}
             className={styles.description}
@@ -45,12 +57,12 @@ export const Project = ({ direction, value, item }) => {
           >
             {item.description}
           </Text>
-          <Text className={styles.title} variants={textVariant(0.2)}>
-            Tool Used
+          <Text className={styles.status} variants={textVariant(0.2)}>
+            {item.status}
           </Text>
-          {!!item.tags?.length && (
+          {/* {!!item.tags?.length && (
             <List items={item.tags} className={styles.items} />
-          )}
+          )} */}
           <Container className={styles.buttonContainer}>
             <Button
               icon="arrowRight"

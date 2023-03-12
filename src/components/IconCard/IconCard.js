@@ -1,9 +1,11 @@
 import { staggerContainer, textVariant } from '@/utils/motion';
+
+import styles from './IconCard.module.css';
+
 import { Container } from '../Container';
 import { Heading } from '../Heading';
 import { Icon } from '../Icon';
 import { Text } from '../Text';
-import styles from './IconCard.module.css';
 
 export const IconCard = ({ title, items, className }) => {
   return (

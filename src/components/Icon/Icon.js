@@ -1,5 +1,5 @@
-import { classes } from '@/utils/styles';
 import styles from './Icon.module.css';
+import { classes } from '@/utils/styles';
 
 /**
  * LANGUAGE

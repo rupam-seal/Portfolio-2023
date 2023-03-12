@@ -1,8 +1,10 @@
-import { classes } from '@/utils/styles';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { useEffect } from 'react';
+import Link from 'next/link';
+
+import { classes } from '@/utils/styles';
 import styles from './Image.module.css';
+
+import { motion } from 'framer-motion';
 
 export const Image = ({ as, src, className, href, variants }) => {
   const defaultComponent = href ? Link : 'div';

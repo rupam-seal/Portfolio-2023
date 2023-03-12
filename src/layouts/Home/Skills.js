@@ -1,11 +1,11 @@
+import styles from './Skills.module.css';
+
 import { Container } from '@/components/Container';
 import { Heading } from '@/components/Heading';
 import { IconCard } from '@/components/IconCard';
 import { Section } from '@/components/Section';
 import { staggerContainer, textVariant } from '@/utils/motion';
-import { framework, language, tools, ui } from './skillData';
-
-import styles from './Skills.module.css';
+import { framework, language, tools, ui } from '../../../data/skillData';
 
 export const Skills = () => {
   return (

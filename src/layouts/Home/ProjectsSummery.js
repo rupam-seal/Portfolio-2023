@@ -1,3 +1,5 @@
+import styles from './ProjectsSummery.module.css';
+
 import { Container } from '@/components/Container';
 import { Heading } from '@/components/Heading';
 import { Image } from '@/components/Image';
@@ -7,18 +9,18 @@ import { classes } from '@/utils/styles';
 import { projects } from '../../../data/projects';
 import { Project } from './Project';
 
-import styles from './ProjectsSummery.module.css';
-
 export const ProjectsSummery = () => {
-  const project = projects.map((project, index) => (
-    <Container key={index}>
-      {index % 2 === 0 ? (
-        <Project item={project} value="-" />
-      ) : (
-        <Project item={project} value="" direction="reverse" />
-      )}
-    </Container>
-  ));
+  const project = projects
+    .slice(0, 5)
+    .map((project, index) => (
+      <Container key={index}>
+        {index % 2 === 0 ? (
+          <Project item={project} value="-" />
+        ) : (
+          <Project item={project} value="" direction="reverse" />
+        )}
+      </Container>
+    ));
 
   return (
     <Section

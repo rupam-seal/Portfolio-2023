@@ -1,13 +1,3 @@
-.section {
-  margin-left: var(--space3XL);
-  margin-right: var(--space3XL);
-
-  @media (--mediaMobile) {
-    margin-left: var(--spaceM);
-    margin-right: var(--spaceM);
-  }
-}
-
 .name {
   text-align: center;
   text-transform: uppercase;

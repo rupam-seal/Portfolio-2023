@@ -1,12 +1,10 @@
 .about {
   margin-top: var(--space6XL);
-  margin-left: var(--space4XL);
-  margin-right: var(--space4XL);
 }
 
 .content {
   margin-top: var(--space6XL);
-  gap: var(--space4XL);
+  gap: var(--space5XL);
 
   @media (--mediaTablet) {
     flex-direction: column;
@@ -14,15 +12,11 @@
 }
 
 .image {
-  max-width: var(--maxWidthS);
-  min-width: var(--minWidthM);
+  max-width: 56rem;
 }
 
 .details {
-  max-width: var(--maxWidthS);
-  min-width: var(--minWidthM);
-  flex: 1;
-  padding: var(--spaceXL);
+  max-width: 45rem;
   gap: var(--spaceL);
 }
 

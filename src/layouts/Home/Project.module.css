@@ -1,6 +1,6 @@
 .project {
-  margin-top: var(--space4XL);
-  gap: var(--space4XL);
+  margin-top: var(--space6XL);
+  gap: var(--space5XL);
 
   @media (--mediaTablet) {
     flex-direction: column;
@@ -13,17 +13,20 @@
 }
 
 .image {
-  max-width: var(--maxWidthM);
-  min-width: var(--minWidthL);
+  max-width: 56rem;
 }
 
 .details {
-  min-width: var(--minWidthM);
+  max-width: 45rem;
 }
 
 .title {
-  color: var(--rgbAccent);
   margin-bottom: var(--spaceM);
+}
+
+.status {
+  color: var(--rgbAccent);
+  margin-bottom: var(--spaceL);
 }
 
 .description {
@@ -32,4 +35,8 @@
 
 .buttonContainer {
   gap: var(--spaceL);
+
+  @media (--mediaMobileS) {
+    flex-direction: column;
+  }
 }

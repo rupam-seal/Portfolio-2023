@@ -1,9 +1,9 @@
 import React from 'react';
-
 import Link from 'next/link';
 
-import styles from './Navbar.module.css';
 import { navVariants } from '@/utils/motion';
+
+import styles from './Navbar.module.css';
 
 import { Container } from '../Container';
 import { Heading } from '../Heading';
@@ -37,6 +37,7 @@ export const Navbar = () => {
           </Heading>
         </A>
       </Container>
+
       <Container align="center" justify="center" className={styles.items}>
         {data}
         <Button
@@ -46,7 +47,7 @@ export const Navbar = () => {
           className={styles.button}
         >
           <Icon icon="Github" type="button" />
-          Github
+          nilax@in
         </Button>
       </Container>
       <Heading level={3} weight={'bold'} className={styles.menu}>

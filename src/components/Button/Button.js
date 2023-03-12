@@ -1,8 +1,11 @@
-import { classes } from '@/utils/styles';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Icon } from '../Icon';
+
+import { motion } from 'framer-motion';
+
 import styles from './Button.module.css';
+import { classes } from '@/utils/styles';
+
+import { Icon } from '../Icon';
 
 export const Button = ({
   className,

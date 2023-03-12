@@ -2,7 +2,7 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
-  bottom: var(--space3XL);
+  bottom: var(--space2XL);
   left: var(--space5XL);
   right: var(--space5XL);
 

@@ -3,8 +3,6 @@ import React from 'react';
 import { classes } from '../../utils/styles';
 import styles from './Hero.module.css';
 
-import { BsArrowDownLeftCircleFill } from 'react-icons/bs';
-
 import { Container } from '../../components/Container';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
@@ -39,7 +37,7 @@ export const Hero = () => {
           <DecoderText text="Nilax Seal" delay={1000}></DecoderText>
         </h1>
         <Heading
-          level={1}
+          level={0}
           className={styles.title}
           align="center"
           weight="bold"
@@ -48,7 +46,7 @@ export const Hero = () => {
           ANDROID/
         </Heading>
         <Heading
-          level={1}
+          level={0}
           className={styles.title}
           align="center"
           weight="bold"

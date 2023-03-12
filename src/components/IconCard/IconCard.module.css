@@ -6,9 +6,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--spaceM);
+
+  @media (--mediaMobile) {
+    gap: var(--spaceS);
+  }
+
+  @media (--mediaMobileS) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .item {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   align-items: center;
   gap: var(--spaceS);
@@ -23,12 +33,20 @@
   &:hover {
     scale: 1.05;
   }
+
+  @media (--mediaMobile) {
+    flex-direction: column;
+    padding: var(--spaceM);
+  }
 }
 
-.text {
-  color: var(--rgbBlack);
-}
-
+.text,
 .icon {
   color: var(--rgbBlack);
+
+  @media (--mediaMobile) {
+    &[data-size='m'] {
+      font-size: var(--fontSizeBodyS);
+    }
+  }
 }

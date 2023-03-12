@@ -1,6 +1,8 @@
-import { staggerContainer, textVariant } from '@/utils/motion';
-import { classes } from '@/utils/styles';
 import { motion } from 'framer-motion';
+import { staggerContainer, textVariant } from '@/utils/motion';
+
+import { classes } from '@/utils/styles';
+
 import { Icon } from '../Icon';
 import { Text } from '../Text';
 

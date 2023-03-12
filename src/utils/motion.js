@@ -1,7 +1,7 @@
 export const navVariants = {
   hidden: {
     opacity: 0,
-    top: -70,
+    top: -50,
   },
   show: {
     opacity: 1,
@@ -73,3 +73,21 @@ export const imageVariant = (value) => ({
     },
   },
 });
+
+export const hoverVariants = {
+  hover: {
+    opacity: 1,
+  },
+
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 0.2,
+      ease: 'easeInOut',
+    },
+  },
+};

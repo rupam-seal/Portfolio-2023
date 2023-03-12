@@ -1,8 +1,8 @@
 import React from 'react';
-import { classes } from '../../utils/styles';
 
 import { motion } from 'framer-motion';
 
+import { classes } from '../../utils/styles';
 import styles from './Text.module.css';
 
 export const Text = ({

@@ -53,10 +53,4 @@
   &[data-secondary='true'] {
     color: var(--colorTextLight);
   }
-
-  @media (--mediaMobile) {
-    &[data-size='m'] {
-      font-size: var(--fontSizeBodyS);
-    }
-  }
 }
