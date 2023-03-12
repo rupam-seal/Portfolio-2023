@@ -1,9 +1,4 @@
 .section {
-  margin-left: var(--space3XL);
-  margin-right: var(--space3XL);
-
-  @media (--mediaMobile) {
-    margin-left: var(--spaceL);
-    margin-right: var(--spaceL);
-  }
+  margin-left: var(--spaceOuter);
+  margin-right: var(--spaceOuter);
 }
