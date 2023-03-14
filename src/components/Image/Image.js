@@ -25,6 +25,7 @@ export const Image = ({ as, src, className, href, variants }) => {
         loading="lazy"
         className={styles.image}
         src={src}
+        alt={''}
         placeholder={'/placeholder.jpg'}
       />
     </MotionComponent>
