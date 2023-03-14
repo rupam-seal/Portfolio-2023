@@ -8,6 +8,7 @@ import { Hero } from './Hero';
 import { ProjectsSummery } from './ProjectsSummery';
 import { Skills } from './Skills';
 import { About } from './About';
+import { motion } from 'framer-motion';
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -44,7 +45,7 @@ export const Home = () => {
   }, [visibleSections]);
 
   return (
-    <div className={styles.section}>
+    <motion.div className={styles.section} exit={{ opacity: 0 }}>
       <Hero
         sectionRef={hero}
         visible={visibleSections.includes(hero.current)}
@@ -61,6 +62,6 @@ export const Home = () => {
         sectionRef={skills}
         visible={visibleSections.includes(skills.current)}
       />
-    </div>
+    </motion.div>
   );
 };

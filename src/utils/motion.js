@@ -7,8 +7,8 @@ export const navVariants = {
     opacity: 1,
     top: 0,
     transition: {
-      duration: 0.6,
-      ease: 'easeInOut',
+      duration: 0.3,
+      ease: 'easeOut',
     },
   },
 };
