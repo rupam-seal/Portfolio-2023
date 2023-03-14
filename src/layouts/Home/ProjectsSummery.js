@@ -47,3 +47,5 @@ export const ProjectsSummery = memo(({ visible, sectionRef }) => {
     </Section>
   );
 });
+
+ProjectsSummery.displayName = 'ProjectsSummery';

@@ -97,3 +97,5 @@ export const Hero = memo(({ sectionRef }) => {
     </Section>
   );
 });
+
+Hero.displayName = 'Hero';

@@ -38,3 +38,5 @@ export const Skills = memo(({ visible, sectionRef }) => {
     </Section>
   );
 });
+
+Skills.displayName = 'Skills';

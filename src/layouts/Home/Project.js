@@ -103,3 +103,5 @@ export const Project = ({ direction, value, item }) => {
     </Section>
   );
 };
+
+Project.displayName = 'Project';
