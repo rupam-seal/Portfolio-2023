@@ -105,3 +105,5 @@ export const About = memo(({ visible, sectionRef }) => {
     </Section>
   );
 });
+
+About.displayName = 'About';
