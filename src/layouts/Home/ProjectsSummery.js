@@ -9,7 +9,7 @@ import { classes } from '@/utils/styles';
 import { projects } from '../../../data/projects';
 import { Project } from './Project';
 
-export const ProjectsSummery = () => {
+export const ProjectsSummery = ({ visible, sectionRef }) => {
   const project = projects
     .slice(0, 5)
     .map((project, index) => (
@@ -28,16 +28,22 @@ export const ProjectsSummery = () => {
       className={styles.summary}
       align={'center'}
       justify={'center'}
+      ref={sectionRef}
+      as="section"
     >
-      <Container align="center" direction={'column'}>
-        <Heading level={1} weight="bold" variants={textVariant(0.3)}>
-          FEATURED
-        </Heading>
-        <Heading level={1} weight="bold" variants={textVariant(0.1)}>
-          WORKS
-        </Heading>
-      </Container>
-      {project}
+      {visible && (
+        <>
+          <Container align="center" direction={'column'}>
+            <Heading level={1} weight="bold" variants={textVariant(0.3)}>
+              FEATURED
+            </Heading>
+            <Heading level={1} weight="bold" variants={textVariant(0.1)}>
+              WORKS
+            </Heading>
+          </Container>
+          {project}
+        </>
+      )}
     </Section>
   );
 };

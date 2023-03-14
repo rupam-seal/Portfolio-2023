@@ -21,7 +21,12 @@ export const Image = ({ as, src, className, href, variants }) => {
       className={(classes(styles.container), className)}
       href={href}
     >
-      <img className={styles.image} src={src} />
+      <img
+        loading="lazy"
+        className={styles.image}
+        src={src}
+        placeholder={'/placeholder.jpg'}
+      />
     </MotionComponent>
   );
 };

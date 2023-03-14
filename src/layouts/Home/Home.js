@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import { classes } from '../../utils/styles';
 import styles from './Home.module.css';
@@ -10,12 +10,57 @@ import { Skills } from './Skills';
 import { About } from './About';
 
 export const Home = () => {
+  const [visibleSections, setVisibleSections] = useState([]);
+
+  const hero = useRef();
+  const projectsSummery = useRef();
+  const about = useRef();
+  const skills = useRef();
+
+  useEffect(() => {
+    const sections = [hero, projectsSummery, about, skills];
+
+    const sectionObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const section = entry.target;
+            observer.unobserve(section);
+            if (visibleSections.includes(section)) return;
+            setVisibleSections((prevSections) => [...prevSections, section]);
+          }
+        });
+      },
+      { rootMargin: '0px 0px -10% 0px', thershold: 0.1 }
+    );
+
+    sections.forEach((section) => {
+      sectionObserver.observe(section.current);
+    });
+
+    return () => {
+      sectionObserver.disconnect();
+    };
+  }, [visibleSections]);
+
   return (
-    <Section className={classes(styles.section)} direction={'column'}>
-      <Hero />
-      <ProjectsSummery />
-      <About />
-      <Skills />
-    </Section>
+    <div className={styles.section}>
+      <Hero
+        sectionRef={hero}
+        visible={visibleSections.includes(hero.current)}
+      />
+      <ProjectsSummery
+        sectionRef={projectsSummery}
+        visible={visibleSections.includes(projectsSummery.current)}
+      />
+      <About
+        sectionRef={about}
+        visible={visibleSections.includes(about.current)}
+      />
+      <Skills
+        sectionRef={skills}
+        visible={visibleSections.includes(skills.current)}
+      />
+    </div>
   );
 };

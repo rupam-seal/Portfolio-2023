@@ -20,13 +20,15 @@ import Spline from '@splinetool/react-spline';
 import { SectionBottom } from '../../components/SectionBottom';
 import { Icon } from '@/components/Icon';
 
-export const Hero = () => {
+export const Hero = ({ sectionRef }) => {
   return (
     <Section
       className={classes(styles.section)}
       fullscreen={true}
       align={'center'}
       justify={'center'}
+      ref={sectionRef}
+      as="section"
     >
       <Container
         className={classes(styles.intro)}
