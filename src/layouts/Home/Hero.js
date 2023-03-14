@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import { classes } from '../../utils/styles';
 import styles from './Hero.module.css';
@@ -20,7 +20,7 @@ import Spline from '@splinetool/react-spline';
 import { SectionBottom } from '../../components/SectionBottom';
 import { Icon } from '@/components/Icon';
 
-export const Hero = ({ sectionRef }) => {
+export const Hero = memo(({ sectionRef }) => {
   return (
     <Section
       className={classes(styles.section)}
@@ -28,7 +28,6 @@ export const Hero = ({ sectionRef }) => {
       align={'center'}
       justify={'center'}
       ref={sectionRef}
-      as="section"
     >
       <Container
         className={classes(styles.intro)}
@@ -97,4 +96,4 @@ export const Hero = ({ sectionRef }) => {
       </SectionBottom>
     </Section>
   );
-};
+});

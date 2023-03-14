@@ -8,8 +8,9 @@ import { staggerContainer, textVariant } from '@/utils/motion';
 import { classes } from '@/utils/styles';
 import { projects } from '../../../data/projects';
 import { Project } from './Project';
+import { memo } from 'react';
 
-export const ProjectsSummery = ({ visible, sectionRef }) => {
+export const ProjectsSummery = memo(({ visible, sectionRef }) => {
   const project = projects
     .slice(0, 5)
     .map((project, index) => (
@@ -29,7 +30,6 @@ export const ProjectsSummery = ({ visible, sectionRef }) => {
       align={'center'}
       justify={'center'}
       ref={sectionRef}
-      as="section"
     >
       {visible && (
         <>
@@ -46,4 +46,4 @@ export const ProjectsSummery = ({ visible, sectionRef }) => {
       )}
     </Section>
   );
-};
+});

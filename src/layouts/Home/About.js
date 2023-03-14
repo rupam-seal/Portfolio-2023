@@ -13,8 +13,9 @@ import { Image } from '@/components/Image';
 import { List } from '@/components/List';
 import { IconCard } from '@/components/IconCard';
 import { Icon } from '@/components/Icon';
+import { memo } from 'react';
 
-export const About = ({ visible, sectionRef }) => {
+export const About = memo(({ visible, sectionRef }) => {
   return (
     <Section
       direction={'column'}
@@ -22,7 +23,6 @@ export const About = ({ visible, sectionRef }) => {
       align={'center'}
       justify={'center'}
       ref={sectionRef}
-      as="section"
     >
       {visible && (
         <>
@@ -104,4 +104,4 @@ export const About = ({ visible, sectionRef }) => {
       )}
     </Section>
   );
-};
+});

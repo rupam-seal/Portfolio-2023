@@ -6,8 +6,9 @@ import { IconCard } from '@/components/IconCard';
 import { Section } from '@/components/Section';
 import { staggerContainer, textVariant } from '@/utils/motion';
 import { framework, language, tools, ui } from '../../../data/skillData';
+import { memo } from 'react';
 
-export const Skills = ({ visible, sectionRef }) => {
+export const Skills = memo(({ visible, sectionRef }) => {
   return (
     <Section
       className={styles.skills}
@@ -15,7 +16,6 @@ export const Skills = ({ visible, sectionRef }) => {
       align="center"
       justify="center"
       ref={sectionRef}
-      as="section"
     >
       {visible && (
         <>
@@ -37,4 +37,4 @@ export const Skills = ({ visible, sectionRef }) => {
       )}
     </Section>
   );
-};
+});
