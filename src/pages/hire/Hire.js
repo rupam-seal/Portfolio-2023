@@ -25,7 +25,7 @@ export const Hire = () => {
           I am looking for web developement job
         </Heading>
         <Text align="center" secondary size="l" variants={textVariant(0.15)}>
-          I'm excited to be applying for the Software Developer position at
+          I&apos;m excited to be applying for the Software Developer position at
           Cloud Clearwater. With software development, there is always something
           new to discover. Designing a program that is truly helpful to the user
           is my ultimate goal on every project, and I am delighted by the
