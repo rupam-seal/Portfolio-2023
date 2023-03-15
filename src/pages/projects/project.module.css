@@ -1,34 +1,27 @@
 .section {
-  margin-top: calc(var(--space5XL) + var(--space2XL));
-  padding-left: calc(var(--space6XL) + var(--space4XL));
-  padding-right: calc(var(--space6XL) + var(--space4XL));
+  margin-top: var(--space6XL);
+  margin-left: var(--spaceOuter);
+  margin-right: var(--spaceOuter);
 }
 
-.description {
-  margin-top: var(--spaceL);
-}
-
-.image {
-  margin-top: var(--space4XL);
-}
-
-.buttonContainer {
-  gap: var(--spaceL);
-}
-
-.button {
-  margin-top: var(--spaceL);
+.wrapper {
+  max-width: 100rem;
+  gap: var(--space4XL);
 }
 
 .content {
   gap: var(--space5XL);
-}
 
-.details {
-  flex: 1;
+  @media (--mediaTablet) {
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 
 .list {
-  flex: 1;
-  gap: var(--spaceL);
+  min-width: 35rem;
+
+  @media (--mediaTablet) {
+    min-width: 100%;
+  }
 }

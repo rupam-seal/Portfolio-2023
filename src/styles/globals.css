@@ -191,9 +191,9 @@ body.dark {
   --themeId: 'dark';
   --rgbBackground: rgb(17, 17, 17);
   --rgbBackgroundLight: rgb(26, 26, 26);
-  --rgbPrimary: rgb(255, 99, 195);
+  --rgbPrimary: rgb(234, 76, 137);
   --rgbSecondary: rgb(25, 25, 25);
-  --rgbAccent: rgb(255, 99, 195);
+  --rgbAccent: rgb(234, 76, 137);
   --rgbText: rgb(255, 255, 255);
   --rgbError: rgb(255, 55, 102);
   --colorTextTitle: rgb(255, 255, 255, 1);

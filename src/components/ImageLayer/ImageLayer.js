@@ -12,8 +12,9 @@ import { Heading } from '../Heading';
 
 import { Container } from '../Container';
 import { Icon } from '../Icon';
+import Link from 'next/link';
 
-const ImageLayer = ({ year }) => {
+const ImageLayer = ({ year, link }) => {
   return (
     <>
       <motion.div className={styles.year} variants={yearVariants}>
@@ -23,13 +24,15 @@ const ImageLayer = ({ year }) => {
       </motion.div>
       <motion.div className={styles.layer} variants={opacityVariants} />
       <motion.div className={styles.circle} variants={circleVariation}>
-        <Heading
-          className={styles.icon}
-          level={3}
-          variants={rotateIconVariation}
-        >
-          <Icon type="white" icon="arrowRight" />
-        </Heading>
+        <Link href={link}>
+          <Heading
+            className={styles.icon}
+            level={3}
+            variants={rotateIconVariation}
+          >
+            <Icon type="white" icon="arrowRight" className={styles.icon} />
+          </Heading>
+        </Link>
       </motion.div>
     </>
   );

@@ -1,6 +1,6 @@
 .project {
   margin-top: var(--space6XL);
-  gap: var(--space5XL);
+  gap: var(--space4XL);
 
   @media (--mediaTablet) {
     flex-direction: column;
@@ -15,34 +15,9 @@
 .image {
   position: relative;
   max-width: 56rem;
-}
+  min-width: 40rem;
 
-.details {
-  max-width: 45rem;
-}
-
-.title {
-  margin-bottom: var(--spaceM);
-}
-
-.no {
-  margin-bottom: var(--spaceL);
-}
-
-.status {
-  color: var(--rgbAccent);
-  margin-bottom: var(--spaceL);
-}
-
-.description {
-  margin-bottom: var(--spaceL);
-}
-
-.buttonContainer {
-  gap: var(--spaceL);
-
-  @media (--mediaMobile) {
-    flex-direction: column;
-    gap: var(--spaceS);
+  @media (--mediaTablet) {
+    min-width: 100%;
   }
 }

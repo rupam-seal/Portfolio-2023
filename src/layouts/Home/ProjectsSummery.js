@@ -11,9 +11,8 @@ import { Project } from './Project';
 import { memo } from 'react';
 
 export const ProjectsSummery = memo(({ visible, sectionRef }) => {
-  const project = projects
-    .slice(0, 5)
-    .map((project, index) => (
+  const project = projects.slice(0, 5).map((project, index) => {
+    return (
       <Container key={index}>
         {index % 2 === 0 ? (
           <Project item={project} value="-" />
@@ -21,7 +20,8 @@ export const ProjectsSummery = memo(({ visible, sectionRef }) => {
           <Project item={project} value="" direction="reverse" />
         )}
       </Container>
-    ));
+    );
+  });
 
   return (
     <Section

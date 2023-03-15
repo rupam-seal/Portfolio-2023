@@ -12,23 +12,29 @@ import { A } from '../A';
 import { Button } from '../Button';
 import { Icon } from '../Icon';
 import { Text } from '../Text';
+import { motion } from 'framer-motion';
 
 export const Navbar = () => {
-  const data = navLinks.map(({ label, pathname }, index) => {
+  const data = navLinks.map(({ label, pathname, target }, index) => {
     return (
-      <A className={styles.navlink} link={pathname} key={index} nav={true}>
+      <A
+        className={styles.navlink}
+        link={pathname}
+        key={index}
+        nav={true}
+        target={target}
+      >
         {label}
       </A>
     );
   });
 
   return (
-    <Container
+    <motion.div
       className={styles.navbar}
-      justify="sb"
-      align="center"
+      initial="hidden"
+      animate="show"
       variants={navVariants}
-      zIndex={5}
     >
       <Container align="center">
         <Link className={styles.logo} href="/">
@@ -41,18 +47,20 @@ export const Navbar = () => {
       <Container align="center" justify="center" className={styles.items}>
         {data}
         <Button
-          href={'https://github.com/rupam-seal'}
+          href={'/hire'}
           size="s"
-          weight="regular"
+          weight="Bold"
+          align="center"
           className={styles.button}
         >
-          <Icon icon="Github" type="button" />
-          nilax@in
+          <span className={styles.buttonText}>
+            <Icon icon="leftCircle" /> hire me
+          </span>
         </Button>
       </Container>
       <Heading level={3} weight={'bold'} className={styles.menu}>
         <Icon icon="menu" />
       </Heading>
-    </Container>
+    </motion.div>
   );
 };

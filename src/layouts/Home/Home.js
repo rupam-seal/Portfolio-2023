@@ -6,7 +6,6 @@ import styles from './Home.module.css';
 import { Section } from '../../components/Section';
 import { Hero } from './Hero';
 import { ProjectsSummery } from './ProjectsSummery';
-import { Skills } from './Skills';
 import { About } from './About';
 import { motion } from 'framer-motion';
 
@@ -16,10 +15,9 @@ export const Home = () => {
   const hero = useRef();
   const projectsSummery = useRef();
   const about = useRef();
-  const skills = useRef();
 
   useEffect(() => {
-    const sections = [hero, projectsSummery, about, skills];
+    const sections = [hero, projectsSummery, about];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -57,10 +55,6 @@ export const Home = () => {
       <About
         sectionRef={about}
         visible={visibleSections.includes(about.current)}
-      />
-      <Skills
-        sectionRef={skills}
-        visible={visibleSections.includes(skills.current)}
       />
     </motion.div>
   );

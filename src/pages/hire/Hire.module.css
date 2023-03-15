@@ -1,0 +1,18 @@
+.section {
+  margin-top: var(--space6XL);
+  margin-left: var(--spaceOuter);
+  margin-right: var(--spaceOuter);
+}
+
+.container {
+  gap: var(--spaceM);
+  max-width: 80rem;
+}
+
+.title {
+  margin-bottom: var(--spaceL);
+}
+
+.button {
+  margin-top: var(--spaceL);
+}

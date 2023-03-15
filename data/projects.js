@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     image: '/Imo.webp',
     view: '',
-    live: '',
+    live: 'https://www.google.com',
     title: 'Imo',
     status:
       'This project source containes my recent react project structure and code',

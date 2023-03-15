@@ -10,70 +10,52 @@ import { Container } from '../../components/Container';
 import { List } from '../../components/List';
 import { projects } from '../../../data/projects';
 import { scaleVariant, textVariant } from '@/utils/motion';
+import { Buttons } from '@/layouts/Home/Project';
+import { Details, ProjectButtons } from '@/layouts/Home/ProjectDetails';
 
 const Project = () => {
   const router = useRouter();
+
   const { project } = router.query;
 
   const item = projects[project];
 
-  console.log(project);
+  const totalProjects = projects.length;
 
   return (
     <>
       {item && (
-        <Section className={styles.section} direction={'column'}>
-          <Container className={styles.content}>
-            <Container direction={'column'} className={styles.details}>
-              <Heading
-                level={3}
-                className={styles.title}
+        <Container className={styles.section} direction="column" align="center">
+          <Container className={styles.wrapper} direction="column">
+            <Container className={styles.content} justify="sb">
+              <Container direction={'column'} className={styles.details}>
+                <Details item={item} totalItem={item.length} />
+                <ProjectButtons
+                  item={item}
+                  title1={'Source'}
+                  title2={'Live Site'}
+                  icon1={'Github'}
+                  icon2={'web'}
+                  className={styles.projectButtons}
+                />
+              </Container>
+              <Container
+                direction={'column'}
+                className={styles.list}
                 variants={textVariant(0.1)}
               >
-                {item.title}
-              </Heading>
-              <Text
-                size="l"
-                weight="medium"
-                secondary
-                className={styles.description}
-                variants={textVariant(0.2)}
-              >
-                {item.description}
-              </Text>
-              <Container className={styles.buttonContainer}>
-                <Text size="m" weight="Bold" variants={textVariant(0.3)}>
-                  <Button className={styles.button} href={item.live} icon="web">
-                    Live Site
-                  </Button>
-                </Text>
-                <Text size="m" weight="Bold" variants={textVariant(0.3)}>
-                  <Button
-                    className={styles.button}
-                    href={item.live}
-                    icon="Github"
-                  >
-                    Source
-                  </Button>
-                </Text>
+                <Text className={styles.tools}>Tool Used</Text>
+                <List items={item.tags} />
               </Container>
             </Container>
-            <Container
-              direction={'column'}
-              className={styles.list}
-              variants={textVariant(0.1)}
-            >
-              <Text className={styles.tools}>Tool Used</Text>
-              <List items={item.tags} />
-            </Container>
+            <Image
+              className={styles.image}
+              src={item.image}
+              href={'/'}
+              variants={textVariant(0.4)}
+            />
           </Container>
-          <Image
-            className={styles.image}
-            src={item.image}
-            href={'/'}
-            variants={textVariant(0.4)}
-          />
-        </Section>
+        </Container>
       )}
     </>
   );

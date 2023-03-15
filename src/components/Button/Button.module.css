@@ -9,7 +9,8 @@
   text-decoration: none;
   border-style: none;
   transition: scale var(--durationS) var(--bezierFastoutSlowin);
-  color: var(--rgbBackground);
+  color: var(--rgbWhite);
+  cursor: pointer;
 
   &:hover {
     scale: 1.02;
@@ -65,5 +66,8 @@
 
   &[data-secondary='true'] {
     color: var(--colorTextLight);
+  }
+  &[data-disabled='true'] {
+    pointer-events: none;
   }
 }

@@ -38,24 +38,6 @@ export const About = memo(({ visible, sectionRef }) => {
                 href="/"
                 variants={imageVariant('-')}
               />
-              <Container className={styles.social}>
-                <Button
-                  size="l"
-                  weight="Bold"
-                  icon="Github"
-                  href={'/'}
-                  variants={textVariant(0.1)}
-                  className={styles.button}
-                />
-                <Button
-                  size="l"
-                  weight="Bold"
-                  icon="Linkedin"
-                  href={'/'}
-                  variants={textVariant(0.2)}
-                  className={styles.button}
-                />
-              </Container>
             </Container>
             <Container
               className={styles.details}
@@ -66,7 +48,9 @@ export const About = memo(({ visible, sectionRef }) => {
                 <Heading level={3} size="m" weight="medium">
                   Hi there
                 </Heading>
-                <span className={styles.wave}>👋</span>
+                <Container className={styles.waveContainer}>
+                  <span className={styles.wave}>👋</span>
+                </Container>
               </Container>
               <Text
                 size="l"
@@ -92,7 +76,7 @@ export const About = memo(({ visible, sectionRef }) => {
               </Text>
               <Button
                 variants={textVariant(0.35)}
-                href={'/'}
+                href={'/contact'}
                 size="m"
                 icon={'send'}
               >

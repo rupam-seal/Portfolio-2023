@@ -16,6 +16,7 @@ export const A = ({
   link,
   secondary,
   icon,
+  ...rest
 }) => {
   const router = useRouter();
   return (
@@ -25,6 +26,7 @@ export const A = ({
           href={link}
           passHref
           className={router.pathname == link ? styles.active : styles.navlink}
+          {...rest}
         >
           {children}
         </Link>
@@ -35,6 +37,7 @@ export const A = ({
             className={classes(styles.link, className)}
             href={link}
             data-secondary={secondary}
+            {...rest}
           >
             {children}
           </Link>

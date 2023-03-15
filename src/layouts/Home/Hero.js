@@ -88,7 +88,7 @@ export const Hero = memo(({ sectionRef }) => {
             Available for work
           </Text>
           <Text className={styles.talk} weight="regular" size="s">
-            <A icon="leftCircle" link="/talk">
+            <A icon="leftCircle" link="/contact">
               Lets talk
             </A>
           </Text>

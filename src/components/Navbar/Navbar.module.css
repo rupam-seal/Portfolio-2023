@@ -4,6 +4,9 @@
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   /* backdrop-filter: blur(100px); */
   /* background: calc(var(--rgbBackground) / 0.9); */
   background: var(--rgbBackground);
@@ -22,7 +25,17 @@
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: var(--spaceM);
+}
+
+.buttonText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spaceS);
 }
 
 .menu {

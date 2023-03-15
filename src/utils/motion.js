@@ -7,8 +7,8 @@ export const navVariants = {
     opacity: 1,
     top: 0,
     transition: {
-      duration: 0.3,
-      ease: 'easeOut',
+      duration: 0.6,
+      ease: 'easeInOut',
     },
   },
 };
@@ -41,7 +41,7 @@ export const textVariant = (delay, duration = 0.6) => ({
 
 export const opacityVariants = {
   hover: {
-    opacity: 0.1,
+    opacity: 0.5,
 
     transition: {
       delay: 0.1,
@@ -52,7 +52,7 @@ export const opacityVariants = {
     opacity: 0,
   },
   show: {
-    opacity: 0.1,
+    opacity: 0.5,
   },
 };
 

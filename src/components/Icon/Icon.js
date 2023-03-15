@@ -50,9 +50,11 @@ import { FaLinkedinIn } from 'react-icons/fa';
  **/
 import { BsArrowDownLeftCircleFill } from 'react-icons/bs';
 import { ImArrowUpRight2 } from 'react-icons/im';
+import { BsArrowUpRight } from 'react-icons/bs';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import { SlGlobe } from 'react-icons/sl';
 import { CgMenuHotdog } from 'react-icons/cg';
+import { MdWavingHand } from 'react-icons/md';
 
 export const icons = {
   /**
@@ -104,9 +106,11 @@ export const icons = {
    **/
   leftCircle: BsArrowDownLeftCircleFill,
   arrowRight: ImArrowUpRight2,
+  arrowRightLight: BsArrowUpRight,
   send: RiSendPlaneFill,
   web: SlGlobe,
   menu: CgMenuHotdog,
+  hire: MdWavingHand,
 };
 
 export const Icon = ({ icon, className, type, ...rest }) => {

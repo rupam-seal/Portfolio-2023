@@ -1,0 +1,7 @@
+.content {
+  margin-top: var(--space6XL);
+  margin-bottom: var(--space6XL);
+  margin-left: var(--spaceOuter);
+  margin-right: var(--spaceOuter);
+  gap: var(--space3XL);
+}

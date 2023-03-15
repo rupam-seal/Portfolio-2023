@@ -1,5 +1,6 @@
 .about {
   margin-top: var(--space6XL);
+  margin-bottom: var(--space6XL);
 }
 
 .content {
@@ -19,19 +20,13 @@
   gap: var(--spaceL);
 }
 
-.social {
-  position: absolute;
-  gap: var(--spaceL);
-  bottom: calc((-1 * var(--spaceM) + 3rem));
-
-  & .button {
-    box-shadow: var(--shadowColor) 0px 3px 12px;
-  }
-}
-
 .details {
   max-width: 45rem;
   gap: var(--spaceL);
+}
+
+.waveContainer {
+  padding-bottom: var(--spaceS);
 }
 
 .wave {

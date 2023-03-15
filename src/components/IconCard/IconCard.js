@@ -19,7 +19,7 @@ export const IconCard = ({ title, items, className }) => {
           items?.map((item, index) => (
             <Container
               className={styles.item}
-              variants={textVariant(0.1)}
+              variants={textVariant(0.2)}
               justify="center"
               key={index}
             >

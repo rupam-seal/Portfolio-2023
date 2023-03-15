@@ -15,9 +15,11 @@ export const Button = ({
   icon,
   weight = 'm',
   size = 'medium',
+  align,
   href,
   disabled,
   children,
+  ...rest
 }) => {
   const MotionComponent = motion(Link);
 
@@ -31,11 +33,13 @@ export const Button = ({
       data-secondary={secondary}
       data-weight={weight}
       data-size={size}
+      data-align={align}
       href={href}
-      disabled={disabled}
+      data-disabled={disabled}
+      {...rest}
     >
       {children}
-      {icon ? <Icon icon={icon} type="button" /> : ''}
+      {icon ? <Icon icon={icon} /> : ''}
     </MotionComponent>
   );
 };

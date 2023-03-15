@@ -6,6 +6,7 @@ import { projects } from '../../../data/projects';
 import styles from './Projects.module.css';
 
 export const Projects = () => {
+  const totalProjects = projects.length;
   return (
     <Container
       direction="column"
@@ -15,7 +16,15 @@ export const Projects = () => {
       exit={{ opacity: 0 }}
     >
       {projects.map((project, index) => {
-        return <Project key={index} item={project} />;
+        return (
+          <Project
+            key={index}
+            item={project}
+            totalProjects={
+              totalProjects <= 9 ? `0${projects.length}` : projects.length
+            }
+          />
+        );
       })}
     </Container>
   );
