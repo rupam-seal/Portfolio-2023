@@ -13,7 +13,6 @@ const index = ({ visible, sectionRef }) => {
       direction={'column'}
       align="center"
       justify="center"
-      exit={{ opacity: 0 }}
     >
       <Container className={styles.content} direction="column">
         <IconCard title={'PROGRAMMING LANGUAGES'} items={language} />

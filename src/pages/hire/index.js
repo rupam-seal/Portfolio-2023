@@ -13,7 +13,6 @@ const index = () => {
       justify="center"
       className={styles.section}
       direction="column"
-      exit={{ opacity: 0 }}
     >
       <Container className={styles.container} direction="column">
         <Heading

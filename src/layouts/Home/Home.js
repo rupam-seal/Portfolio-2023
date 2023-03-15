@@ -43,7 +43,7 @@ export const Home = () => {
   }, [visibleSections]);
 
   return (
-    <motion.div className={styles.section} exit={{ opacity: 0 }}>
+    <div className={styles.section}>
       <Hero
         sectionRef={hero}
         visible={visibleSections.includes(hero.current)}
@@ -56,6 +56,6 @@ export const Home = () => {
         sectionRef={about}
         visible={visibleSections.includes(about.current)}
       />
-    </motion.div>
+    </div>
   );
 };

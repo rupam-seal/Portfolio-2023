@@ -13,7 +13,6 @@ const index = () => {
       align="center"
       justify="center"
       className={styles.section}
-      exit={{ opacity: 0 }}
     >
       {projects.map((project, index) => {
         return (
