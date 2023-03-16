@@ -2,12 +2,8 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
-  bottom: var(--space2XL);
-  left: var(--space5XL);
-  right: var(--space5XL);
-
-  @media (--mediaMobile) {
-    left: var(--spaceM);
-    right: var(--spaceM);
-  }
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spaceL) var(--spaceOuter);
 }
