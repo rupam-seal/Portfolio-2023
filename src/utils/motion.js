@@ -164,3 +164,22 @@ export const rotateIconVariation = {
     rotate: -360,
   },
 };
+
+export const menuVariants = {
+  closed: {
+    height: 0,
+
+    transition: {
+      delay: 0.2,
+      ease: 'easeInOut',
+    },
+  },
+  opened: {
+    height: '100%',
+
+    transition: {
+      delay: 0.2,
+      ease: 'easeInOut',
+    },
+  },
+};

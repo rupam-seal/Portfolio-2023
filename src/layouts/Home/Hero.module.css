@@ -11,9 +11,18 @@
   transition: opacity var(--durationL) var(--bezierFastoutSlowin) 0.2s;
 }
 
-.title {
+/* .title1,
+.title2 {
   margin-top: 0;
 }
+
+.title1 {
+  margin-bottom: calc(var(--spaceS) * -2);
+}
+
+.line {
+  font-weight: var(--fontWeightRegular);
+} */
 
 .description {
   max-width: var(--maxWidthXM);

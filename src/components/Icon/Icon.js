@@ -53,7 +53,7 @@ import { ImArrowUpRight2 } from 'react-icons/im';
 import { BsArrowUpRight } from 'react-icons/bs';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import { SlGlobe } from 'react-icons/sl';
-import { CgMenuHotdog } from 'react-icons/cg';
+import { HiMenuAlt1 } from 'react-icons/hi';
 import { MdWavingHand } from 'react-icons/md';
 
 export const icons = {
@@ -109,7 +109,7 @@ export const icons = {
   arrowRightLight: BsArrowUpRight,
   send: RiSendPlaneFill,
   web: SlGlobe,
-  menu: CgMenuHotdog,
+  menu: HiMenuAlt1,
   hire: MdWavingHand,
 };
 

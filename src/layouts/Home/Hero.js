@@ -32,23 +32,23 @@ export const Hero = memo(({ sectionRef }) => {
       <Container
         className={classes(styles.intro)}
         direction="column"
-        zIndex={1}
+        zIndex={2}
       >
         <h1 className={styles.name}>
           <DecoderText text="Nilax Seal" delay={1000}></DecoderText>
         </h1>
         <Heading
           level={0}
-          className={styles.title}
+          className={styles.title1}
           align="center"
           weight="bold"
           variants={textVariant(0.2)}
         >
-          ANDROID/
+          ANDROID<span className={styles.line}>/</span>
         </Heading>
         <Heading
           level={0}
-          className={styles.title}
+          className={styles.title2}
           align="center"
           weight="bold"
           variants={textVariant(0.2)}
@@ -58,17 +58,17 @@ export const Hero = memo(({ sectionRef }) => {
 
         <Text
           size="m"
-          weight="regular"
+          weight="medium"
           align="center"
           variants={textVariant(0)}
           className={styles.description}
         >
-          NilaX — Graphic / UI-UX / Web Designer freelance located in India,
-          specializing in the creation of visual identity and unique and
-          innovative web designs.
+          NilaX — Android / UI-UX / Web Developer freelance located in India,
+          specializing in the creation of modern and user freindly and unique
+          android and web designs.
         </Text>
       </Container>
-      <Container className={styles.blob} zIndex={0}>
+      <Container className={styles.blob} zIndex={1}>
         <Spline scene="https://prod.spline.design/MYdCFyAC5T06Rt9l/scene.splinecode" />
       </Container>
       <SectionBottom>

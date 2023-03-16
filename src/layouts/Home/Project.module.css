@@ -4,6 +4,7 @@
 
   @media (--mediaTablet) {
     flex-direction: column;
+    gap: var(--spaceXL);
 
     &[data-fullscreen='true'] {
       width: auto;
