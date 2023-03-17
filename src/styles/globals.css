@@ -183,7 +183,7 @@ h5 {
   }
 
   @media (--mediaMobile) {
-    --fontSizeH0: 5.6rem;
+    --fontSizeH0: 7rem;
     --fontSizeH1: 4rem;
     --fontSizeH2: 3.4rem;
     --fontSizeH3: 2.8rem;
@@ -200,7 +200,7 @@ h5 {
   }
 
   @media (--mediaMobileS) {
-    --fontSizeH0: 4.2rem;
+    --fontSizeH0: 6rem;
     --fontSizeH1: 3.8rem;
     --fontSizeH2: 2.8rem;
     --fontSizeH3: 2.4rem;

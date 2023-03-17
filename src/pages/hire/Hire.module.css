@@ -1,5 +1,5 @@
 .section {
-  margin-top: calc(var(--space5XL) + var(--spaceL));
+  margin-top: calc(var(--space3XL) + var(--space3XL));
   margin-left: var(--spaceOuter);
   margin-right: var(--spaceOuter);
 }
