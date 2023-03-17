@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 
 import { navVariants } from '@/utils/motion';
@@ -17,9 +17,18 @@ import { useToggle } from '@/hooks/useToggle';
 import { Menu } from './Menu';
 
 export const Navbar = () => {
-  const { status: expand, toggleStatus: toggleExpand } = useToggle();
+  const lightTheme = 'light';
+  const darkTheme = 'dark';
 
-  console.log(expand);
+  const { status: expand, toggleStatus: toggleExpand } = useToggle();
+  const { status: theme, toggleStatus: toggleTheme } = useToggle();
+
+  useEffect(() => {
+    document.body.classList.add(lightTheme);
+    theme
+      ? document.body.classList.replace(lightTheme, darkTheme)
+      : document.body.classList.replace(darkTheme, lightTheme);
+  }, [theme]);
 
   const data = navLinks.map(({ label, pathname, target }, index) => {
     return (
@@ -51,31 +60,52 @@ export const Navbar = () => {
           </Link>
         </Container>
 
-        <Container align="center" justify="center" className={styles.menu}>
-          {data}
-          <Button
-            href={'/hire'}
-            size="s"
-            weight="Bold"
-            align="center"
-            className={styles.button}
-          >
-            <span className={styles.buttonText}>
-              <Icon icon="leftCircle" /> hire me
-            </span>
-          </Button>
-        </Container>
-
-        <Heading
-          level={3}
-          weight={'bold'}
-          className={styles.toggleContainer}
-          onClick={toggleExpand}
+        <Container
+          className={styles.rightContainer}
+          align="center"
+          justify="center"
         >
-          <Icon icon="menu" className={styles.menuIcon} />
-        </Heading>
+          <Container className={styles.buttonContainer}>
+            <Text
+              size="s"
+              weight="bold"
+              className={styles.themeContainer}
+              onClick={toggleTheme}
+            >
+              {theme ? (
+                <Icon icon="night" className={styles.menuIcon} />
+              ) : (
+                <Icon icon="day" className={styles.menuIcon} />
+              )}
+            </Text>
+
+            <Text
+              size="s"
+              weight="bold"
+              className={styles.toggleContainer}
+              onClick={toggleExpand}
+            >
+              <Icon icon="menu" className={styles.menuIcon} />
+            </Text>
+          </Container>
+
+          <Container align="center" justify="center" className={styles.menu}>
+            {data}
+            <Button
+              href={'/hire'}
+              size="s"
+              weight="regular"
+              align="center"
+              className={styles.button}
+            >
+              <span className={styles.buttonText}>
+                <Icon icon="leftCircle" /> hire me
+              </span>
+            </Button>
+          </Container>
+        </Container>
       </motion.header>
-      <Menu expand={expand} />
+      <Menu expand={expand} toggleExpand={toggleExpand} />
     </>
   );
 };

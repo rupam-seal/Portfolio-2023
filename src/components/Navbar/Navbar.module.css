@@ -7,11 +7,10 @@
   left: 0;
   right: 0;
   top: 0;
-  background: var(--rgbBackground);
+  background-color: var(--rgbBackground);
   z-index: var(--zIndex5);
 
   @media (--mediaMobile) {
-    padding: var(--spaceS) var(--spaceOuter);
     backdrop-filter: blur(100px);
     background: calc(var(--rgbBackground) / 0.9);
   }
@@ -43,15 +42,32 @@
   }
 }
 
-.toggleContainer {
-  display: none;
+.themeContainer {
+  display: flex;
+  align-items: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  justify-content: center;
+  border-radius: calc(var(--borderRadius1));
+  transition: scale var(--durationM) var(--bezierFastoutSlowin);
+  background-color: var(--colorTextExtraLight);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transition: var(--colorChangeTransitionXS);
+  margin-right: var(--spaceM);
 
   @media (--mediaMobile) {
     display: flex;
     align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
     justify-content: center;
-    border-radius: calc(var(--borderRadius0));
-    transition: background-color var(--durationS) var(--bezierFastoutSlowin);
+    border-radius: calc(var(--borderRadius1));
+    transition: scale var(--durationM) var(--bezierFastoutSlowin);
+    background-color: var(--colorTextExtraLight);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: var(--colorChangeTransitionXS);
   }
 
   & .menuIcon {
@@ -59,10 +75,42 @@
     align-items: center;
     justify-content: center;
     padding: var(--spaceS);
-    transition: color var(--durationM) var(--bezierFastoutSlowin);
+    color: var(--colorTextTitle);
+    transition: scale var(--durationM) var(--bezierFastoutSlowin);
   }
 
   &:hover {
+    scale: 0.95;
+  }
+}
+
+.toggleContainer {
+  display: none;
+
+  @media (--mediaMobile) {
+    display: flex;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    justify-content: center;
+    border-radius: calc(var(--borderRadius1));
+    transition: scale var(--durationM) var(--bezierFastoutSlowin);
     background-color: var(--colorTextExtraLight);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: var(--colorChangeTransitionXS);
+  }
+
+  & .menuIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spaceS);
+    color: var(--colorTextTitle);
+    transition: scale var(--durationM) var(--bezierFastoutSlowin);
+  }
+
+  &:hover {
+    scale: 0.95;
   }
 }
