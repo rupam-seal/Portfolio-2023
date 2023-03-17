@@ -4,7 +4,7 @@ import { classes } from '../../utils/styles';
 import styles from './Container.module.css';
 
 export const Container = ({
-  as: Component = 'div',
+  as: Component = motion.div,
   show,
   className,
   children,
@@ -15,9 +15,8 @@ export const Container = ({
   zIndex,
   ...rest
 }) => {
-  const MotionComponent = motion(Component);
   return (
-    <MotionComponent
+    <Component
       variants={variants}
       initial="hidden"
       whileInView="show"
@@ -30,6 +29,6 @@ export const Container = ({
       {...rest}
     >
       {children}
-    </MotionComponent>
+    </Component>
   );
 };

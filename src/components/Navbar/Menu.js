@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { A } from '../A';
 import { Heading } from '../Heading';
 import { SectionBottom } from '../SectionBottom';
+import { Social } from '../Social';
 import { Text } from '../Text';
 import styles from './Menu.module.css';
-import { navLinks } from './navData';
+import { navLinks } from '../../../data/navData';
 
 export const Menu = ({
   as: Component = 'motion.div',
@@ -51,6 +52,8 @@ export const Menu = ({
                 Hire me
               </A>
             </Text>
+
+            <Social level={3} />
           </SectionBottom>
         </motion.div>
       )}

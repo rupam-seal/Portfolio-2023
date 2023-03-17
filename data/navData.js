@@ -15,8 +15,8 @@ export const navLinks = [
     target: '',
   },
   {
-    label: 'Github',
-    pathname: 'https://github.com/rupam-seal',
-    target: '_blank',
+    label: 'Contact',
+    pathname: '/contact',
+    target: '',
   },
 ];

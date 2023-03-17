@@ -1,6 +1,7 @@
 .text {
   line-height: var(--lineHeightBody);
   color: var(--colorTextBody);
+  transition: var(--colorChangeTransitionXS);
 
   &[data-size='s'] {
     font-size: var(--fontSizeBodyS);

@@ -1,0 +1,14 @@
+.container {
+  gap: var(--spaceL);
+}
+
+.heading {
+  transition: color 0.3 var(--bezierFastoutSlowin);
+
+  & :hover {
+    & .icon {
+      transition: color 0.3 var(--bezierFastoutSlowin);
+      color: var(--rgbAccent);
+    }
+  }
+}

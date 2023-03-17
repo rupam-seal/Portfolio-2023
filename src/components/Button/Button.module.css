@@ -13,8 +13,17 @@
   color: var(--rgbWhite);
   cursor: pointer;
 
+  & .icon {
+    transition: transform var(--durationM) var(--bezierFastoutSlowin);
+  }
+
   &:hover {
     scale: 1.02;
+
+    & .icon {
+      transition: transform var(--durationM) var(--bezierFastoutSlowin);
+      transform: rotate(45deg);
+    }
   }
 
   &[data-size='s'] {

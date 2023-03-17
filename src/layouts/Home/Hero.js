@@ -18,6 +18,7 @@ import {
 import { SectionBottom } from '../../components/SectionBottom';
 import { Icon } from '@/components/Icon';
 import { Blob } from '@/components/Blob';
+import { Social } from '@/components/Social';
 
 export const Hero = memo(({ sectionRef }) => {
   return (
@@ -32,6 +33,7 @@ export const Hero = memo(({ sectionRef }) => {
         className={classes(styles.intro)}
         direction="column"
         zIndex={2}
+        animate="show"
       >
         <Text
           size="m"
@@ -75,9 +77,17 @@ export const Hero = memo(({ sectionRef }) => {
       </Container>
       <Blob />
       <SectionBottom className={styles.sectionBottom}>
-        <Container align="center" variants={scaleVariant}>
-          <div className={styles.arrow}></div>
-          <Container direction={'column'}>
+        <Container
+          direction={'column'}
+          variants={scaleVariant}
+          className={styles.social}
+        >
+          <Social level={4} />
+        </Container>
+
+        <Container align="center" variants={textVariant(0.6)}>
+          <Container className={styles.arrow}></Container>
+          <Container direction={'column'} className={styles.scroll}>
             <Text weight="regular" size="s">
               Keep —
             </Text>
@@ -86,11 +96,12 @@ export const Hero = memo(({ sectionRef }) => {
             </Text>
           </Container>
         </Container>
+
         <Container direction={'column'} variants={scaleVariant}>
-          <Text weight="regular" size="s" align="end">
+          <Text weight="regular" size="s" align="start">
             Available for work
           </Text>
-          <Text className={styles.talk} weight="medium" size="s">
+          <Text className={styles.talk} weight="medium" size="s" align="start">
             <A icon="leftCircle" link="/contact">
               Lets talk
             </A>

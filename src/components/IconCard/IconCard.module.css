@@ -27,8 +27,8 @@
   border-radius: var(--borderRadius2);
   background-color: var(--rgbSecondary);
   box-shadow: var(--shadowColor) 0px 3px 12px;
-
-  transition: scale var(--durationS) var(--bezierFastoutSlowin);
+  transition: scale var(--durationS) var(--bezierFastoutSlowin),
+    var(--backgroundChangeTransitionXS), var(--colorChangeTransitionXS);
 
   &:hover {
     scale: 1.05;
@@ -43,6 +43,7 @@
 .text,
 .icon {
   color: var(--colorTextBody);
+  transition: var(--colorChangeTransitionXS);
 
   @media (--mediaMobile) {
     &[data-size='m'] {

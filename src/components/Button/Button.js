@@ -39,7 +39,7 @@ export const Button = ({
       {...rest}
     >
       {children}
-      {icon ? <Icon icon={icon} /> : ''}
+      {icon ? <Icon className={styles.icon} icon={icon} /> : ''}
     </MotionComponent>
   );
 };

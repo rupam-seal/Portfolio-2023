@@ -26,7 +26,7 @@ import { SiTailwindcss } from 'react-icons/si';
 import { SiAndroidstudio } from 'react-icons/si';
 import { TbBrandVscode } from 'react-icons/tb';
 import { BsGit } from 'react-icons/bs';
-import { BsGithub } from 'react-icons/bs';
+import { FaGithubAlt } from 'react-icons/fa';
 import { SiGitlab } from 'react-icons/si';
 import { GrDocker } from 'react-icons/gr';
 /**
@@ -45,6 +45,7 @@ import { SiAxios } from 'react-icons/si';
  * Social
  **/
 import { FaLinkedinIn } from 'react-icons/fa';
+import { AiFillInstagram } from 'react-icons/ai';
 /**
  * OTHERS
  **/
@@ -54,6 +55,7 @@ import { BsArrowUpRight } from 'react-icons/bs';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import { SlGlobe } from 'react-icons/sl';
 import { HiMenuAlt4 } from 'react-icons/hi';
+import { CgClose } from 'react-icons/cg';
 import { MdWavingHand } from 'react-icons/md';
 import { TbSun } from 'react-icons/tb';
 import { TbMoonFilled } from 'react-icons/tb';
@@ -84,7 +86,7 @@ export const icons = {
   AndroidStudio: SiAndroidstudio,
   VsCode: TbBrandVscode,
   Git: BsGit,
-  Github: BsGithub,
+  Github: FaGithubAlt,
   Gitlab: SiGitlab,
   Docker: GrDocker,
   /**
@@ -100,9 +102,10 @@ export const icons = {
    **/
   Axios: SiAxios,
   /**
-   * LIBRARY
+   * SOCIAL
    **/
   Linkedin: FaLinkedinIn,
+  Instagram: AiFillInstagram,
   /**
    * OTHERS
    **/
@@ -112,6 +115,7 @@ export const icons = {
   send: RiSendPlaneFill,
   web: SlGlobe,
   menu: HiMenuAlt4,
+  close: CgClose,
   hire: MdWavingHand,
   day: TbSun,
   night: TbMoonFilled,

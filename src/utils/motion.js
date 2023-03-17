@@ -68,7 +68,7 @@ export const scaleVariant = {
       type: 'spring',
       stiffness: 100,
       duration: 0.5,
-      delay: 1.5,
+      delay: 1,
     },
   },
 };
@@ -212,6 +212,37 @@ export const menuItemVariants = (delay) => ({
     opacity: 0,
     transition: {
       delay: 0.4 + delay * -1,
+    },
+  },
+});
+
+export const themeVariants = {
+  hidden: {
+    y: '-20px',
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.1,
+      duration: 0.2,
+      type: 'spring',
+      stiffness: 400,
+      damping: 15,
+    },
+  },
+};
+
+export const closeVariants = (rotate) => ({
+  hidden: {
+    rotate: 0,
+  },
+  show: {
+    rotate: rotate,
+    opacity: 1,
+    transition: {
+      duration: 0.4,
     },
   },
 });

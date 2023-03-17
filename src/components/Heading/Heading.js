@@ -11,6 +11,7 @@ export const Heading = ({
   weight = 'medium',
   className,
   variants,
+  secondary,
   ...rest
 }) => {
   const clampedLevel = Math.min(Math.max(level, 0), 5);
@@ -23,6 +24,7 @@ export const Heading = ({
       data-align={align}
       data-weight={weight}
       data-level={level}
+      data-secondary={secondary}
       {...rest}
     >
       <span>{children}</span>

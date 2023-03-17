@@ -44,11 +44,6 @@ Now
 1rem = 10px || 62.5%
 */
 
-* {
-  transition: var(--backgroundChangeTransitionXS),
-    var(--colorChangeTransitionXS);
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -61,6 +56,7 @@ body {
   padding: 0;
   font-family: var(--fontStack);
   background-color: var(--rgbBackground);
+  transition: var(--backgroundChangeTransitionXS);
 }
 
 h1,

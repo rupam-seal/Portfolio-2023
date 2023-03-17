@@ -1,7 +1,8 @@
 .heading {
   line-height: var(--lineHeightTitle);
   color: var(--colorTextTitle);
-  transition: var(--backgroundChangeTransitionXS);
+  transition: var(--backgroundChangeTransitionXS),
+    var(--colorChangeTransitionXS);
 
   &[data-level='0'] {
     letter-spacing: -0.06em;
@@ -54,5 +55,9 @@
 
   &[data-weight='bold'] {
     font-weight: var(--fontWeightBold);
+  }
+
+  &[data-secondary='true'] {
+    color: var(--colorTextLight);
   }
 }
