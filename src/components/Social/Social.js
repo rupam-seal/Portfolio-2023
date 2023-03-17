@@ -11,7 +11,7 @@ export const Social = ({ level, className }) => {
     <Container className={classes(styles.container, className)}>
       {social.map((item, index) => {
         return (
-          <Link href={item.link} target={item.target}>
+          <Link key={index} href={item.link} target={item.target}>
             <Heading
               key={index}
               className={styles.heading}
