@@ -167,7 +167,7 @@ export const rotateIconVariation = {
 
 export const menuVariants = {
   closed: {
-    height: '0vh',
+    height: 0,
 
     transition: {
       delay: 0.5,
@@ -175,7 +175,7 @@ export const menuVariants = {
     },
   },
   opened: {
-    height: '100vh',
+    height: '100%',
 
     transition: {
       delay: 0.5,
