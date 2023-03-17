@@ -16,6 +16,7 @@ export const A = ({
   link,
   secondary,
   icon,
+  type,
   ...rest
 }) => {
   const router = useRouter();
@@ -26,6 +27,7 @@ export const A = ({
           href={link}
           passHref
           className={router.pathname == link ? styles.active : styles.navlink}
+          data-type={type}
           {...rest}
         >
           {children}

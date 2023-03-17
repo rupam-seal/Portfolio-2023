@@ -8,7 +8,6 @@
   margin-bottom: var(--spaceS);
   font-weight: var(--fontWeightMedium);
   line-height: 1;
-  transition: opacity var(--durationL) var(--bezierFastoutSlowin) 0.2s;
 }
 
 /* .title1,
@@ -24,14 +23,35 @@
   font-weight: var(--fontWeightRegular);
 } */
 
+.line {
+  transition: var(--backgroundChangeTransitionXS);
+}
+
+.title1,
+.title2 {
+  font-family: 'Impact';
+  line-height: calc(var(--lineHeightTitle) - 0.2);
+
+  &[data-level='0'] {
+    letter-spacing: 0em;
+    font-size: var(--fontSizeH0);
+  }
+}
+
 .description {
   max-width: var(--maxWidthXM);
+  margin-top: var(--spaceS);
 }
 
 .blob {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.sectionBottom {
+  padding: var(--spaceL) var(--spaceOuter);
+  z-index: var(--zIndex3);
 }
 
 .talk {
@@ -41,41 +61,53 @@
   gap: var(--spaceS);
 }
 
-.scroll:before,
-.scroll:after {
-  content: '';
-  display: block;
-  width: var(--fontSizeBodyXXS);
-  height: var(--fontSizeBodyXXS);
-  transform: rotate(45deg);
-  border-bottom: 1px solid var(--colorTextBody);
-  border-right: 1px solid var(--colorTextBody);
-  margin-right: var(--spaceM);
-}
+.arrow {
+  width: 0;
+  height: 2rem;
+  border: 0.1rem solid var(--colorTextLight);
+  position: relative;
+  animation: scroll 1.5s infinite;
+  -webkit-animation: scroll 1.5s infinite;
+  margin-right: var(--spaceL);
+  margin-top: calc(var(--spaceXS) * -1);
+  transition: var(--borderChangeTransitionXS);
 
-.scroll:before {
-  animation: down-arrow-before 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-}
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -0.5rem;
+    width: 0.1rem;
+    height: 1rem;
 
-.scroll:after {
-  animation: down-arrow-after 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-}
-
-@keyframes down-arrow-before {
-  50% {
-    transform: rotate(45deg) translate(70%, 70%);
-  }
-  100% {
-    transform: rotate(45deg) translate(70%, 70%);
+    border-top: 10px solid var(--colorTextLight);
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    transition: var(--borderChangeTransitionXS);
   }
 }
 
-@keyframes down-arrow-after {
-  50% {
-    transform: rotate(45deg) translate(110%, 110%);
-    opacity: 0;
+@keyframes scroll {
+  0% {
+    height: 2rem;
   }
-  51% {
-    transform: rotate(45deg) translate(-130%, -130%);
+  30% {
+    height: 2.5rem;
+  }
+  60% {
+    height: 2rem;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    height: 2rem;
+  }
+  30% {
+    height: 2.5rem;
+  }
+  60% {
+    height: 2rem;
   }
 }

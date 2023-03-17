@@ -8,7 +8,8 @@
   border-radius: var(--borderRadius0);
   text-decoration: none;
   border-style: none;
-  transition: scale var(--durationS) var(--bezierFastoutSlowin);
+  transition: scale var(--durationS) var(--bezierFastoutSlowin),
+    var(--backgroundChangeTransitionXS);
   color: var(--rgbWhite);
   cursor: pointer;
 

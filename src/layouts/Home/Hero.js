@@ -6,7 +6,6 @@ import styles from './Hero.module.css';
 import { Container } from '../../components/Container';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
-import { DecoderText } from '../../components/DecoderText';
 import { Section } from '../../components/Section';
 import { A } from '../../components/A';
 
@@ -34,14 +33,20 @@ export const Hero = memo(({ sectionRef }) => {
         direction="column"
         zIndex={2}
       >
-        <h1 className={styles.name}>
-          <DecoderText text="Nilax Seal" delay={1000}></DecoderText>
-        </h1>
+        <Text
+          size="m"
+          align="center"
+          weight="medium"
+          className={styles.name}
+          variants={textVariant(0.4)}
+        >
+          NILAX SEAL
+        </Text>
         <Heading
           level={0}
           className={styles.title1}
           align="center"
-          weight="bold"
+          weight="medium"
           variants={textVariant(0.2)}
         >
           ANDROID<span className={styles.line}>/</span>
@@ -50,7 +55,7 @@ export const Hero = memo(({ sectionRef }) => {
           level={0}
           className={styles.title2}
           align="center"
-          weight="bold"
+          weight="medium"
           variants={textVariant(0.2)}
         >
           WEB DEVELOPER
@@ -69,11 +74,13 @@ export const Hero = memo(({ sectionRef }) => {
         </Text>
       </Container>
       <Container className={styles.blob} zIndex={1}>
-        <Spline scene="https://prod.spline.design/MYdCFyAC5T06Rt9l/scene.splinecode" />
+        {/* https://prod.spline.design/wW0KvxCQ2buZDdji/scene.splinecode */}
+        {/* https://prod.spline.design/MYdCFyAC5T06Rt9l/scene.splinecode */}
+        <Spline scene="https://prod.spline.design/wW0KvxCQ2buZDdji/scene.splinecode" />
       </Container>
-      <SectionBottom>
+      <SectionBottom className={styles.sectionBottom}>
         <Container align="center" variants={scaleVariant}>
-          <div className={styles.scroll}></div>
+          <div className={styles.arrow}></div>
           <Container direction={'column'}>
             <Text weight="regular" size="s">
               Keep —
@@ -87,7 +94,7 @@ export const Hero = memo(({ sectionRef }) => {
           <Text weight="regular" size="s" align="end">
             Available for work
           </Text>
-          <Text className={styles.talk} weight="regular" size="s">
+          <Text className={styles.talk} weight="medium" size="s">
             <A icon="leftCircle" link="/contact">
               Lets talk
             </A>

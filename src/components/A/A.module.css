@@ -8,6 +8,11 @@
   &:hover {
     transform: translateY(calc(var(--spaceXS) * -1));
   }
+
+  &[data-type='hamburger'] {
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--fontSizeH4);
+  }
 }
 
 .navlink {
@@ -18,6 +23,11 @@
 .active {
   color: var(--colorTextBody);
   font-weight: var(--fontWeightMedium);
+
+  &[data-type='hamburger'] {
+    font-size: var(--fontSizeH4);
+    color: var(--rgbAccent);
+  }
 }
 
 .link {

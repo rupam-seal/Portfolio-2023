@@ -13,7 +13,7 @@ export const Button = ({
   as,
   secondary,
   icon,
-  weight = 'm',
+  weight = 'medium',
   size = 'medium',
   align,
   href,

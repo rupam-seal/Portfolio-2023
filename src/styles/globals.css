@@ -10,7 +10,7 @@
   font-weight: 400;
   src: url('../assets/fonts/gotham-book.woff2') format('woff2');
   font-display: block;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
@@ -36,6 +36,12 @@
 Now
 1rem = 10px || 62.5%
 */
+
+* {
+  transition: var(--backgroundChangeTransitionXS),
+    var(--colorChangeTransitionXS);
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -44,6 +50,7 @@ html {
 }
 
 body {
+  margin: 0;
   padding: 0;
   font-family: var(--fontStack);
   background-color: var(--rgbBackground);
@@ -76,6 +83,12 @@ h5 {
   --durationM: 400ms;
   --durationL: 600ms;
   --durationXL: 800ms;
+
+  --backgroundChangeTransitionXS: background-color var(--durationXL)
+    var(--bezierFastoutSlowin);
+  --colorChangeTransitionXS: color var(--durationXL) var(--bezierFastoutSlowin);
+  --borderChangeTransitionXS: border var(--durationXL)
+    var(--bezierFastoutSlowin);
 
   --systemFontStack: 'system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif';
   --fontStack: 'Gotham', var(--systemFontStack);

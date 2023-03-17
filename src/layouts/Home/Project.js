@@ -1,5 +1,4 @@
 import { Container } from '@/components/Container';
-import { DecoderText } from '@/components/DecoderText';
 import { Heading } from '@/components/Heading';
 import { Image } from '@/components/Image';
 import { Section } from '@/components/Section';

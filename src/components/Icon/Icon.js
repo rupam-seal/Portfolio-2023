@@ -53,8 +53,10 @@ import { ImArrowUpRight2 } from 'react-icons/im';
 import { BsArrowUpRight } from 'react-icons/bs';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import { SlGlobe } from 'react-icons/sl';
-import { HiMenuAlt1 } from 'react-icons/hi';
+import { HiMenuAlt4 } from 'react-icons/hi';
 import { MdWavingHand } from 'react-icons/md';
+import { TbSun } from 'react-icons/tb';
+import { TbMoonFilled } from 'react-icons/tb';
 
 export const icons = {
   /**
@@ -109,8 +111,10 @@ export const icons = {
   arrowRightLight: BsArrowUpRight,
   send: RiSendPlaneFill,
   web: SlGlobe,
-  menu: HiMenuAlt1,
+  menu: HiMenuAlt4,
   hire: MdWavingHand,
+  day: TbSun,
+  night: TbMoonFilled,
 };
 
 export const Icon = ({ icon, className, type, ...rest }) => {
