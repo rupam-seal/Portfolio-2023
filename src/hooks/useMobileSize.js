@@ -8,7 +8,7 @@ const isMobile = () => {
 };
 
 export const useMobileSize = () => {
-  // Initialize the desktop size to an accurate value on initial state set
+  // Initialize the mobile size to an accurate value on initial state set
   const [isMobileSize, setIsMobileSize] = useState(isMobile);
 
   useEffect(() => {

@@ -44,6 +44,7 @@ export const Project = ({ direction, value, item, totalProjects = '05' }) => {
           justify="center"
           initial="hidden"
           whileHover="hover"
+          whileTap="show"
         >
           <ImageLayer year={year} link={`/projects/${id - 1}`} />
           <Image src={image} />
