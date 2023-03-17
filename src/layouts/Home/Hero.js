@@ -15,9 +15,9 @@ import {
   textVariant,
 } from '../../utils/motion';
 
-import Spline from '@splinetool/react-spline';
 import { SectionBottom } from '../../components/SectionBottom';
 import { Icon } from '@/components/Icon';
+import { Blob } from '@/components/Blob';
 
 export const Hero = memo(({ sectionRef }) => {
   return (
@@ -73,11 +73,7 @@ export const Hero = memo(({ sectionRef }) => {
           android and web designs.
         </Text>
       </Container>
-      <Container className={styles.blob} zIndex={1}>
-        {/* https://prod.spline.design/wW0KvxCQ2buZDdji/scene.splinecode */}
-        {/* https://prod.spline.design/MYdCFyAC5T06Rt9l/scene.splinecode */}
-        <Spline scene="https://prod.spline.design/wW0KvxCQ2buZDdji/scene.splinecode" />
-      </Container>
+      <Blob />
       <SectionBottom className={styles.sectionBottom}>
         <Container align="center" variants={scaleVariant}>
           <div className={styles.arrow}></div>

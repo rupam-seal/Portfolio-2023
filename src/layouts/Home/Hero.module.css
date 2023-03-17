@@ -43,12 +43,6 @@
   margin-top: var(--spaceS);
 }
 
-.blob {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 .sectionBottom {
   padding: var(--spaceL) var(--spaceOuter);
   z-index: var(--zIndex3);
