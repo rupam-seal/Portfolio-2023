@@ -26,9 +26,16 @@
   font-weight: 700;
   src: url('../assets/fonts/gotham-bold.woff2') format('woff2');
   font-display: block;
-  font-style: italic;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Impact';
+  font-weight: 700;
+  src: url('../assets/fonts/impact.woff') format('woff');
+  font-display: block;
+  font-style: normal;
+}
 /*
 1rem = 16px || 100%
 1px = 16/100 = 6.25%
@@ -92,6 +99,7 @@ h5 {
 
   --systemFontStack: 'system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif';
   --fontStack: 'Gotham', var(--systemFontStack);
+  --fontStackHeader: 'Impact';
 
   --fontWeightRegular: 400;
   --fontWeightMedium: 500;

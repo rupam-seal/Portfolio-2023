@@ -29,7 +29,7 @@
 
 .title1,
 .title2 {
-  font-family: 'Impact';
+  font-family: var(--fontStackHeader);
   line-height: calc(var(--lineHeightTitle) - 0.2);
 
   &[data-level='0'] {
