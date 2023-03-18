@@ -17,12 +17,14 @@ import Link from 'next/link';
 const ImageLayer = ({ year, link }) => {
   return (
     <>
+      <motion.div className={styles.layer} variants={opacityVariants} />
+
       <motion.div className={styles.year} variants={yearVariants}>
         <Heading level={4} weight="Bold" className={styles.text}>
           {year}
         </Heading>
       </motion.div>
-      <motion.div className={styles.layer} variants={opacityVariants} />
+
       <motion.div className={styles.circle} variants={circleVariation}>
         <Link href={link}>
           <Heading

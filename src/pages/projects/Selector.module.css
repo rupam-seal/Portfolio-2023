@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: calc(var(--space4XL) * -1);
+  margin-left: var(--spaceOuter);
+  margin-right: var(--spaceOuter);
+  z-index: var(--zIndex4);
+
+  & .normal,
+  & .active {
+    padding: var(--spaceXS) var(--spaceM);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--backgroundChangeTransitionXS),
+      var(--colorChangeTransitionXS);
+  }
+
+  & .normal {
+    & .text {
+      color: var(--colorTextLight);
+    }
+  }
+
+  & .active {
+    background-color: var(--rgbBackgroundLight);
+
+    & .text {
+      color: var(--colorTextBody);
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import styles from './project.module.css';
+import styles from './slug.module.css';
 
 import { Section } from '../../components/Section';
 import { Heading } from '../../components/Heading';
@@ -16,22 +16,21 @@ import { Details, ProjectButtons } from '@/layouts/Home/ProjectDetails';
 const Project = () => {
   const router = useRouter();
 
-  const { project } = router.query;
+  const { slug } = router.query;
 
-  const item = projects[project];
-
+  const projectData = projects[slug];
   const totalProjects = projects.length;
 
   return (
     <>
-      {item && (
+      {projectData && (
         <Container className={styles.section} direction="column" align="center">
           <Container className={styles.wrapper} direction="column">
             <Container className={styles.content} justify="sb">
-              <Container direction={'column'} className={styles.details}>
-                <Details item={item} totalItem={item.length} />
+              <Container direction={'column'}>
+                <Details projectData={projectData} />
                 <ProjectButtons
-                  item={item}
+                  projectData={projectData}
                   title1={'Source'}
                   title2={'Live Site'}
                   icon1={'Github'}
@@ -45,15 +44,17 @@ const Project = () => {
                 variants={textVariant(0.1)}
               >
                 <Text className={styles.tools}>Tool Used</Text>
-                <List items={item.tags} />
+                <List items={projectData.tags} />
               </Container>
             </Container>
-            <Image
-              className={styles.image}
-              src={item.image}
-              href={'/'}
-              variants={textVariant(0.4)}
-            />
+            <Container animate="show">
+              <Image
+                className={styles.image}
+                src={projectData.image}
+                href={'/'}
+                variants={textVariant(0.4)}
+              />
+            </Container>
           </Container>
         </Container>
       )}

@@ -8,7 +8,7 @@ import styles from './ToggleButton.module.css';
 export const ToggleButton = ({ icon, toggleStatus, visibility, variants }) => {
   return (
     <Container
-      className={styles.themeContainer}
+      className={styles.container}
       onClick={toggleStatus}
       data-visibility={visibility}
     >
@@ -19,7 +19,7 @@ export const ToggleButton = ({ icon, toggleStatus, visibility, variants }) => {
         animate="show"
         exit="hidden"
       >
-        <Icon icon={icon} className={styles.menuIcon} />
+        <Icon icon={icon} className={styles.icon} />
       </motion.div>
     </Container>
   );

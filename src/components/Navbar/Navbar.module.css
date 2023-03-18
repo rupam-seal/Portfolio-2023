@@ -17,12 +17,6 @@
   }
 }
 
-.logo {
-  & .logoText {
-    text-decoration: none;
-  }
-}
-
 .menu {
   @media (--mediaMobile) {
     display: none;

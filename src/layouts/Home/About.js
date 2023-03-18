@@ -11,7 +11,7 @@ import { Button } from '@/components/Button';
 import { A } from '@/components/A';
 import { Image } from '@/components/Image';
 import { List } from '@/components/List';
-import { IconCard } from '@/components/IconCard';
+import { IconCard } from '@/components/Card';
 import { Icon } from '@/components/Icon';
 import { memo } from 'react';
 
@@ -19,7 +19,7 @@ export const About = memo(({ visible, sectionRef }) => {
   return (
     <Section
       direction={'column'}
-      className={styles.about}
+      className={styles.section}
       align={'center'}
       justify={'center'}
       ref={sectionRef}

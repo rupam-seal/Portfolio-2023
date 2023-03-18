@@ -15,14 +15,14 @@
   left: var(--space2XL);
   z-index: var(--zIndex1);
 
+  & .text {
+    color: var(--rgbWhite);
+  }
+
   @media (--mediaMobile) {
     left: var(--spaceM);
     bottom: var(--spaceXL);
   }
-}
-
-.text {
-  color: var(--rgbWhite);
 }
 
 .circle {
@@ -39,6 +39,7 @@
   justify-content: center;
 
   & .icon {
+    color: var(--rgbBlack);
     margin-top: var(--spaceXS);
   }
 
@@ -55,8 +56,4 @@
     bottom: var(--spaceM);
     border-radius: calc(var(--borderRadius4) + var(--borderRadius4));
   }
-}
-
-.icon {
-  color: #000000;
 }

@@ -10,7 +10,7 @@ import { Icon } from '../Icon';
 export const Button = ({
   className,
   variants,
-  as,
+  as: Component = Link,
   secondary,
   icon,
   weight = 'medium',
@@ -21,25 +21,21 @@ export const Button = ({
   children,
   ...rest
 }) => {
-  const MotionComponent = motion(Link);
-
   return (
-    <MotionComponent
-      variants={variants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className={classes(styles.button, className)}
-      data-secondary={secondary}
-      data-weight={weight}
-      data-size={size}
-      data-align={align}
-      href={href}
-      data-disabled={disabled}
-      {...rest}
-    >
-      {children}
-      {icon ? <Icon className={styles.icon} icon={icon} /> : ''}
-    </MotionComponent>
+    <motion.div variants={variants}>
+      <Component
+        className={classes(styles.button, className)}
+        data-secondary={secondary}
+        data-weight={weight}
+        data-size={size}
+        data-align={align}
+        href={href}
+        data-disabled={disabled}
+        {...rest}
+      >
+        {children}
+        {icon ? <Icon className={styles.icon} icon={icon} /> : ''}
+      </Component>
+    </motion.div>
   );
 };

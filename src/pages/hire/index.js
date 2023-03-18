@@ -4,7 +4,7 @@ import { Heading } from '@/components/Heading';
 import { Section } from '@/components/Section';
 import { Text } from '@/components/Text';
 import { textVariant } from '@/utils/motion';
-import styles from './Hire.module.css';
+import styles from './index.module.css';
 
 const index = () => {
   return (

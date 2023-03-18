@@ -1,12 +1,12 @@
-.details {
-  max-width: 45rem;
+.section {
+  max-width: var(--minWidthL);
 }
 
 .title {
   margin-bottom: var(--spaceM);
 }
 
-.no {
+.projectNo {
   margin-bottom: var(--spaceL);
 }
 
@@ -19,7 +19,7 @@
   margin-bottom: var(--spaceL);
 }
 
-.buttonContainer {
+.buttons {
   width: 100%;
   gap: var(--spaceL);
 
@@ -29,7 +29,7 @@
   }
 }
 
-.disabledContainer {
+.disabled {
   position: relative;
 
   & .tooltip {

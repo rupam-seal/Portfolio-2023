@@ -16,18 +16,18 @@ export const Heading = ({
 }) => {
   const clampedLevel = Math.min(Math.max(level, 0), 5);
   const Component = as || `h${Math.max(clampedLevel, 1)}`;
-  const MotionComponent = motion(Component);
   return (
-    <MotionComponent
-      variants={variants}
-      className={classes(styles.heading, className)}
-      data-align={align}
-      data-weight={weight}
-      data-level={level}
-      data-secondary={secondary}
-      {...rest}
-    >
-      <span>{children}</span>
-    </MotionComponent>
+    <motion.div variants={variants}>
+      <Component
+        className={classes(styles.heading, className)}
+        data-align={align}
+        data-weight={weight}
+        data-level={level}
+        data-secondary={secondary}
+        {...rest}
+      >
+        <span>{children}</span>
+      </Component>
+    </motion.div>
   );
 };

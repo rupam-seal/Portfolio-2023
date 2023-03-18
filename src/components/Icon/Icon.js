@@ -59,6 +59,7 @@ import { CgClose } from 'react-icons/cg';
 import { MdWavingHand } from 'react-icons/md';
 import { TbSun } from 'react-icons/tb';
 import { TbMoonFilled } from 'react-icons/tb';
+import { MdDesignServices } from 'react-icons/md';
 
 export const icons = {
   /**
@@ -119,6 +120,7 @@ export const icons = {
   hire: MdWavingHand,
   day: TbSun,
   night: TbMoonFilled,
+  ui: MdDesignServices,
 };
 
 export const Icon = ({ icon, className, type, ...rest }) => {

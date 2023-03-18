@@ -1,4 +1,4 @@
-.navlink,
+.normal,
 .active {
   text-decoration: none;
   font-size: var(--fontSizeBodyS);
@@ -16,9 +16,9 @@
   }
 }
 
-.navlink {
+.normal {
   color: var(--colorTextLight);
-  font-weight: var(--fontWeightRegular);
+  font-weight: var(--fontWeightMedium);
 }
 
 .active {
@@ -29,6 +29,13 @@
     font-size: var(--fontSizeH4);
     color: var(--rgbAccent);
   }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spaceXS);
 }
 
 .link {
@@ -54,11 +61,4 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spaceXS);
 }

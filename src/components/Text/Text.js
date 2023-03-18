@@ -6,7 +6,7 @@ import { classes } from '../../utils/styles';
 import styles from './Text.module.css';
 
 export const Text = ({
-  as: Component = 'span',
+  as: Component = motion.span,
   children,
   size = 'm',
   weight = 'auto',
@@ -19,7 +19,7 @@ export const Text = ({
 }) => {
   const MotionComponent = motion(Component);
   return (
-    <MotionComponent
+    <Component
       variants={variants}
       className={classes(styles.text, className)}
       data-size={size}
@@ -30,6 +30,6 @@ export const Text = ({
       {...rest}
     >
       {children}
-    </MotionComponent>
+    </Component>
   );
 };

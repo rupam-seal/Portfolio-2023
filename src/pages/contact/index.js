@@ -1,5 +1,5 @@
 import { Section } from '@/components/Section';
-import styles from './Contact.module.css';
+import styles from './index.module.css';
 
 const index = () => {
   return <Section fullscreen={true}></Section>;

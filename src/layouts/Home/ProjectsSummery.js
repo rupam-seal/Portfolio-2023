@@ -11,41 +11,57 @@ import { Project } from './Project';
 import { memo } from 'react';
 
 export const ProjectsSummery = memo(({ visible, sectionRef }) => {
-  const project = projects.slice(0, 5).map((project, index) => {
-    return (
-      <Container key={index}>
-        {index % 2 === 0 ? (
-          <Project item={project} value="-" />
-        ) : (
-          <Project item={project} value="" direction="reverse" />
-        )}
-      </Container>
-    );
-  });
-
   return (
     <Section
       direction={'column'}
-      className={styles.summary}
+      className={styles.section}
       align={'center'}
       justify={'center'}
       ref={sectionRef}
     >
       {visible && (
         <>
-          <Container align="center" direction={'column'}>
-            <Heading level={1} weight="bold" variants={textVariant(0.3)}>
-              FEATURED
-            </Heading>
-            <Heading level={1} weight="bold" variants={textVariant(0.1)}>
-              WORKS
-            </Heading>
-          </Container>
-          {project}
+          <Title />
+          <ProjectsData />
         </>
       )}
     </Section>
   );
 });
+
+export const Title = () => {
+  return (
+    <Container align="center" direction={'column'}>
+      <Heading level={1} weight="bold" variants={textVariant(0.3)}>
+        FEATURED
+      </Heading>
+      <Heading level={1} weight="bold" variants={textVariant(0.1)}>
+        WORKS
+      </Heading>
+    </Container>
+  );
+};
+
+export const ProjectsData = () => {
+  // Only show 5 projects that have a featured image
+  const projectsData = projects.slice(0, 5).map((project, index) => {
+    return (
+      <Container key={index}>
+        {index % 2 === 0 ? (
+          <Project projectData={project} projectNo={index} value="-" />
+        ) : (
+          <Project
+            projectData={project}
+            projectNo={index}
+            value=""
+            direction="reverse"
+          />
+        )}
+      </Container>
+    );
+  });
+
+  return projectsData;
+};
 
 ProjectsSummery.displayName = 'ProjectsSummery';

@@ -26,7 +26,10 @@ export const A = ({
         <Link
           href={link}
           passHref
-          className={router.pathname == link ? styles.active : styles.navlink}
+          className={classes(
+            router.pathname == link ? styles.active : styles.normal,
+            className
+          )}
           data-type={type}
           {...rest}
         >

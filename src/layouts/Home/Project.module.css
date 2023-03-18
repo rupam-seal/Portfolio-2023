@@ -1,4 +1,4 @@
-.project {
+.section {
   margin-top: var(--space6XL);
   gap: var(--space4XL);
 
@@ -11,14 +11,14 @@
       height: auto;
     }
   }
-}
 
-.image {
-  position: relative;
-  max-width: 56rem;
-  min-width: 40rem;
+  & .image {
+    position: relative;
+    max-width: var(--maxWidthS);
+    min-width: var(--minWidthM);
 
-  @media (--mediaTablet) {
-    min-width: 100%;
+    @media (--mediaTablet) {
+      min-width: 100%;
+    }
   }
 }

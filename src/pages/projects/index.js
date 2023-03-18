@@ -1,32 +1,35 @@
-import { Container } from '@/components/Container';
 import { Section } from '@/components/Section';
-import { Project } from '@/layouts/Home/Project';
+
+import styles from './index.module.css';
+import { useEffect, useState } from 'react';
+
 import { projects } from '../../../data/projects';
+import Selector from './Selector';
+import Projects from './Projects';
 
-import styles from './Projects.module.css';
+const Index = () => {
+  const [category, setCatagory] = useState('all');
+  const [projectData, setProjectData] = useState(projects);
 
-const index = () => {
-  const totalProjects = projects.length;
+  useEffect(() => {
+    category === 'all'
+      ? setProjectData(projects)
+      : setProjectData(
+          projects.filter((project) => project.category === category)
+        );
+  }, [category]);
+
   return (
-    <Container
-      direction="column"
+    <Section
+      className={styles.section}
       align="center"
       justify="center"
-      className={styles.section}
+      direction="column"
     >
-      {projects.map((project, index) => {
-        return (
-          <Project
-            key={index}
-            item={project}
-            totalProjects={
-              totalProjects <= 9 ? `0${projects.length}` : projects.length
-            }
-          />
-        );
-      })}
-    </Container>
+      <Selector category={category} setCatagory={setCatagory} />
+      {projects && <Projects projectData={projectData} />}
+    </Section>
   );
 };
 
-export default index;
+export default Index;

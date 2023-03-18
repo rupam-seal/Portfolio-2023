@@ -1,41 +1,47 @@
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
 import { Heading } from '@/components/Heading';
+import { Section } from '@/components/Section';
 import { Text } from '@/components/Text';
 import { textVariant } from '@/utils/motion';
 
 import styles from './ProjectDetails.module.css';
 
-export const ProjectDetails = ({ item, totalProjects }) => {
+export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
   return (
-    <Container className={styles.details} align="center" justify="center">
+    <Section className={styles.section} align="center" justify="center">
       <Container direction="column">
-        <Details item={item} totalProjects={totalProjects} />
+        <Details
+          projectData={projectData}
+          projectNo={projectNo}
+          totalProjects={totalProjects}
+        />
         <ProjectButtons
           title1="View Project"
           title2="Live Site"
           icon1="arrowRight"
           icon2="web"
-          item={item}
+          projectData={projectData}
         />
       </Container>
-    </Container>
+    </Section>
   );
 };
 
-export const Details = ({ item, totalProjects }) => {
-  const { id, title, description, status } = item;
+export const Details = ({ projectData, projectNo, totalProjects }) => {
+  const PROJECT_NO = projectNo + 1;
+  const { id, title, description, status } = projectData;
 
   return (
     <>
       {totalProjects && (
         <Text
           weight="Bold"
-          className={styles.no}
+          className={styles.projectNo}
           variants={textVariant(0.05)}
           secondary
         >
-          0{id}/{totalProjects}
+          0{PROJECT_NO}/{totalProjects}
         </Text>
       )}
       <Heading
@@ -62,28 +68,35 @@ export const Details = ({ item, totalProjects }) => {
   );
 };
 
-export const ProjectButtons = ({ title1, title2, icon1, icon2, item }) => {
+export const ProjectButtons = ({
+  title1,
+  title2,
+  icon1,
+  icon2,
+  projectData,
+}) => {
+  const { id, live } = projectData;
   return (
-    <Container className={styles.buttonContainer}>
+    <Container className={styles.buttons}>
       <Button
         icon={icon1}
-        href={`/projects/${item.id - 1}`}
+        href={`/projects/${id - 1}`}
         size="m"
         variants={textVariant(0.1)}
       >
         {title1}
       </Button>
-      <div className={styles.disabledContainer}>
+      <div className={styles.disabled}>
         <Button
           target="_blank"
           icon={icon2}
-          href={item.live}
+          href={live}
           size="m"
           className={styles.button}
-          disabled={item.live === '' ? true : false}
+          disabled={live === '' ? true : false}
           variants={textVariant(0.1)}
         >
-          {item.live === '' ? (
+          {live === '' ? (
             <div className={styles.tooltip}>work in progress</div>
           ) : (
             ''

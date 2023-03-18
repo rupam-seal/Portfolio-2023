@@ -26,32 +26,48 @@ import { Icon } from '@/components/Icon';
 import ImageLayer from '@/components/ImageLayer/ImageLayer';
 import { ProjectDetails } from './ProjectDetails';
 
-export const Project = ({ direction, value, item, totalProjects = '05' }) => {
-  const { id, image, year } = item;
+export const Project = ({
+  direction,
+  value,
+  projectData,
+  totalProjects = '05',
+  projectNo,
+}) => {
+  const { id, image, year } = projectData;
+  const path = `/projects/${id - 1}`;
 
   return (
     <Section
-      className={styles.project}
+      className={styles.section}
       align="center"
       direction={direction}
       justify={'sb'}
     >
-      <Container variants={imageVariant()}>
-        <motion.div
-          id="image"
-          className={styles.image}
-          align="center"
-          justify="center"
-          initial="hidden"
-          whileHover="hover"
-          whileTap="show"
-        >
-          <ImageLayer year={year} link={`/projects/${id - 1}`} />
-          <Image src={image} />
-        </motion.div>
-      </Container>
-      <ProjectDetails item={item} totalProjects={totalProjects} />
+      <ImageDetails path={path} image={image} year={year} />
+      <ProjectDetails
+        projectData={projectData}
+        projectNo={projectNo}
+        totalProjects={totalProjects}
+      />
     </Section>
+  );
+};
+
+export const ImageDetails = ({ path, image, year }) => {
+  return (
+    <Container variants={imageVariant()}>
+      <motion.div
+        id="image"
+        className={styles.image}
+        align="center"
+        justify="center"
+        initial="hidden"
+        whileHover="hover"
+      >
+        <ImageLayer year={year} link={path} />
+        <Image src={image} />
+      </motion.div>
+    </Container>
   );
 };
 
