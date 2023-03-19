@@ -22,7 +22,9 @@ const ImageLayer = ({ year, link }) => {
           {year}
         </Heading>
       </motion.div>
+
       <motion.div className={styles.layer} variants={opacityVariants} />
+
       <motion.div className={styles.circle} variants={circleVariation}>
         <Link href={link}>
           <Heading
