@@ -125,13 +125,13 @@ h5 {
 
   --viewPortWidth: 100vw;
   --viewPortHeight: 100vh;
-  --minWidthS: 30rem;
+  --minWidthS: 35rem;
   --minWidthM: 40rem;
   --minWidthL: 45rem;
   --maxWidthS: 56rem;
   --maxWidthM: 72rem;
   --maxWidthXM: 90rem;
-  --maxWidthL: 109.6rem;
+  --maxWidthL: 100rem;
   --maxWidthXL: 168rem;
 
   --spaceOuter: 6.4rem;
