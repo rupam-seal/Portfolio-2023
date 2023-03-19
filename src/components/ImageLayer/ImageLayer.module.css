@@ -15,7 +15,7 @@
   left: var(--space2XL);
   z-index: var(--zIndex1);
 
-  .text {
+  & .text {
     color: var(--rgbWhite);
   }
 
