@@ -27,15 +27,15 @@
 
 .waveContainer {
   padding-bottom: var(--spaceS);
+}
 
-  & .wave {
-    font-size: var(--fontSizeH3);
-    animation-name: wave-animation;
-    animation-duration: calc(var(--durationS) * 10);
-    animation-iteration-count: infinite;
-    transform-origin: 70% 70%;
-    display: inline-block;
-  }
+.wave {
+  font-size: var(--fontSizeH3);
+  animation-name: wave-animation;
+  animation-duration: calc(var(--durationS) * 10);
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
 
 @keyframes wave-animation {
