@@ -35,10 +35,16 @@ const Project = () => {
                   title2={'Live Site'}
                   icon1={'Github'}
                   icon2={'web'}
+                  href1={projectData.source}
+                  href2={projectData.live}
+                  target1="_blank"
+                  target2="_blank"
                   animation1={'bounce'}
                   animation2={'bounce'}
+                  disabled={projectData.live === '' ? true : false}
+                  tooltip={projectData.live === '' ? true : false}
                   className={styles.projectButtons}
-                />
+                ></ProjectButtons>
               </Container>
               <Container
                 direction={'column'}
