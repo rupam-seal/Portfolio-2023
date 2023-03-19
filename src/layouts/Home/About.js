@@ -11,7 +11,6 @@ import { Button } from '@/components/Button';
 import { A } from '@/components/A';
 import { Image } from '@/components/Image';
 import { List } from '@/components/List';
-import { IconCard } from '@/components/Card';
 import { Icon } from '@/components/Icon';
 import { memo } from 'react';
 
