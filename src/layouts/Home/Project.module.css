@@ -13,10 +13,10 @@
   }
 }
 
-.image {
+& .image {
   position: relative;
-  max-width: 56rem;
-  min-width: 40rem;
+  max-width: var(--maxWidthS);
+  min-width: var(--minWidthM);
 
   @media (--mediaTablet) {
     min-width: 100%;
