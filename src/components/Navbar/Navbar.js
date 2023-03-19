@@ -21,7 +21,6 @@ import { motion } from 'framer-motion';
 import { useToggle } from '@/hooks/useToggle';
 import { Menu } from './Menu';
 import { ToggleButton } from '../ToggleButton';
-import { Logo } from '../Logo';
 
 export const Navbar = () => {
   const lightTheme = 'light';
@@ -45,7 +44,13 @@ export const Navbar = () => {
         variants={navVariants}
         className={styles.header}
       >
-        <Logo />
+        <Container align="center" className={styles.logo}>
+          <Link className={styles.logoText} href="/">
+            <Heading level={4} weight={'bold'}>
+              NX
+            </Heading>
+          </Link>
+        </Container>
 
         <Container
           className={styles.rightContainer}
