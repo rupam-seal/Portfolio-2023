@@ -30,7 +30,7 @@
   margin-top: var(--spaceS);
 }
 
-.sectionBottom {
+.bottom {
   padding: var(--spaceL) var(--spaceOuter);
   z-index: var(--zIndex3);
 }
@@ -41,7 +41,7 @@
   }
 }
 
-.scroll {
+.keepScrolling {
   display: none;
 
   @media (--mediaMobile) {
@@ -49,7 +49,7 @@
   }
 }
 
-.talk {
+.letsTalk {
   display: flex;
   align-items: center;
   justify-content: flex-end;
