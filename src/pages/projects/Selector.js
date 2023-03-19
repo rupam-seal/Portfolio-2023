@@ -22,6 +22,8 @@ export const Options = ({ category, setCatagory }) => {
       {categories.map((item, index) => (
         <Container
           key={index}
+          align="center"
+          justify="center"
           className={category === item.category ? styles.active : styles.normal}
           onClick={() => handleClick(item.category)}
         >
