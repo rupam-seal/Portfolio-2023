@@ -19,6 +19,7 @@ export const Button = ({
   href,
   disabled,
   children,
+  animation,
   ...rest
 }) => {
   return (
@@ -31,6 +32,7 @@ export const Button = ({
         data-align={align}
         href={href}
         data-disabled={disabled}
+        data-animation={animation}
         {...rest}
       >
         {children}

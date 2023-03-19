@@ -3,7 +3,7 @@
   gap: 1rem;
   margin-bottom: calc(var(--space4XL) * -1);
   margin-top: calc(var(--spaceXL) * -1);
-  z-index: var(--zIndex4);
+  z-index: var(--zIndex3);
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;

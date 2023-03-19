@@ -17,7 +17,7 @@ export const Blob = ({
   // console.log(isMobileSize);
 
   return (
-    <Component className={styles.blob} zIndex={1}>
+    <Component className={styles.blob} z={1}>
       {/* https://prod.spline.design/wW0KvxCQ2buZDdji/scene.splinecode */}
       {/* https://prod.spline.design/MYdCFyAC5T06Rt9l/scene.splinecode */}
       {isMobileSize ? (

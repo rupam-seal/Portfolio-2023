@@ -41,7 +41,7 @@ export const Intro = () => {
     <Container
       className={classes(styles.intro)}
       direction="column"
-      zIndex={2}
+      z={2}
       animate="show"
     >
       <Text

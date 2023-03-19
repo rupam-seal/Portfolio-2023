@@ -22,6 +22,8 @@ export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
           icon1="arrowRight"
           icon2="web"
           projectData={projectData}
+          animation1={'rotate'}
+          animation2={'bounce'}
         />
       </Container>
     </Section>
@@ -74,6 +76,8 @@ export const ProjectButtons = ({
   icon1,
   icon2,
   projectData,
+  animation1,
+  animation2,
 }) => {
   const { id, live } = projectData;
   return (
@@ -83,6 +87,7 @@ export const ProjectButtons = ({
         href={`/projects/${id - 1}`}
         size="m"
         variants={textVariant(0.1)}
+        animation={animation1}
       >
         {title1}
       </Button>
@@ -95,6 +100,7 @@ export const ProjectButtons = ({
           className={styles.button}
           disabled={live === '' ? true : false}
           variants={textVariant(0.1)}
+          animation={animation2}
         >
           {live === '' ? (
             <div className={styles.tooltip}>work in progress</div>

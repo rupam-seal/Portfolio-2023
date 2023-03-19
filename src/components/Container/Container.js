@@ -12,7 +12,7 @@ export const Container = ({
   align = 'auto',
   justify = 'auto',
   variants,
-  zIndex,
+  z,
   ...rest
 }) => {
   return (
@@ -25,7 +25,7 @@ export const Container = ({
       data-direction={direction}
       data-justify={justify}
       data-align={align}
-      data-z={zIndex}
+      data-z={z}
       {...rest}
     >
       {children}

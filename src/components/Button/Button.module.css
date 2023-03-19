@@ -17,15 +17,6 @@
     transition: transform var(--durationM) var(--bezierFastoutSlowin);
   }
 
-  &:hover {
-    scale: 1.02;
-
-    & .icon {
-      transition: transform var(--durationM) var(--bezierFastoutSlowin);
-      transform: rotate(45deg);
-    }
-  }
-
   &[data-size='s'] {
     font-size: var(--fontSizeBodyS);
   }
@@ -77,7 +68,45 @@
   &[data-secondary='true'] {
     color: var(--colorTextLight);
   }
+
   &[data-disabled='true'] {
     pointer-events: none;
+  }
+
+  &[data-animation='rotate'] {
+    &:hover {
+      scale: 1.02;
+
+      & .icon {
+        transition: transform var(--durationM) var(--bezierFastoutSlowin);
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &[data-animation='bounce'] {
+    &:hover {
+      scale: 1.02;
+
+      & .icon {
+        animation: bounce2 1.5s ease infinite;
+      }
+    }
+  }
+}
+
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
   }
 }

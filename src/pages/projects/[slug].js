@@ -35,6 +35,8 @@ const Project = () => {
                   title2={'Live Site'}
                   icon1={'Github'}
                   icon2={'web'}
+                  animation1={'bounce'}
+                  animation2={'bounce'}
                   className={styles.projectButtons}
                 />
               </Container>
