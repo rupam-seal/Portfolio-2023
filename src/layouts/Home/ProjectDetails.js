@@ -80,11 +80,13 @@ export const ProjectButtons = ({
   animation2,
 }) => {
   const { id, live } = projectData;
+  const path = `/projects/${id - 1}`;
+
   return (
-    <Container className={styles.buttons}>
+    <div className={styles.buttons}>
       <Button
         icon={icon1}
-        href={`/projects/${id - 1}`}
+        href={path}
         size="m"
         variants={textVariant(0.1)}
         animation={animation1}
@@ -110,6 +112,6 @@ export const ProjectButtons = ({
           {title2}
         </Button>
       </div>
-    </Container>
+    </div>
   );
 };

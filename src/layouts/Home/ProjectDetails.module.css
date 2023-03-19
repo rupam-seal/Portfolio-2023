@@ -20,6 +20,7 @@
 }
 
 .buttons {
+  display: flex;
   width: 100%;
   gap: var(--spaceL);
 
@@ -32,30 +33,30 @@
 .disabled {
   position: relative;
 
-  & .tooltip {
-    opacity: 0;
-    position: absolute;
-    display: none;
-    background-color: var(--rgbError);
-    color: var(--rgbWhite);
-    top: calc(var(--spaceL) * -1);
-    right: calc(var(--spaceL) * -4);
-    font-size: var(--fontSizeBodyXXS);
-    padding: var(--spaceS);
-    border-radius: var(--borderRadius1) var(--borderRadius1)
-      var(--borderRadius1) 0;
-    box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.2);
-
-    @media (--mediaMobile) {
-      top: calc(var(--spaceL) * -1);
-      right: calc(var(--spaceL));
-    }
-  }
-
   &:hover {
     & .tooltip {
       display: flex;
       opacity: 1;
     }
+  }
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  display: none;
+  background-color: var(--rgbError);
+  color: var(--rgbWhite);
+  top: calc(var(--spaceL) * -1);
+  right: calc(var(--spaceL) * -4);
+  font-size: var(--fontSizeBodyXXS);
+  padding: var(--spaceS);
+  border-radius: var(--borderRadius1) var(--borderRadius1) var(--borderRadius1)
+    0;
+  box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+
+  @media (--mediaMobile) {
+    top: calc(var(--spaceL) * -1);
+    right: calc(var(--spaceL));
   }
 }
