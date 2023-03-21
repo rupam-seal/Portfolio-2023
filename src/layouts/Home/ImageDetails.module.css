@@ -1,0 +1,10 @@
+.image {
+  position: relative;
+  object-position: center center;
+  max-width: var(--maxWidthS);
+  min-width: var(--minWidthM);
+
+  @media (--mediaTablet) {
+    min-width: 100%;
+  }
+}

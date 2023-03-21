@@ -21,6 +21,7 @@ export const Text = ({
   return (
     <Component
       variants={variants}
+      viewport={{ once: true, amount: 0.25 }}
       className={classes(styles.text, className)}
       data-size={size}
       data-weight={weight}

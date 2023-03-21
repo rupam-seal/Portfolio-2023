@@ -24,7 +24,7 @@ export default Projects;
 
 export const FilteredProjects = ({ projectData, projectsLength }) => {
   const filteredProjectsLength = () =>
-    projectsLength <= 9 ? `0${projectData?.length}` : projectData?.length;
+    projectsLength <= 9 ? `0${projectsLength}` : projectsLength;
 
   return (
     <>

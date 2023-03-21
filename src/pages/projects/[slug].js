@@ -13,6 +13,8 @@ import { scaleVariant, textVariant } from '@/utils/motion';
 import { Buttons } from '@/layouts/Home/Project';
 import { Details, ProjectButtons } from '@/layouts/Home/ProjectDetails';
 import { RichText } from '@/components/RichText';
+import { ProjectsData } from '@/layouts/Home/ProjectsSummery';
+import { ImageDetails } from '@/layouts/Home/ImageDetails';
 
 const Project = () => {
   const router = useRouter();
@@ -20,66 +22,70 @@ const Project = () => {
   const { slug } = router.query;
 
   const projectData = projects[slug];
-  const totalProjects = projects.length;
 
   return (
     <>
       {projectData && (
         <Container className={styles.section} direction="column" align="center">
-          <Container className={styles.wrapper} direction="column">
-            <Container className={styles.content}>
-              <Image
-                src={projectData.image}
-                href={'/'}
-                variants={textVariant(0.4)}
-              />
-              <Container direction={'column'}>
-                <Details projectData={projectData} />
-                <ProjectButtons
-                  projectData={projectData}
-                  title1={'Source'}
-                  title2={'Live Site'}
-                  icon1={'Github'}
-                  icon2={'web'}
-                  href1={projectData.source}
-                  href2={projectData.live}
-                  target1="_blank"
-                  target2="_blank"
-                  animation1={'bounce'}
-                  animation2={'bounce'}
-                  disabled={projectData.live === '' ? true : false}
-                  tooltip={projectData.live === '' ? true : false}
-                  className={styles.projectButtons}
-                ></ProjectButtons>
-              </Container>
-              <Container
-                direction={'column'}
-                className={styles.list}
-                variants={textVariant(0.1)}
-              >
-                <Text className={styles.tools}>Tool Used</Text>
-                <List items={projectData.tags} />
-              </Container>
-              <Demo projectData={projectData} />
-              <RichText projectData={projectData} />
-            </Container>
-          </Container>
+          <Info projectData={projectData} />
+          <FeaturedImages projectData={projectData} />
+          <FeatureVideo projectData={projectData} />
         </Container>
       )}
     </>
   );
 };
 
-const Demo = ({ projectData }) => {
-  const { demo } = projectData;
+const Info = ({ projectData }) => {
+  const totalProjects = projects.length;
 
-  const imageLink = demo.filter((item) => item.image);
-  const videoLink = demo.filter((item) => item.video);
-  const desktopLink = demo.filter((item) => item.desktop);
-  const mobileLink = demo.filter((item) => item.mobile);
+  const { image, source, live, tags } = projectData;
+  return (
+    <Container className={styles.wrapper} direction="column">
+      <Container className={styles.info}>
+        <Image src={image} href={'/'} variants={textVariant(0.4)} />
+        <Container direction={'column'}>
+          <Details projectData={projectData} />
+          <ProjectButtons
+            projectData={projectData}
+            title1={'Source'}
+            title2={'Live Site'}
+            icon1={'Github'}
+            icon2={'web'}
+            href1={source}
+            href2={live}
+            target1="_blank"
+            target2="_blank"
+            animation1={'bounce'}
+            animation2={'bounce'}
+            disabled={live === '' ? true : false}
+            tooltip={live === '' ? true : false}
+          ></ProjectButtons>
+        </Container>
+        <Container
+          direction={'column'}
+          className={styles.list}
+          variants={textVariant(0.1)}
+        >
+          <Text className={styles.tools}>Tool Used</Text>
+          <List items={tags} />
+        </Container>
+        <RichText projectData={projectData} />
+      </Container>
+    </Container>
+  );
+};
+
+const FeaturedImages = ({ projectData }) => {
+  const { feature, video } = projectData;
+
+  const totalDemoItem = feature.length;
+
+  const filteredDemoItemsLength = () =>
+    totalDemoItem <= 9 ? `0${totalDemoItem}` : totalDemoItem;
 
   return (
-    <Container className={styles.demo} direction="column">
+    <Container className={styles.feature} direction="column">
       <Container align="center" direction={'column'}>
         <Heading level={1} weight="bold" variants={textVariant(0.3)}>
           FEATURED
@@ -88,20 +94,49 @@ const Demo = ({ projectData }) => {
           IMAGES
         </Heading>
       </Container>
-      <Container className={styles.imageContainer}>
-        {imageLink[0]?.image.map((item, index) => {
+      <Container
+        className={styles.featureItems}
+        align="center"
+        justify="center"
+      >
+        {feature.map((item, index) => {
           return (
-            <Image
+            <Section
               key={index}
-              src={item}
-              className={styles.image}
-              variants={textVariant(index / 10)}
-            />
+              className={styles.featureItem}
+              align="center"
+              justify="center"
+              direction={index % 2 === 0 ? 'reverse' : 'flex'}
+            >
+              <Container className={styles.featureDetails}>
+                <Details
+                  projectData={item}
+                  projectNo={index}
+                  totalProjects={filteredDemoItemsLength()}
+                />
+              </Container>
+              <Image
+                src={item.image}
+                className={styles.featureImage}
+                variants={textVariant(0.3)}
+              />
+            </Section>
           );
         })}
       </Container>
+    </Container>
+  );
+};
 
-      <Container align="center" direction={'column'}>
+const FeatureVideo = ({ projectData }) => {
+  const { video } = projectData;
+  return (
+    <div className={styles.featureVideo}>
+      <Container
+        align="center"
+        direction={'column'}
+        className={styles.videoHeader}
+      >
         <Heading level={1} weight="bold" variants={textVariant(0.3)}>
           WATCH VIDEO
         </Heading>
@@ -109,26 +144,14 @@ const Demo = ({ projectData }) => {
       <Container className={styles.iframeContainer} variants={textVariant(0.4)}>
         <iframe
           className={styles.iframe}
-          src={videoLink[0]?.video}
+          src={video}
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen
         ></iframe>
       </Container>
-    </Container>
+    </div>
   );
 };
 
 export default Project;
-
-{
-  /* <Heading level={5} className={styles.heading}>
-          In desktop devices
-        </Heading>
-        <Image src={desktopLink[0]?.desktop} />
-
-        <Heading level={5} className={styles.heading}>
-          In mobile devices
-        </Heading>
-        <Image src={mobileLink[0]?.mobile} /> */
-}

@@ -25,6 +25,7 @@ import { Icon } from '@/components/Icon';
 
 import ImageLayer from '@/components/ImageLayer/ImageLayer';
 import { ProjectDetails } from './ProjectDetails';
+import { ImageDetails } from './ImageDetails';
 
 export const Project = ({
   direction,
@@ -50,24 +51,6 @@ export const Project = ({
         totalProjects={totalProjects}
       />
     </Section>
-  );
-};
-
-export const ImageDetails = ({ path, image, year }) => {
-  return (
-    <Container variants={imageVariant()}>
-      <motion.div
-        id="image"
-        className={styles.image}
-        align="center"
-        justify="center"
-        initial="hidden"
-        whileHover="hover"
-      >
-        <ImageLayer year={year} link={path} />
-        <Image src={image} />
-      </motion.div>
-    </Container>
   );
 };
 

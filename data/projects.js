@@ -12,21 +12,27 @@ export const projects = [
     tags: ['Django', 'HTML', 'CSS'],
     year: '2023',
     category: 'android',
-    demo: [
+    feature: [
       {
-        image: [
-          '/assets/images/imo/demo1.png',
-          '/assets/images/imo/demo2.png',
-          '/assets/images/imo/demo3.png',
-        ],
+        id: 1,
+        title: 'upload',
+        image: '/assets/images/imo/demo1.png',
+        description:
+          'This project imo is a image classification website where user can upload images and it will classify images into their respective category',
+        status: '',
       },
-      // { desktop: '/desktop.png' },
-      // { mobile: '/mobile.png' },
+
       {
-        video:
-          'https://player.vimeo.com/video/809796150?h=70b4e85be8&badge=0&autopause=0&player_id=0&app_id=58479/embed',
+        id: 2,
+        title: 'upload',
+        image: '/assets/images/imo/demo2.png',
+        description:
+          'This project imo is a image classification website where user can upload images and it will classify images into their respective category',
+        status: '',
       },
     ],
+    video:
+      'https://player.vimeo.com/video/809796150?h=70b4e85be8&badge=0&autopause=0&player_id=0&app_id=58479/embed',
     info: [
       // { id: 'heading', content: 'Problem', level: '4' }
     ],
