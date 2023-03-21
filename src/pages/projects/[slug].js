@@ -43,7 +43,6 @@ const Info = ({ projectData }) => {
   return (
     <Container className={styles.wrapper} direction="column">
       <Container className={styles.info}>
-        <Image src={image} href={'/'} variants={textVariant(0.4)} />
         <Container direction={'column'}>
           <Details projectData={projectData} />
           <ProjectButtons
@@ -62,6 +61,9 @@ const Info = ({ projectData }) => {
             tooltip={live === '' ? true : false}
           ></ProjectButtons>
         </Container>
+
+        <Image src={image} href={'/'} variants={textVariant(0.4)} />
+
         <Container
           direction={'column'}
           className={styles.list}

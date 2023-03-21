@@ -34,7 +34,7 @@ export const Project = ({
   totalProjects = '05',
   projectNo,
 }) => {
-  const { id, image, year } = projectData;
+  const { id, thumbnail, year } = projectData;
   const path = `/projects/${id - 1}`;
 
   return (
@@ -44,7 +44,7 @@ export const Project = ({
       direction={direction}
       justify={'sb'}
     >
-      <ImageDetails path={path} image={image} year={year} />
+      <ImageDetails path={path} image={thumbnail} year={year} />
       <ProjectDetails
         projectData={projectData}
         projectNo={projectNo}

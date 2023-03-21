@@ -14,10 +14,14 @@ import { Container } from '../Container';
 import { Icon } from '../Icon';
 import Link from 'next/link';
 
-const ImageLayer = ({ year, link }) => {
+const ImageLayer = ({ year, link, rounded }) => {
   return (
     <>
-      <motion.div className={styles.layer} variants={opacityVariants} />
+      <motion.div
+        className={styles.layer}
+        variants={opacityVariants}
+        data-round={rounded}
+      />
 
       <motion.div className={styles.year} variants={yearVariants}>
         <Heading level={4} weight="Bold" className={styles.text}>

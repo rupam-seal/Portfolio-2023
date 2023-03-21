@@ -10,6 +10,6 @@
     scale: 1.02;
   } */
   &[data-round='true'] {
-    border-radius: var(--borderRadius4);
+    border-radius: var(--borderRadius2);
   }
 }

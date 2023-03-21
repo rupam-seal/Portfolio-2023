@@ -17,8 +17,12 @@ export const ImageDetails = ({ path, image, year, imageLayer = true }) => {
         initial="hidden"
         whileHover="hover"
       >
-        {imageLayer === true ? <ImageLayer year={year} link={path} /> : ''}
-        <Image src={image} />
+        {imageLayer === true ? (
+          <ImageLayer rounded={true} year={year} link={path} />
+        ) : (
+          ''
+        )}
+        <Image src={image} rounded={true} />
       </motion.div>
     </Container>
   );
