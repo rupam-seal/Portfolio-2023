@@ -32,10 +32,10 @@ export const ProjectsSummery = memo(({ visible, sectionRef }) => {
 export const Title = () => {
   return (
     <Container align="center" direction={'column'}>
-      <Heading level={1} weight="bold" variants={textVariant(0.3)}>
+      <Heading level={1} weight="Bold" variants={textVariant(0.3)}>
         FEATURED
       </Heading>
-      <Heading level={1} weight="bold" variants={textVariant(0.1)}>
+      <Heading level={1} weight="Bold" variants={textVariant(0.1)}>
         WORKS
       </Heading>
     </Container>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 import styles from './ImageDetails.module.css';
 
-export const ImageDetails = ({ path, image, year, imageLayer }) => {
+export const ImageDetails = ({ path, image, year, imageLayer = true }) => {
   return (
     <Container variants={imageVariant()}>
       <motion.div
@@ -17,7 +17,7 @@ export const ImageDetails = ({ path, image, year, imageLayer }) => {
         initial="hidden"
         whileHover="hover"
       >
-        {imageLayer ? <ImageLayer year={year} link={path} /> : ''}
+        {imageLayer === true ? <ImageLayer year={year} link={path} /> : ''}
         <Image src={image} />
       </motion.div>
     </Container>

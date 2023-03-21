@@ -1,5 +1,5 @@
 .section {
-  gap: var(--space4XL);
+  gap: var(--space5XL);
 
   @media (--mediaTablet) {
     flex-direction: column;

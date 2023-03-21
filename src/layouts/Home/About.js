@@ -26,16 +26,17 @@ export const About = memo(({ visible, sectionRef }) => {
       {visible && (
         <>
           <Container>
-            <Heading level={1} weight="bold" variants={textVariant(0.1)}>
+            <Heading level={1} weight="Bold" variants={textVariant(0.1)}>
               ABOUT ME
             </Heading>
           </Container>
           <Section className={styles.content}>
             <Container className={styles.image} align="center" justify="center">
               <Image
-                src={'./profile.jpg'}
+                src={'/assets/images/profile.jpg'}
                 href="/"
-                variants={imageVariant('-')}
+                variants={imageVariant('0.4')}
+                rounded={true}
               />
             </Container>
             <Container

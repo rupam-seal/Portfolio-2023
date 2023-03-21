@@ -39,7 +39,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: '/assets/images/desktop-main.png',
+    image: '/assets/images/imo/demo2.png',
     source: '',
     live: '',
     title: 'Slingshot Shooting Game ',
@@ -51,7 +51,7 @@ export const projects = [
   },
   {
     id: 3,
-    image: '/assets/images/desktop-main.png',
+    image: '/assets/images/imo/demo2.png',
     source: '',
     live: '',
     title: 'RepTok',
@@ -63,7 +63,7 @@ export const projects = [
   },
   {
     id: 4,
-    image: '/assets/images/desktop-main.png',
+    image: '/assets/images/imo/demo2.png',
     source: '',
     live: 'https://cointra.netlify.com',
     title: 'Cointra',
