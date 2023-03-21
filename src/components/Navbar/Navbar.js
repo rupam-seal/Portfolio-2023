@@ -31,10 +31,10 @@ export const Navbar = () => {
   const { status: theme, toggleStatus: toggleTheme } = useToggle();
 
   useEffect(() => {
-    document.body.classList.add(lightTheme);
+    document.body.classList.add(darkTheme);
     theme
-      ? document.body.classList.replace(lightTheme, darkTheme)
-      : document.body.classList.replace(darkTheme, lightTheme);
+      ? document.body.classList.replace(darkTheme, lightTheme)
+      : document.body.classList.replace(lightTheme, darkTheme);
   }, [theme]);
 
   return (

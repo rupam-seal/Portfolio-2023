@@ -1,5 +1,4 @@
 .section {
-  margin-top: var(--space6XL);
   gap: var(--space4XL);
 
   @media (--mediaTablet) {
@@ -15,6 +14,7 @@
 
 .image {
   position: relative;
+  object-position: center center;
   max-width: var(--maxWidthS);
   min-width: var(--minWidthM);
 

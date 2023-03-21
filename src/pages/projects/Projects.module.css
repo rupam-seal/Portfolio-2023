@@ -1,1 +1,3 @@
-
+.section {
+  gap: var(--space6XL);
+}

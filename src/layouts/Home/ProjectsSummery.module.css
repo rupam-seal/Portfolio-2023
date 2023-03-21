@@ -1,3 +1,4 @@
 .section {
   margin-top: var(--space6XL);
+  gap: var(--space6XL);
 }

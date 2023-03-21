@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    image: '/Imo.webp',
+    image: '/assets/images/imo/main.png',
     source: 'https://github.com/rupam-seal/imo',
     live: '',
     title: 'Imo',
@@ -12,10 +12,28 @@ export const projects = [
     tags: ['Django', 'HTML', 'CSS'],
     year: '2023',
     category: 'android',
+    demo: [
+      {
+        image: [
+          '/assets/images/imo/demo1.png',
+          '/assets/images/imo/demo2.png',
+          '/assets/images/imo/demo3.png',
+        ],
+      },
+      // { desktop: '/desktop.png' },
+      // { mobile: '/mobile.png' },
+      {
+        video:
+          'https://player.vimeo.com/video/809796150?h=70b4e85be8&badge=0&autopause=0&player_id=0&app_id=58479/embed',
+      },
+    ],
+    info: [
+      // { id: 'heading', content: 'Problem', level: '4' }
+    ],
   },
   {
     id: 2,
-    image: '/Tsks.webp',
+    image: '/assets/images/desktop-main.png',
     source: '',
     live: '',
     title: 'Slingshot Shooting Game ',
@@ -27,7 +45,7 @@ export const projects = [
   },
   {
     id: 3,
-    image: '/RepTok.webp',
+    image: '/assets/images/desktop-main.png',
     source: '',
     live: '',
     title: 'RepTok',
@@ -39,7 +57,7 @@ export const projects = [
   },
   {
     id: 4,
-    image: '/Cointra.webp',
+    image: '/assets/images/desktop-main.png',
     source: '',
     live: 'https://cointra.netlify.com',
     title: 'Cointra',

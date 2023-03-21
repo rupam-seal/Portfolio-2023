@@ -6,7 +6,7 @@ import styles from './Image.module.css';
 
 import { motion } from 'framer-motion';
 
-export const Image = ({ as, src, className, href, variants }) => {
+export const Image = ({ as, src, className, href, variants, rounded }) => {
   const defaultComponent = href ? Link : 'div';
   const Component = as || defaultComponent;
 
@@ -24,6 +24,7 @@ export const Image = ({ as, src, className, href, variants }) => {
       <img
         loading="lazy"
         className={styles.image}
+        data-round={rounded}
         src={src}
         alt={''}
         placeholder={'/placeholder.jpg'}

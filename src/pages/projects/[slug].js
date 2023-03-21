@@ -12,6 +12,7 @@ import { projects } from '../../../data/projects';
 import { scaleVariant, textVariant } from '@/utils/motion';
 import { Buttons } from '@/layouts/Home/Project';
 import { Details, ProjectButtons } from '@/layouts/Home/ProjectDetails';
+import { RichText } from '@/components/RichText';
 
 const Project = () => {
   const router = useRouter();
@@ -26,7 +27,12 @@ const Project = () => {
       {projectData && (
         <Container className={styles.section} direction="column" align="center">
           <Container className={styles.wrapper} direction="column">
-            <Container className={styles.content} justify="sb">
+            <Container className={styles.content}>
+              <Image
+                src={projectData.image}
+                href={'/'}
+                variants={textVariant(0.4)}
+              />
               <Container direction={'column'}>
                 <Details projectData={projectData} />
                 <ProjectButtons
@@ -54,14 +60,8 @@ const Project = () => {
                 <Text className={styles.tools}>Tool Used</Text>
                 <List items={projectData.tags} />
               </Container>
-            </Container>
-            <Container animate="show">
-              <Image
-                className={styles.image}
-                src={projectData.image}
-                href={'/'}
-                variants={textVariant(0.4)}
-              />
+              <Demo projectData={projectData} />
+              <RichText projectData={projectData} />
             </Container>
           </Container>
         </Container>
@@ -70,4 +70,65 @@ const Project = () => {
   );
 };
 
+const Demo = ({ projectData }) => {
+  const { demo } = projectData;
+
+  const imageLink = demo.filter((item) => item.image);
+  const videoLink = demo.filter((item) => item.video);
+  const desktopLink = demo.filter((item) => item.desktop);
+  const mobileLink = demo.filter((item) => item.mobile);
+
+  return (
+    <Container className={styles.demo} direction="column">
+      <Container align="center" direction={'column'}>
+        <Heading level={1} weight="bold" variants={textVariant(0.3)}>
+          FEATURED
+        </Heading>
+        <Heading level={1} weight="bold" variants={textVariant(0.1)}>
+          IMAGES
+        </Heading>
+      </Container>
+      <Container className={styles.imageContainer}>
+        {imageLink[0]?.image.map((item, index) => {
+          return (
+            <Image
+              key={index}
+              src={item}
+              className={styles.image}
+              variants={textVariant(index / 10)}
+            />
+          );
+        })}
+      </Container>
+
+      <Container align="center" direction={'column'}>
+        <Heading level={1} weight="bold" variants={textVariant(0.3)}>
+          WATCH VIDEO
+        </Heading>
+      </Container>
+      <Container className={styles.iframeContainer} variants={textVariant(0.4)}>
+        <iframe
+          className={styles.iframe}
+          src={videoLink[0]?.video}
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </Container>
+    </Container>
+  );
+};
+
 export default Project;
+
+{
+  /* <Heading level={5} className={styles.heading}>
+          In desktop devices
+        </Heading>
+        <Image src={desktopLink[0]?.desktop} />
+
+        <Heading level={5} className={styles.heading}>
+          In mobile devices
+        </Heading>
+        <Image src={mobileLink[0]?.mobile} /> */
+}

@@ -43,7 +43,7 @@ export const Details = ({ projectData, projectNo, totalProjects }) => {
   const { id, title, description, status } = projectData;
 
   return (
-    <>
+    <Container className={styles.details} direction="column">
       {totalProjects && (
         <Text
           weight="Bold"
@@ -74,7 +74,7 @@ export const Details = ({ projectData, projectNo, totalProjects }) => {
       <Text className={styles.status} variants={textVariant(0.2)}>
         {status}
       </Text>
-    </>
+    </Container>
   );
 };
 
