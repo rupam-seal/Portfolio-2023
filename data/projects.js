@@ -40,8 +40,7 @@ export const projects = [
         status: '',
       },
     ],
-    video:
-      'https://player.vimeo.com/video/809796150?h=70b4e85be8&badge=0&autopause=0&player_id=0&app_id=58479/embed',
+    video: 'https://www.youtube.com/embed/w7nT0l8yMFk',
   },
 
   {
@@ -86,7 +85,7 @@ export const projects = [
         status: '',
       },
     ],
-    video: 'https://player.vimeo.com/video/810285625?h=63203440a8',
+    video: 'https://www.youtube.com/embed/xHz6DkeAF44',
   },
 
   {
@@ -106,27 +105,25 @@ export const projects = [
       {
         id: 1,
         title: 'Main page',
-        image: '/assets/images/cointra/demo1.png',
+        image: '/assets/images/threed/thumbnail.png',
         description:
-          'View all the crypto state directly on the main page and also user can search for a specific Coin',
+          'Currently this website have only one page. In the future i am thinking to add more features and pages.',
         status: '',
       },
-
       {
-        id: 2,
-        title: 'Single Coin page',
-        image: '/assets/images/cointra/demo2.png',
+        id: 1,
+        title: 'Rotation of Propeller',
+        gif: '/assets/images/threed/fly.gif',
         description:
-          'Single coin page with price change percentage, market cap value, volume, and historical chart. For fetching historical data it uses Axios',
+          'If any user hover on drone glb model propeller rotation start.',
         status: '',
       },
-
       {
-        id: 3,
-        title: 'Pagination',
-        image: '/assets/images/cointra/demo3.png',
+        id: 1,
+        title: 'Change color',
+        gif: '/assets/images/threed/color.gif',
         description:
-          'For navigating between pages. This component created using material ui.  ',
+          'Click button to change drone color blue, red, yellow, green',
         status: '',
       },
     ],

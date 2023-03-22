@@ -62,7 +62,12 @@ const Info = ({ projectData }) => {
           ></ProjectButtons>
         </Container>
 
-        <Image src={image} href={'/'} variants={textVariant(0.4)} />
+        <Image
+          className={styles.image}
+          src={image}
+          href={'/'}
+          variants={textVariant(0.4)}
+        />
 
         <Container
           direction={'column'}
@@ -117,11 +122,31 @@ const FeaturedImages = ({ projectData }) => {
                   totalProjects={filteredDemoItemsLength()}
                 />
               </Container>
-              <Image
-                src={item.image}
-                className={styles.featureImage}
-                variants={textVariant(0.3)}
-              />
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  className={styles.featureImage}
+                  variants={textVariant(0.3)}
+                />
+              ) : (
+                ''
+              )}
+
+              {item.gif ? (
+                <div className={styles.featureGifContainer}>
+                  <Image
+                    src={projectData.image}
+                    className={styles.featureGifImage}
+                  />
+                  <Image
+                    src={item.gif}
+                    className={styles.featureGif}
+                    variants={textVariant(0.3)}
+                  />
+                </div>
+              ) : (
+                ''
+              )}
             </Section>
           );
         })}

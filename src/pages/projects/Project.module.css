@@ -6,6 +6,10 @@
 
 .wrapper {
   max-width: var(--maxWidthM);
+
+  @media (--mediaTablet) {
+    width: 100%;
+  }
 }
 
 .info {
@@ -69,18 +73,39 @@
   }
 }
 
+.featureGifImage {
+  opacity: 0;
+  height: 0;
+  max-width: var(--maxWidthS);
+  min-width: var(--minWidthM);
+
+  @media (--mediaTablet) {
+    min-width: 100%;
+  }
+}
+
+.featureGif {
+  width: 100%;
+  height: 100%;
+}
+
 .videoHeader,
 .featureVideo {
   width: 100%;
-  margin-bottom: var(--spaceS);
+  margin-bottom: var(--space3XL);
 
   @media (--mediaTablet) {
     margin-bottom: var(--space4XL);
   }
 }
 
+.featureVideo {
+  max-width: var(--maxWidthM);
+}
+
 .iframeContainer {
   padding-bottom: 56.25%; /* 16:9 */
+  width: 100%;
   height: 0;
   position: relative;
 }
@@ -95,5 +120,4 @@
   height: 100%;
   overflow: auto;
   margin: auto;
-  max-width: var(--maxWidthM);
 }
