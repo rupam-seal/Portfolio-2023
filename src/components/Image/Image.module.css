@@ -4,7 +4,8 @@
 }
 
 .image {
-  width: 100%;
+  width: var(--maxWidthS);
+  height: var(--maxWidthS);
   transition: scale var(--durationS) var(--bezierFastoutSlowin);
   /* &:hover {
     scale: 1.02;
