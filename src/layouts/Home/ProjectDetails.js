@@ -48,7 +48,7 @@ export const Details = ({ projectData, projectNo, totalProjects }) => {
         <Text
           weight="Bold"
           className={styles.projectNo}
-          variants={textVariant(0.05)}
+          variants={textVariant(0.1)}
           secondary
         >
           0{PROJECT_NO}/{totalProjects}
@@ -58,12 +58,12 @@ export const Details = ({ projectData, projectNo, totalProjects }) => {
         level={3}
         className={styles.title}
         weight="medium"
-        variants={textVariant(0)}
+        variants={textVariant(0.15)}
       >
         {title}
       </Heading>
       <Text
-        variants={textVariant(0.1)}
+        variants={textVariant(0.2)}
         className={styles.description}
         secondary
         weight="regular"
@@ -71,7 +71,7 @@ export const Details = ({ projectData, projectNo, totalProjects }) => {
       >
         {description}
       </Text>
-      <Text className={styles.status} variants={textVariant(0.2)}>
+      <Text className={styles.status} variants={textVariant(0.25)}>
         {status}
       </Text>
     </Container>
@@ -101,7 +101,7 @@ export const ProjectButtons = ({
         icon={icon1}
         href={href1}
         size="m"
-        variants={textVariant(0.1)}
+        variants={textVariant(0.25)}
         animation={animation1}
       >
         {title1}
@@ -114,7 +114,7 @@ export const ProjectButtons = ({
           size="m"
           className={styles.button}
           disabled={disabled}
-          variants={textVariant(0.1)}
+          variants={textVariant(0.35)}
           animation={animation2}
         >
           {tooltip ? (
