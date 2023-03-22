@@ -1,11 +1,11 @@
 export const projects = [
   {
     id: 1,
+    title: 'Imo',
     thumbnail: '/assets/images/imo/thumbnail.png',
     image: '/assets/images/imo/thumbnail.png',
     source: 'https://github.com/rupam-seal/imo',
     live: '',
-    title: 'Imo',
     status:
       'Future plans: Add some features like image details and share the image with others options and more.',
     description:
@@ -45,11 +45,11 @@ export const projects = [
 
   {
     id: 2,
+    title: 'Cointra',
     thumbnail: '/assets/images/cointra/thumbnail.png',
     image: '/assets/images/cointra/thumbnail.png',
     source: 'https://github.com/rupam-seal/CoinTra',
     live: 'https://cointra.netlify.app/',
-    title: 'Cointra',
     status:
       'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
     description:
@@ -90,11 +90,11 @@ export const projects = [
 
   {
     id: 3,
+    title: 'ThreeD',
     thumbnail: '/assets/images/threed/thumbnail.png',
     image: '/assets/images/threed/thumbnail.png',
     source: 'https://github.com/rupam-seal/drone-website',
-    live: 'threedrone.netlify.app/',
-    title: 'ThreeD',
+    live: 'https://threedrone.netlify.app/',
     status:
       'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
     description: 'A drone website landing page using React and Three.js',
@@ -128,6 +128,48 @@ export const projects = [
       },
     ],
     video: 'https://www.youtube.com/embed/NCiPE6CgJy8',
+  },
+
+  {
+    id: 4,
+    title: 'Card Printing',
+    thumbnail: '/assets/images/cardprinting/thumbnail.png',
+    image: '/assets/images/cardprinting/thumbnail.png',
+    source: 'https://github.com/rupam-seal/CardPrinting',
+    live: '',
+    status:
+      'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
+    description: 'A drone website landing page using React and Three.js',
+    tags: ['Python', 'Three.js'],
+    year: '2023',
+    category: 'desktop',
+    feature: [
+      {
+        id: 1,
+        title: 'Login Page',
+        image: '/assets/images/cardprinting/login.png',
+        description:
+          'User can login from this page and after login user is redirected to home page',
+        status: '',
+      },
+      {
+        id: 2,
+        title: 'Home Page',
+        image: '/assets/images/cardprinting/main.png',
+        description:
+          'User can enter value and after click on print software will print hardcopy of the card with printer.',
+        status: '',
+      },
+      {
+        id: 3,
+        title: 'Print page',
+        image: '/assets/images/cardprinting/print.png',
+        description:
+          'After clicking on print button it will generate a new card from above information.',
+        status: '',
+      },
+    ],
+    video: 'https://www.youtube.com/embed/CnM-VT5AU4Y',
   },
 ];
 
