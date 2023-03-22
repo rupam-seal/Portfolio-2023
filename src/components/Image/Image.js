@@ -6,6 +6,8 @@ import styles from './Image.module.css';
 
 import { motion } from 'framer-motion';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 export const Image = ({ as, src, className, href, variants, rounded }) => {
   const defaultComponent = href ? Link : 'div';
   const Component = as || defaultComponent;
@@ -21,13 +23,12 @@ export const Image = ({ as, src, className, href, variants, rounded }) => {
       className={(classes(styles.container), className)}
       href={href}
     >
-      <img
-        loading="lazy"
+      <LazyLoadImage
+        effect="blur"
         className={styles.image}
         data-round={rounded}
         src={src}
         alt={''}
-        placeholder={'/placeholder.jpg'}
       />
     </MotionComponent>
   );
