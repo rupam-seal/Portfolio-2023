@@ -92,13 +92,13 @@ export const projects = [
     id: 3,
     thumbnail: '/assets/images/threed/thumbnail.png',
     image: '/assets/images/threed/thumbnail.png',
-    source: 'https://github.com/rupam-seal/CoinTra',
-    live: 'https://cointra.netlify.app/',
+    source: 'https://github.com/rupam-seal/drone-website',
+    live: 'threedrone.netlify.app/',
     title: 'ThreeD',
     status:
       'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
     description: 'A drone website landing page using React and Three.js',
-    tags: ['React.js', 'JavaScript', 'HTML', 'CSS'],
+    tags: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'HTML', 'CSS'],
     year: '2023',
     category: 'web',
     feature: [
@@ -127,7 +127,7 @@ export const projects = [
         status: '',
       },
     ],
-    video: 'https://player.vimeo.com/video/810285625?h=63203440a8',
+    video: 'https://www.youtube.com/embed/NCiPE6CgJy8',
   },
 ];
 
