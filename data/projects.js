@@ -208,6 +208,47 @@ export const projects = [
         ],
         video: 'https://www.youtube.com/embed/CnM-VT5AU4Y',
     },
+
+    {
+        id: 6,
+        title: 'Orbit',
+        thumbnail: '/assets/images/orbit/thumbnail.png',
+        image: '/assets/images/orbit/thumbnail.png',
+        source: 'https://github.com/rupam-seal/portfolio-2022.git',
+        live: '',
+        status: 'Need to update code, refractor complete project and improve performance.',
+        description: 'Portfolio website made with reactjs',
+        tags: ['Python', 'Three.js'],
+        year: '2023',
+        category: 'android',
+        feature: [
+            {
+                id: 1,
+                title: 'Login Page',
+                image: '/assets/images/cardprinting/login.png',
+                description:
+                    'User can login from this page and after login user is redirected to home page',
+                status: '',
+            },
+            {
+                id: 2,
+                title: 'Home Page',
+                image: '/assets/images/cardprinting/main.png',
+                description:
+                    'User can enter value and after click on print software will print hardcopy of the card with printer.',
+                status: '',
+            },
+            {
+                id: 3,
+                title: 'Print page',
+                image: '/assets/images/cardprinting/print.png',
+                description:
+                    'After clicking on print button it will generate a new card from above information.',
+                status: '',
+            },
+        ],
+        video: 'https://www.youtube.com/embed/CnM-VT5AU4Y',
+    },
 ];
 
 // info: [
