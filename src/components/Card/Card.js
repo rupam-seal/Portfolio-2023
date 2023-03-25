@@ -17,7 +17,7 @@ import { Text } from '../Text';
  * @returns {Component} The Card component.
  */
 
-export const Card = ({ title, items, className }) => {
+export const Card = ({ title = '', items = [], className }) => {
   return (
     <Container className={styles.card} direction="column" align="center">
       <Heading level={5} weight="Bold" variants={textVariant(0.1)}>

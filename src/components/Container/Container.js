@@ -26,7 +26,7 @@ export const Container = ({
   show,
   className,
   children,
-  direction,
+  direction = 'row',
   align = 'auto',
   justify = 'auto',
   variants,

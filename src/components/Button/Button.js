@@ -51,7 +51,7 @@ export const Button = ({
         data-size={size}
         data-align={align}
         href={href}
-        data-disabled={disabled}
+        aria-disabled={disabled}
         data-animation={animation}
         {...rest}
       >
