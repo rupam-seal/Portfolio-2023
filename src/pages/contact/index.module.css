@@ -9,7 +9,7 @@
   }
 
   @media (--mediaMobile) {
-    margin-top: calc(var(--space6XL) + var(--space6XL));
+    margin-top: calc(var(--space6XL) + var(--space2XL));
   }
 }
 
@@ -23,10 +23,6 @@
 
   &:hover {
     box-shadow: var(--shadowColor3);
-  }
-
-  @media (--mediaMobileS) {
-    flex-direction: column;
   }
 }
 
