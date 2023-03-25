@@ -6,6 +6,17 @@ import styles from './Blob.module.css';
 
 import { useMobileSize } from '@/hooks/useMobileSize';
 
+/**
+ * Blob Component.
+ * Renders a blob SVG animation using the '@splinetool/react-spline' library.
+ *
+ * @param {String} device - The device type ('desktop', 'mobile', etc.).
+ * @param {String} className - The CSS class name for the component.
+ * @param {Component} as - The HTML element type for the component.
+ * @param {Object} rest - The remaining props to be passed to the component.
+ * @returns {Component} The Blob component.
+ */
+
 export const Blob = ({
   device = 'desktop',
   className,
