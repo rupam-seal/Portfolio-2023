@@ -14,4 +14,8 @@
   &[data-type='white'] {
     color: var(--rgbBlack);
   }
+
+  &[data-type='body'] {
+    color: var(--rgbPrimary);
+  }
 }

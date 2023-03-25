@@ -220,6 +220,7 @@ body.dark {
   --colorTextExtraLight: rgb(255, 255, 255, 0.1);
   --shadowColor: rgba(25, 25, 25, 0.1);
   --shadowColor2: rgba(255, 255, 255, 0.05) 0px 0px 0px 1px;
+  --shadowColor3: rgba(234, 76, 137, 0.2) 0px 0px 0px 1px;
 }
 
 body.light {
@@ -238,4 +239,5 @@ body.light {
   --colorTextExtraLight: rgb(0, 0, 0, 0.1);
   --shadowColor: rgba(0, 0, 0, 0.09);
   --shadowColor2: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  --shadowColor3: rgba(234, 76, 137, 0.2) 0px 0px 0px 1px;
 }
