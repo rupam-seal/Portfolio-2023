@@ -32,8 +32,7 @@ const index = () => {
                     As a self-taught developer with a strong passion for
                     software development, I have developed a solid foundation in
                     various programming languages, frameworks, and technologies
-                    over the years. I am confident that I have the skills and
-                    expertise to make a valuable contribution to your team.
+                    over the years.
                 </Text>
                 <Text
                     align="center"
@@ -61,8 +60,6 @@ const index = () => {
                     quickly. I am passionate about creating engaging and
                     functional web experiences and am committed to staying
                     up-to-date with the latest industry trends and technologies.
-                    I have strong attention to detail and take pride in writing
-                    clean and efficient code.
                 </Text>
                 <Text
                     align="center"
