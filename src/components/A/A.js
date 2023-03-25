@@ -9,6 +9,20 @@ import { useRouter } from 'next/router';
 import { Icon } from '../Icon';
 import { Container } from '../Container';
 
+/**
+ * A Component.
+ * Renders a hyperlink or navigation link with optional icon using Next.js Link and the 'react-icons' library.
+ *
+ * @param {Boolean} nav - Whether the link is for navigation purposes.
+ * @param {String} className - The CSS class name for the component.
+ * @param {String} children - The content to render inside the component.
+ * @param {String} link - The URL to link to.
+ * @param {Boolean} secondary - Whether the link should be styled as secondary text.
+ * @param {IconType} icon - The name of the icon to display next to the link.
+ * @param {String} type - The type of link, used as a data attribute.
+ * @returns {Component} The A component.
+ */
+
 export const A = ({
   nav = false,
   className,
