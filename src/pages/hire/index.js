@@ -21,7 +21,7 @@ const index = () => {
                     className={styles.title}
                     variants={textVariant(0.1)}
                 >
-                    I am looking for web developement job
+                    I am looking for a Web Development job.
                 </Heading>
                 <Text
                     align="center"
