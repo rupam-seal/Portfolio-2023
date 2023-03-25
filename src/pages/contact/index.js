@@ -52,7 +52,7 @@ export const SocialItem = ({ icon, link }) => {
     <>
       {social.map((item, index) => {
         return (
-          <Link href={item.link} target="_blank">
+          <Link href={item.link} target="_blank" key={index}>
             <Container
               className={styles.social}
               align="center"

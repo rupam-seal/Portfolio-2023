@@ -58,11 +58,12 @@ export const About = memo(({ visible, sectionRef }) => {
                 secondary
                 variants={textVariant(0.3)}
               >
-                I'm a self-taught android and web developer with a passion for
-                coding and creating engaging web experiences. I started learning
-                to code when I was a teenager. I've taught myself various
-                programming languages, frameworks, and technologies, and I have
-                hands-on experience in both <A link={'/projects'}>front-end</A>{' '}
+                I&lsquo;m a self-taught android and web developer with a passion
+                for coding and creating engaging web experiences. I started
+                learning to code when I was a teenager. I&lsquo;ve taught myself
+                various programming languages, frameworks, and technologies, and
+                I have hands-on experience in both{' '}
+                <A link={'/projects'}>front-end</A>
                 and <A link={'/projects'}>back-end</A> development and
                 deployment.
               </Text>
@@ -72,10 +73,10 @@ export const About = memo(({ visible, sectionRef }) => {
                 secondary
                 variants={textVariant(0.3)}
               >
-                I'm a fast learner and a problem-solver, always looking for
-                innovative solutions to complex problems. I love what I do and
-                am excited about the endless possibilities for innovation and
-                creativity in software development.
+                I&lsquo;m a fast learner and a problem-solver, always looking
+                for innovative solutions to complex problems. I love what I do
+                and am excited about the endless possibilities for innovation
+                and creativity in software development.
               </Text>
               <Button
                 variants={textVariant(0.35)}
