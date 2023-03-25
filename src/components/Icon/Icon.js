@@ -2,6 +2,13 @@ import styles from './Icon.module.css';
 import { classes } from '@/utils/styles';
 
 /**
+ * ICON COMPONENT
+ * This component is used to render icons from various icon libraries
+ * using the icons object.
+ * The icons object maps icon names to their corresponding components.
+ **/
+
+/**
  * LANGUAGE
  **/
 import { FaPython } from 'react-icons/fa';

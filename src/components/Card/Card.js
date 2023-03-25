@@ -7,6 +7,16 @@ import { Heading } from '../Heading';
 import { Icon } from '../Icon';
 import { Text } from '../Text';
 
+/**
+ * Card Component.
+ * Renders a card with a title and a list of items.
+ *
+ * @param {String} title - The title for the card.
+ * @param {Array} items - The list of items to be displayed in the card.
+ * @param {String} className - The CSS class name for the component.
+ * @returns {Component} The Card component.
+ */
+
 export const Card = ({ title, items, className }) => {
   return (
     <Container className={styles.card} direction="column" align="center">

@@ -8,6 +8,19 @@ import { motion } from 'framer-motion';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+/**
+ * Image Component.
+ * Renders an image using the 'react-lazy-load-image-component' and 'framer-motion' libraries.
+ *
+ * @param {Component} as - The HTML element type for the component.
+ * @param {String} src - The image source URL.
+ * @param {String} className - The CSS class name for the component.
+ * @param {String} href - The URL for the link, if the image should be clickable.
+ * @param {Object} variants - The animation variants for the motion component.
+ * @param {Boolean} rounded - Whether the image should have rounded corners.
+ * @returns {Component} The Image component.
+ */
+
 export const Image = ({ as, src, className, href, variants, rounded }) => {
   const defaultComponent = href ? Link : 'div';
   const Component = as || defaultComponent;

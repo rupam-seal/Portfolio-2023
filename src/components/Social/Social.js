@@ -6,6 +6,15 @@ import { Heading } from '../Heading';
 import { Icon } from '../Icon';
 import styles from './Social.module.css';
 
+/**
+ * Social Component.
+ * Renders social media icons with links to profiles.
+ *
+ * @param {Number} level - The heading level for the icons.
+ * @param {String} className - The CSS class name for the component.
+ * @returns {Component} The Social component.
+ */
+
 export const Social = ({ level, className }) => {
   return (
     <Container className={classes(styles.container, className)}>

@@ -14,6 +14,16 @@ import { Container } from '../Container';
 import { Icon } from '../Icon';
 import Link from 'next/link';
 
+/**
+ * ImageLayer Component.
+ * Displays a layer with an year and an arrow icon linking to a given URL.
+ *
+ * @param {String} year - The year to be displayed.
+ * @param {String} link - The URL the arrow icon should link to.
+ * @param {Boolean} rounded - Whether the layer should have rounded corners.
+ * @returns {Component} The ImageLayer component.
+ */
+
 const ImageLayer = ({ year, link, rounded }) => {
   return (
     <>
