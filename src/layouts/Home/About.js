@@ -63,9 +63,8 @@ export const About = memo(({ visible, sectionRef }) => {
                 learning to code when I was a teenager. I&lsquo;ve taught myself
                 various programming languages, frameworks, and technologies, and
                 I have hands-on experience in both{' '}
-                <A link={'/projects'}>front-end</A>
-                and <A link={'/projects'}>back-end</A> development and
-                deployment.
+                <A link={'/projects'}>front-end</A> and{' '}
+                <A link={'/projects'}>back-end</A> development and deployment.
               </Text>
               <Text
                 size="m"
