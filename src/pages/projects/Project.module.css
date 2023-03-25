@@ -1,7 +1,11 @@
 .section {
-  margin-top: var(--space6XL);
+  margin-top: calc(var(--space5XL) + var(--spaceXL));
   margin-left: var(--spaceOuter);
   margin-right: var(--spaceOuter);
+
+  @media (--mediaTablet) {
+    margin-top: var(--space6XL);
+  }
 }
 
 .wrapper {

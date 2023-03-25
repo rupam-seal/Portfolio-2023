@@ -1,5 +1,6 @@
 import { A } from '@/components/A';
 import { Container } from '@/components/Container';
+import { Footer } from '@/components/Footer';
 import { Heading } from '@/components/Heading';
 import { Icon } from '@/components/Icon';
 import { Section } from '@/components/Section';
@@ -17,21 +18,30 @@ const index = () => {
 
   return (
     <Section
+      fullscreen={true}
+      justify="sb"
       align="center"
-      justify="center"
       direction="column"
-      className={styles.section}
+      className={styles.contact}
     >
-      <Heading level={3}>Contact me</Heading>
-      <Container direction="column">
-        <TextItem icon="phone">+91 9395212761</TextItem>
-        <TextItem icon="email" handleClick={handleClick}>
-          rupam.x.seal@gmail.com
-        </TextItem>
-      </Container>
-      <Container className={styles.socialContainer}>
-        <SocialItem />
-      </Container>
+      <Section
+        className={styles.section}
+        align="center"
+        justify="center"
+        direction="column"
+      >
+        <Heading level={3}>Contact me</Heading>
+        <Container direction="column">
+          <TextItem icon="phone">+91 9395212761</TextItem>
+          <TextItem icon="email" handleClick={handleClick}>
+            rupam.x.seal@gmail.com
+          </TextItem>
+        </Container>
+        <Container className={styles.socialContainer}>
+          <SocialItem />
+        </Container>
+      </Section>
+      <Footer />
     </Section>
   );
 };
@@ -39,10 +49,12 @@ const index = () => {
 export const TextItem = ({ icon, children, handleClick }) => {
   return (
     <Container className={styles.container} onClick={handleClick}>
-      <Text className={styles.icon}>
+      <Text className={styles.icon} size="m">
         <Icon icon={icon} type="body" />
       </Text>
-      <Text className={styles.text}>{children}</Text>
+      <Text className={styles.text} size="m">
+        {children}
+      </Text>
     </Container>
   );
 };

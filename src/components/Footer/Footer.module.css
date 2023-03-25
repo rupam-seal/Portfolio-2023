@@ -1,8 +1,8 @@
 .footer {
-  margin: var(--space3XL) var(--space3XL);
+  padding: var(--space3XL) var(--space3XL);
 
   @media (--mediaMobile) {
-    margin-left: var(--spaceL);
-    margin-right: var(--spaceL);
+    padding-left: var(--spaceL);
+    padding-right: var(--spaceL);
   }
 }

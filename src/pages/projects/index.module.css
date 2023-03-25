@@ -1,9 +1,12 @@
 .section {
-  margin-top: var(--space6XL);
-  margin-bottom: var(--space6XL);
+  margin-top: calc(var(--space5XL) + var(--spaceXL));
   margin-left: var(--spaceOuter);
   margin-right: var(--spaceOuter);
   gap: var(--space5XL);
+
+  @media (--mediaTablet) {
+    margin-top: var(--space6XL);
+  }
 
   @media (--mediaMobile) {
     gap: calc(var(--space5XL) + var(--spaceM));

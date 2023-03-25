@@ -1,7 +1,16 @@
 .section {
-  margin-top: var(--space6XL);
-  margin-bottom: var(--space6XL);
+  margin-top: calc(var(--space5XL) + var(--spaceXL));
+  margin-left: var(--spaceOuter);
+  margin-right: var(--spaceOuter);
   gap: var(--space3XL);
+
+  @media (--mediaTablet) {
+    margin-top: var(--space6XL);
+  }
+
+  @media (--mediaMobile) {
+    margin-top: calc(var(--space6XL) + var(--space6XL));
+  }
 }
 
 .container {
@@ -14,6 +23,10 @@
 
   &:hover {
     box-shadow: var(--shadowColor3);
+  }
+
+  @media (--mediaMobileS) {
+    flex-direction: column;
   }
 }
 

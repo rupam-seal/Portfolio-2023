@@ -1,7 +1,11 @@
 .content {
-  margin-top: var(--space6XL);
-  margin-bottom: var(--space6XL);
+  margin-top: calc(var(--space5XL) + var(--spaceXL));
+  margin-bottom: var(--space4XL);
   margin-left: var(--spaceOuter);
   margin-right: var(--spaceOuter);
   gap: var(--space3XL);
+
+  @media (--mediaTablet) {
+    margin-top: var(--space6XL);
+  }
 }

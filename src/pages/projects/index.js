@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { projects } from '../../../data/projects';
 import Selector from './Selector';
 import Projects from './Projects';
+import { Footer } from '@/components/Footer';
 
 const Index = () => {
   const [category, setCatagory] = useState('all');
@@ -28,6 +29,7 @@ const Index = () => {
     >
       <Selector category={category} setCatagory={setCatagory} />
       {projects && <Projects projectData={projectData} />}
+      <Footer />
     </Section>
   );
 };

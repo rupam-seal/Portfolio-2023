@@ -15,6 +15,7 @@ import { Details, ProjectButtons } from '@/layouts/Home/ProjectDetails';
 import { RichText } from '@/components/RichText';
 import { ProjectsData } from '@/layouts/Home/ProjectsSummery';
 import { ImageDetails } from '@/layouts/Home/ImageDetails';
+import { Footer } from '@/components/Footer';
 
 const Project = () => {
   const router = useRouter();
@@ -30,6 +31,7 @@ const Project = () => {
           <Info projectData={projectData} />
           <FeaturedImages projectData={projectData} />
           <FeatureVideo projectData={projectData} />
+          <Footer />
         </Container>
       )}
     </>

@@ -8,6 +8,7 @@ import { Hero } from './Hero';
 import { ProjectsSummery } from './ProjectsSummery';
 import { About } from './About';
 import { motion } from 'framer-motion';
+import { Footer } from '@/components/Footer';
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -56,6 +57,7 @@ export const Home = () => {
         sectionRef={about}
         visible={visibleSections.includes(about.current)}
       />
+      <Footer />
     </div>
   );
 };

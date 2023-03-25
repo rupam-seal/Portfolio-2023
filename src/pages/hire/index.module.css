@@ -1,12 +1,16 @@
 .section {
-  margin-top: calc(var(--space3XL) + var(--space3XL));
+  margin-top: calc(var(--space5XL) + var(--spaceXL));
   margin-left: var(--spaceOuter);
   margin-right: var(--spaceOuter);
+
+  @media (--mediaTablet) {
+    margin-top: var(--space6XL);
+  }
 }
 
 .container {
   gap: var(--spaceM);
-  max-width: 70rem;
+  max-width: 82rem;
 }
 
 .title {
@@ -15,4 +19,5 @@
 
 .button {
   margin-top: calc(var(--spaceL) + var(--spaceM));
+  margin-bottom: var(--space2XL);
 }

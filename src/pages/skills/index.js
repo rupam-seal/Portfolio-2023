@@ -5,6 +5,7 @@ import { Container } from '@/components/Container';
 import { staggerContainer, textVariant } from '@/utils/motion';
 import { framework, language, tools, ui } from '../../../data/skillData';
 import { Card } from '@/components/Card';
+import { Footer } from '@/components/Footer';
 
 const index = ({ visible, sectionRef }) => {
   return (
@@ -20,6 +21,7 @@ const index = ({ visible, sectionRef }) => {
         <Card title={'TOOLS'} items={tools} />
         <Card title={'UI/UX'} items={ui} />
       </Container>
+      <Footer />
     </Container>
   );
 };
