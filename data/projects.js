@@ -51,10 +51,9 @@ export const projects = [
     image: '/assets/images/cointra/thumbnail.png',
     source: 'https://github.com/rupam-seal/CoinTra',
     live: 'https://cointra.netlify.app/',
-    status:
-      'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
+    status: 'Future plans: Add a top 5 coins carousel and chat option.',
     description:
-      'CoinTra is a website that displays the real-time value of the top 400 Cryptocurrencies along with their price, price change percentage, market cap value, volume, and other key metrics of cryptocurrencies. It also allows the user to search for a particular Coin.',
+      'CoinTra provides real-time information on the top 200 cryptocurrencies, including their current value, market cap, volume, and other key metrics. Users can search for specific coins using the search function.',
     tags: ['React.js', 'JavaScript', 'HTML', 'CSS'],
     year: '2023',
     category: 'web',
@@ -64,7 +63,7 @@ export const projects = [
         title: 'Main page',
         image: '/assets/images/cointra/demo1.png',
         description:
-          'View all the crypto state directly on the main page and also user can search for a specific Coin',
+          'Users can view the real-time status of all cryptocurrencies, as well as use the search function to quickly locate information on a specific coin.',
         status: '',
       },
 
@@ -73,7 +72,7 @@ export const projects = [
         title: 'Single Coin page',
         image: '/assets/images/cointra/demo2.png',
         description:
-          'Single coin page with price change percentage, market cap value, volume, and historical chart. For fetching historical data it uses Axios',
+          'The website provides a single coin page that displays key metrics such as price change percentage, market cap value, and volume, along with a historical chart to track price trends. To fetch historical data, the website uses the Axios library, which enables efficient and reliable data retrieval.',
         status: '',
       },
 
@@ -82,7 +81,7 @@ export const projects = [
         title: 'Pagination',
         image: '/assets/images/cointra/demo3.png',
         description:
-          'For navigating between pages. This component created using material ui.  ',
+          'To enable seamless navigation between pages, the website utilizes a component built using Material UI, a popular React-based design framework.',
         status: '',
       },
     ],
@@ -98,7 +97,8 @@ export const projects = [
     live: 'https://threedrone.netlify.app/',
     status:
       'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
-    description: 'A drone website landing page using React and Three.js',
+    description:
+      'This landing page for a drone website is built using React and Three.js, providing a modern and interactive user interface.',
     tags: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'HTML', 'CSS'],
     year: '2023',
     category: 'web',
