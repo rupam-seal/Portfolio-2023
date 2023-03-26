@@ -77,18 +77,9 @@
   }
 }
 
-.featureGifImage {
-  opacity: 0;
-  height: 0;
+.featureGif {
   max-width: var(--maxWidthS);
   min-width: var(--minWidthM);
-
-  @media (--mediaTablet) {
-    min-width: 100%;
-  }
-}
-
-.featureGif {
   width: 100%;
   height: 100%;
 }

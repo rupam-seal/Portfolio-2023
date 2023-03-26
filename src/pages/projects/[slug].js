@@ -135,17 +135,11 @@ const FeaturedImages = ({ projectData }) => {
               )}
 
               {item.gif ? (
-                <div className={styles.featureGifContainer}>
-                  <Image
-                    src={projectData.image}
-                    className={styles.featureGifImage}
-                  />
-                  <Image
-                    src={item.gif}
-                    className={styles.featureGif}
-                    variants={textVariant(0.3)}
-                  />
-                </div>
+                <Image
+                  src={item.gif}
+                  className={styles.featureGif}
+                  variants={textVariant(0.3)}
+                />
               ) : (
                 ''
               )}
