@@ -5,6 +5,7 @@ import { Icon } from '@/components/Icon';
 import { Section } from '@/components/Section';
 import { Text } from '@/components/Text';
 import { textVariant } from '@/utils/motion';
+import { motion } from 'framer-motion';
 
 import styles from './ProjectDetails.module.css';
 
@@ -129,13 +130,18 @@ export const ProjectButtons = ({
   animation2,
 }) => {
   return (
-    <div className={styles.buttons}>
+    <motion.div
+      className={styles.buttons}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+    >
       <Button
         target={target1}
         icon={icon1}
         href={href1}
         size="m"
-        variants={textVariant(0.35)}
+        variants={textVariant(0.3)}
         animation={animation1}
       >
         {title1}
@@ -148,7 +154,7 @@ export const ProjectButtons = ({
           size="m"
           className={styles.button}
           disabled={disabled}
-          variants={textVariant(0.35)}
+          variants={textVariant(0.3)}
           animation={animation2}
         >
           {tooltip ? (
@@ -159,6 +165,6 @@ export const ProjectButtons = ({
           {title2}
         </Button>
       </div>
-    </div>
+    </motion.div>
   );
 };
