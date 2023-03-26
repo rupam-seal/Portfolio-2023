@@ -69,11 +69,17 @@
 .featureImage {
   position: relative;
   object-position: center center;
+  width: 56rem;
+  height: 323rem;
   max-width: var(--maxWidthS);
   min-width: var(--minWidthM);
 
   @media (--mediaTablet) {
     min-width: 100%;
+  }
+
+  @media (--mediaMobile) {
+    width: 100%;
   }
 }
 

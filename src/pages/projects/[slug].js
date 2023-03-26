@@ -41,7 +41,7 @@ const Project = () => {
 const Info = ({ projectData }) => {
   const totalProjects = projects.length;
 
-  const { image, source, live, tags } = projectData;
+  const { image, source, live, tools } = projectData;
   return (
     <Container className={styles.wrapper} direction="column">
       <Container className={styles.info}>
@@ -77,7 +77,7 @@ const Info = ({ projectData }) => {
           variants={textVariant(0.1)}
         >
           <Text className={styles.tools}>Tool Used</Text>
-          <List items={tags} />
+          <List tools={tools} />
         </Container>
         <RichText projectData={projectData} />
       </Container>

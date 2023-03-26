@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
 import { Heading } from '@/components/Heading';
+import { Icon } from '@/components/Icon';
 import { Section } from '@/components/Section';
 import { Text } from '@/components/Text';
 import { textVariant } from '@/utils/motion';
@@ -18,6 +19,7 @@ export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
           projectData={projectData}
           projectNo={projectNo}
           totalProjects={totalProjects}
+          showStatus={false}
         />
         <ProjectButtons
           title1="View Project"
@@ -38,9 +40,14 @@ export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
   );
 };
 
-export const Details = ({ projectData, projectNo, totalProjects }) => {
+export const Details = ({
+  projectData,
+  projectNo,
+  totalProjects,
+  showStatus = true,
+}) => {
   const PROJECT_NO = projectNo + 1;
-  const { id, title, description, status } = projectData;
+  const { id, title, description, status, tools } = projectData;
 
   return (
     <Container className={styles.details} direction="column">
@@ -71,9 +78,36 @@ export const Details = ({ projectData, projectNo, totalProjects }) => {
       >
         {description}
       </Text>
-      <Text className={styles.status} variants={textVariant(0.25)}>
-        {status}
-      </Text>
+
+      {showStatus ? (
+        <Text className={styles.status} variants={textVariant(0.25)}>
+          {status}
+        </Text>
+      ) : (
+        <Tools tools={tools} />
+      )}
+    </Container>
+  );
+};
+
+export const Tools = ({ tools }) => {
+  return (
+    <Container direction={'column'}>
+      <Heading
+        level={5}
+        className={styles.toolsHeading}
+        variants={textVariant(0.25)}
+      >
+        Tools
+      </Heading>
+      <Container className={styles.tools}>
+        {tools &&
+          tools.map((item, index) => (
+            <Text key={index} size="l" variants={textVariant(0.3)}>
+              <Icon icon={item} />
+            </Text>
+          ))}
+      </Container>
     </Container>
   );
 };
@@ -101,7 +135,7 @@ export const ProjectButtons = ({
         icon={icon1}
         href={href1}
         size="m"
-        variants={textVariant(0.25)}
+        variants={textVariant(0.35)}
         animation={animation1}
       >
         {title1}

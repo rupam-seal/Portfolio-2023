@@ -59,5 +59,6 @@
 
   &[data-secondary='true'] {
     color: var(--colorTextLight);
+    transition: var(--colorChangeTransitionXS);
   }
 }

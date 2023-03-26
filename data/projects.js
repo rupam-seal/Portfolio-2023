@@ -10,7 +10,7 @@ export const projects = [
       "Future plans: Add new features, such as image details and image sharing options, to enhance users' experience.",
     description:
       "Imo is a image classification website. Users can easily upload their images and get instant results about the image's content, allowing them to organize their collections more efficiently.",
-    tags: ['Django', 'JavaScript', 'HTML', 'CSS'],
+    tools: ['Django', 'JavaScript', 'HTML', 'CSS'],
     year: '2023',
     category: 'web',
     feature: [
@@ -54,7 +54,7 @@ export const projects = [
     status: 'Future plans: Add a top 5 coins carousel and chat option.',
     description:
       'CoinTra provides real-time information on the top 200 cryptocurrencies, including their current value, market cap, volume, and other key metrics. Users can search for specific coins using the search function.',
-    tags: ['React.js', 'JavaScript', 'HTML', 'CSS'],
+    tools: ['React.js', 'JavaScript', 'HTML', 'CSS'],
     year: '2023',
     category: 'web',
     feature: [
@@ -99,7 +99,7 @@ export const projects = [
       'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
     description:
       'This landing page for a drone website is built using React and Three.js, providing a modern and interactive user interface.',
-    tags: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'HTML', 'CSS'],
+    tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'HTML', 'CSS'],
     year: '2023',
     category: 'web',
     feature: [
@@ -108,7 +108,7 @@ export const projects = [
         title: 'Main page',
         image: '/assets/images/threed/thumbnail.png',
         description:
-          'Currently this website have only one page. In the future i am thinking to add more features and pages.',
+          'Currently, this website has only one page. However iam planning to add more features and pages to this website.',
         status: '',
       },
       {
@@ -116,7 +116,7 @@ export const projects = [
         title: 'Rotation of Propeller',
         gif: '/assets/images/threed/fly.gif',
         description:
-          'If any user hover on drone glb model propeller rotation start.',
+          'If a user hovers over the drone GLB model, the propeller rotation will start automatically, enhancing the interactive experience',
         status: '',
       },
       {
@@ -124,7 +124,7 @@ export const projects = [
         title: 'Change color',
         gif: '/assets/images/threed/color.gif',
         description:
-          'Click button to change drone color blue, red, yellow, green',
+          'User can click a button to change the color of the drone to blue, red, yellow, or green, providing a customizable and interactive experience.',
         status: '',
       },
     ],
@@ -139,9 +139,10 @@ export const projects = [
     source: 'https://github.com/rupam-seal/CardPrinting',
     live: '',
     status:
-      'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
-    description: 'A drone website landing page using React and Three.js',
-    tags: ['Python', 'Three.js'],
+      'This software is designed for use in gold hallmarking centers and is used by over 10 such centers for generating and printing cards with gold hallmarking information.',
+    description:
+      'This software reduces the hallmarking card generation process from 16 minutes to less than 4 minutes.',
+    tools: ['Python', 'Three.js'],
     year: '2023',
     category: 'desktop',
     feature: [
@@ -150,7 +151,7 @@ export const projects = [
         title: 'Login Page',
         image: '/assets/images/cardprinting/login.png',
         description:
-          'User can login from this page and after login user is redirected to home page',
+          'Users can log in from this page, and after logging in, they will be redirected to the home page.',
         status: '',
       },
       {
@@ -158,7 +159,7 @@ export const projects = [
         title: 'Home Page',
         image: '/assets/images/cardprinting/main.png',
         description:
-          'User can enter value and after click on print software will print hardcopy of the card with printer.',
+          "The user can input information, and upon clicking the 'Gold' button, the software will generate a card with the entered information.",
         status: '',
       },
       {
@@ -166,7 +167,7 @@ export const projects = [
         title: 'Print page',
         image: '/assets/images/cardprinting/print.png',
         description:
-          'After clicking on print button it will generate a new card from above information.',
+          "After the user clicks on the 'Print' button, the software will print a hardcopy of the generated card.",
         status: '',
       },
     ],
@@ -182,8 +183,8 @@ export const projects = [
     live: 'https://nilax-2022.netlify.app/',
     status:
       'Need to update code, refractor complete project and improve performance.',
-    description: 'Portfolio website made with reactjs',
-    tags: ['Python', 'Three.js'],
+    description: 'Portfolio website 2022 made with reactjs',
+    tools: ['Python', 'Three.js'],
     year: '2023',
     category: 'web',
     feature: [
@@ -225,7 +226,7 @@ export const projects = [
     status:
       'Need to update code, refractor complete project and improve performance.',
     description: 'Portfolio website made with reactjs',
-    tags: ['Python', 'Three.js'],
+    tools: ['Python', 'Three.js'],
     year: '2023',
     category: 'android',
     feature: [

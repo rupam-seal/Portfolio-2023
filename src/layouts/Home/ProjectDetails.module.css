@@ -10,13 +10,23 @@
   margin-bottom: var(--spaceL);
 }
 
+.toolsHeading {
+  color: var(--rgbAccent);
+  margin-bottom: var(--spaceL);
+}
+
+.tools {
+  gap: var(--spaceL);
+  margin-bottom: var(--spaceL);
+}
+
 .status {
   color: var(--rgbAccent);
   margin-bottom: var(--spaceL);
 }
 
 .description {
-  margin-bottom: var(--spaceL);
+  margin-bottom: var(--spaceXL);
 }
 
 .buttons {

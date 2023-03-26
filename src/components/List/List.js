@@ -12,16 +12,16 @@ import styles from './List.module.css';
  * List Component.
  * Renders a list of items with icons using the 'framer-motion' library.
  *
- * @param {Array} items - The list of items to render.
+ * @param {Array} tools - The list of items to render.
  * @param {String} className - The CSS class name for the component.
  * @returns {Component} The List component.
  */
 
-export const List = ({ items, className }) => {
+export const List = ({ tools, className }) => {
   return (
     <motion.ul className={classes(styles.meta, className)}>
-      {!!items?.length &&
-        items?.map((item, index) => (
+      {!!tools?.length &&
+        tools?.map((item, index) => (
           <motion.li
             initial="hidden"
             whileInView="show"

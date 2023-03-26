@@ -1,7 +1,6 @@
 .icon {
   color: var(--colorTextBodyTitle);
   cursor: pointer;
-  transition: var(--colorChangeTransitionXS);
 
   &[data-type='link'] {
     color: var(--rgbAccent);
