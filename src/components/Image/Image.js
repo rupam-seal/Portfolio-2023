@@ -21,28 +21,57 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
  * @returns {Component} The Image component.
  */
 
-export const Image = ({ as, src, className, href, variants, rounded }) => {
-  const defaultComponent = href ? Link : 'div';
-  const Component = as || defaultComponent;
-
-  const MotionComponent = motion(Component);
+export const Image = ({
+  as,
+  src,
+  className,
+  href,
+  variants,
+  rounded,
+  ...rest
+}) => {
+  // const defaultComponent = href ? Link : 'div';
+  const Component = as || 'div';
 
   return (
-    <MotionComponent
-      variants={variants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className={(classes(styles.container), className)}
-      href={href}
-    >
-      <LazyLoadImage
-        effect="blur"
-        className={styles.image}
-        data-round={rounded}
-        src={src}
-        alt={''}
-      />
-    </MotionComponent>
+    <>
+      {href ? (
+        <Link
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
+          className={(classes(styles.container), className)}
+          target={'_blank'}
+          href={href}
+          {...rest}
+        >
+          <LazyLoadImage
+            effect="blur"
+            className={styles.image}
+            data-round={rounded}
+            src={src}
+            alt={''}
+          />
+        </Link>
+      ) : (
+        <Component
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
+          className={(classes(styles.container), className)}
+          {...rest}
+        >
+          <LazyLoadImage
+            effect="blur"
+            className={styles.image}
+            data-round={rounded}
+            src={src}
+            alt={''}
+          />
+        </Component>
+      )}
+    </>
   );
 };

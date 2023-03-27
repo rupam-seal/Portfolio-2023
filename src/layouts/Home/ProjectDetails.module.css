@@ -76,3 +76,7 @@
     right: calc(var(--spaceL));
   }
 }
+
+.readMore {
+  margin-left: var(--spaceS);
+}

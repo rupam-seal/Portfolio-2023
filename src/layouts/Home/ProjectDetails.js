@@ -4,10 +4,12 @@ import { Heading } from '@/components/Heading';
 import { Icon } from '@/components/Icon';
 import { Section } from '@/components/Section';
 import { Text } from '@/components/Text';
+import { slice } from '@/utils/slice';
 import { textVariant } from '@/utils/motion';
 import { motion } from 'framer-motion';
 
 import styles from './ProjectDetails.module.css';
+import { A } from '@/components/A';
 
 export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
   const { id, live, source } = projectData;
@@ -21,6 +23,8 @@ export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
           projectNo={projectNo}
           totalProjects={totalProjects}
           showStatus={false}
+          sliceDetails={true}
+          href1={path}
         />
         <ProjectButtons
           title1="View Project"
@@ -46,9 +50,14 @@ export const Details = ({
   projectNo,
   totalProjects,
   showStatus = true,
+  sliceDetails = false,
+  href1,
 }) => {
+  const SLICE_LENGTH = 250;
   const PROJECT_NO = projectNo + 1;
   const { id, title, description, status, tools } = projectData;
+
+  const sliceStr = slice(description, SLICE_LENGTH);
 
   return (
     <Container className={styles.details} direction="column">
@@ -77,7 +86,20 @@ export const Details = ({
         weight="regular"
         size="m"
       >
-        {description}
+        {sliceDetails ? (
+          <>
+            {sliceStr}
+            {description.length > SLICE_LENGTH ? (
+              <Text size="m" className={styles.readMore}>
+                <A link={href1}>read more</A>
+              </Text>
+            ) : (
+              ''
+            )}
+          </>
+        ) : (
+          description
+        )}
       </Text>
 
       {showStatus ? (

@@ -12,12 +12,41 @@
   }
 }
 
+.imageContainer {
+  position: relative;
+}
+
 .image {
   position: relative;
   max-width: 42rem;
   display: flex;
   flex-direction: column;
   gap: var(--spaceL);
+  animation: fly 10s ease infinite;
+}
+
+.imageBg {
+  position: absolute;
+  z-index: -1;
+}
+
+@keyframes fly {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translate(-20px, -10px);
+  }
+  40% {
+    transform: translate(20px, 20px);
+  }
+  60%,
+  80%,
+  100%,
+  0% {
+    transform: translate(-5px, 5px);
+  }
 }
 
 .details {

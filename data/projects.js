@@ -1,4 +1,7 @@
 export const projects = [
+  /** 
+  ===================================== PROJECT 1 =====================================
+  **/
   {
     id: 1,
     title: 'Imo',
@@ -43,7 +46,9 @@ export const projects = [
     ],
     video: 'https://www.youtube.com/embed/w7nT0l8yMFk',
   },
-
+  /** 
+  ===================================== PROJECT 2 =====================================
+  **/
   {
     id: 2,
     title: 'Cointra',
@@ -87,7 +92,9 @@ export const projects = [
     ],
     video: 'https://www.youtube.com/embed/xHz6DkeAF44',
   },
-
+  /** 
+  ===================================== PROJECT 3 =====================================
+  **/
   {
     id: 3,
     title: 'ThreeD',
@@ -130,7 +137,9 @@ export const projects = [
     ],
     video: 'https://www.youtube.com/embed/NCiPE6CgJy8',
   },
-
+  /** 
+  ===================================== PROJECT 4 =====================================
+  **/
   {
     id: 4,
     title: 'Card Printing',
@@ -173,7 +182,9 @@ export const projects = [
     ],
     video: 'https://www.youtube.com/embed/CnM-VT5AU4Y',
   },
-
+  /** 
+  ===================================== PROJECT 5 =====================================
+  **/
   {
     id: 5,
     title: 'Portfolio 2022',
@@ -246,7 +257,9 @@ export const projects = [
       },
     ],
   },
-
+  /** 
+  ===================================== PROJECT 6 =====================================
+  **/
   {
     id: 6,
     title: 'Orbit',
@@ -302,6 +315,66 @@ export const projects = [
         status: '',
       },
     ],
+  },
+
+  /** 
+  ===================================== PROJECT 7 =====================================
+  **/
+  {
+    id: 7,
+    title: 'Cros',
+    description:
+      'Cros is a customer relationship management (CRM) software built with Django, specifically designed for shop owners to help manage and track customer interactions, sales, and inventory. The application offers features such as sales reporting, customer analytics, and inventory management to help shop owners streamline their operations and improve their customer service.',
+    thumbnail: '/assets/images/orbit/thumbnail.png',
+    image: '/assets/images/orbit/thumbnail.png',
+    source: 'https://github.com/rupam-seal/Cros.git',
+    live: '',
+    status:
+      'To enable users to access the project without the need for login or signup, a guest user feature will need to be implemented. This feature will allow anyone to use the project with limited access, providing a seamless user experience. By incorporating the guest user feature, users can quickly access the project and perform basic tasks, such as viewing content or submitting forms, without creating an account or providing personal information.',
+    tools: ['Django', 'HTML', 'CSS', 'JavaScript', 'Charts.js'],
+    year: '2023',
+    category: 'web',
+    feature: [],
+  },
+
+  /** 
+  ===================================== PROJECT 8 =====================================
+  **/
+  {
+    id: 8,
+    title: 'Tsks',
+    description:
+      'Cros is a customer relationship management (CRM) software built with Django, specifically designed for shop owners to help manage and track customer interactions, sales, and inventory. The application offers features such as sales reporting, customer analytics, and inventory management to help shop owners streamline their operations and improve their customer service.',
+    thumbnail: '/assets/images/orbit/thumbnail.png',
+    image: '/assets/images/orbit/thumbnail.png',
+    source: 'https://github.com/rupam-seal/Cros.git',
+    live: '',
+    status:
+      'To enable users to access the project without the need for login or signup, a guest user feature will need to be implemented. This feature will allow anyone to use the project with limited access, providing a seamless user experience. By incorporating the guest user feature, users can quickly access the project and perform basic tasks, such as viewing content or submitting forms, without creating an account or providing personal information.',
+    tools: ['Django', 'HTML', 'CSS', 'JavaScript', 'Charts.js'],
+    year: '2023',
+    category: 'web',
+    feature: [],
+  },
+
+  /** 
+  ===================================== PROJECT 9 =====================================
+  **/
+  {
+    id: 9,
+    title: 'Proxo',
+    description:
+      'Cros is a customer relationship management (CRM) software built with Django, specifically designed for shop owners to help manage and track customer interactions, sales, and inventory. The application offers features such as sales reporting, customer analytics, and inventory management to help shop owners streamline their operations and improve their customer service.',
+    thumbnail: '/assets/images/orbit/thumbnail.png',
+    image: '/assets/images/orbit/thumbnail.png',
+    source: 'https://github.com/rupam-seal/Cros.git',
+    live: '',
+    status:
+      'To enable users to access the project without the need for login or signup, a guest user feature will need to be implemented. This feature will allow anyone to use the project with limited access, providing a seamless user experience. By incorporating the guest user feature, users can quickly access the project and perform basic tasks, such as viewing content or submitting forms, without creating an account or providing personal information.',
+    tools: ['Django', 'HTML', 'CSS', 'JavaScript', 'Charts.js'],
+    year: '2023',
+    category: 'android',
+    feature: [],
   },
 ];
 

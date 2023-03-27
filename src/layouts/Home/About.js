@@ -12,9 +12,27 @@ import { A } from '@/components/A';
 import { Image } from '@/components/Image';
 import { List } from '@/components/List';
 import { Icon } from '@/components/Icon';
-import { memo } from 'react';
+import { memo, useState } from 'react';
 
 export const About = memo(({ visible, sectionRef }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioUrl = '/assets/sounds/about.mp3';
+
+  let audioElement;
+  if (typeof window !== 'undefined') {
+    audioElement = new Audio(audioUrl);
+  }
+
+  const handleMouseEnter = () => {
+    setIsPlaying(true);
+    audioElement.play();
+  };
+
+  const handleMouseLeave = () => {
+    setIsPlaying(false);
+    audioElement.pause();
+  };
+
   return (
     <Section
       direction={'column'}
@@ -31,12 +49,27 @@ export const About = memo(({ visible, sectionRef }) => {
             </Heading>
           </Container>
           <Section className={styles.content}>
-            <Container className={styles.image} align="center" justify="center">
+            <Container
+              className={styles.imageContainer}
+              align="center"
+              justify="center"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <Image
-                src={'/assets/images/profile.jpg'}
-                href="/"
+                className={styles.image}
+                src={'/assets/images/p.png'}
+                href="https://unsplash.com/photos/7Y1CI9FCcNM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
                 variants={imageVariant('0.4')}
                 rounded={true}
+                alt="Photo by Rootnot Studio on Unsplash"
+              />
+              <Image
+                className={styles.imageBg}
+                src={'/assets/images/bg.jpg'}
+                href="https://unsplash.com/photos/7Y1CI9FCcNM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+                rounded={true}
+                alt="Photo by Rootnot Studio on Unsplash"
               />
             </Container>
             <Container

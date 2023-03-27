@@ -52,6 +52,7 @@ import { SiAxios } from 'react-icons/si';
 import { SiTensorflow } from 'react-icons/si';
 import { SiKeras } from 'react-icons/si';
 import { CgFramer } from 'react-icons/cg';
+import { HiChartSquareBar } from 'react-icons/hi';
 /**
  * Social
  **/
@@ -128,6 +129,7 @@ export const icons = {
   TesorFlow: SiTensorflow,
   Keras: SiKeras,
   FramerMotion: CgFramer,
+  'Charts.js': HiChartSquareBar,
   /**
    * SOCIAL
    **/
