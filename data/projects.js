@@ -230,7 +230,7 @@ export const projects = [
       },
       {
         id: 6,
-        title: 'Login Page',
+        title: '3d Model',
         gif: '/assets/images/portfolio2022/model.gif',
         description: 'You can experience an immersive interactive 3D model',
         status: '',
