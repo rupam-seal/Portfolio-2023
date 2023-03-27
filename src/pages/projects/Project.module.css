@@ -82,6 +82,10 @@
   min-width: var(--minWidthM);
   width: 100%;
   height: 100%;
+
+  @media (--mediaTablet) {
+    min-width: 100%;
+  }
 }
 
 .videoHeader,
