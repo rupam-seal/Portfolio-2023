@@ -2,15 +2,15 @@ export const projects = [
   {
     id: 1,
     title: 'Imo',
+    description:
+      "Imo is a image classification website. Users can easily upload their images and get instant results about the image's content, allowing them to organize their collections more efficiently.",
     thumbnail: '/assets/images/imo/thumbnail.png',
     image: '/assets/images/imo/thumbnail.png',
     source: 'https://github.com/rupam-seal/imo',
     live: '',
     status:
       "Future plans: Add new features, such as image details and image sharing options, to enhance users' experience.",
-    description:
-      "Imo is a image classification website. Users can easily upload their images and get instant results about the image's content, allowing them to organize their collections more efficiently.",
-    tools: ['Django', 'JavaScript', 'HTML', 'CSS'],
+    tools: ['Django', 'TesorFlow', 'Keras', 'JavaScript', 'HTML', 'CSS'],
     year: '2023',
     category: 'web',
     feature: [
@@ -47,14 +47,14 @@ export const projects = [
   {
     id: 2,
     title: 'Cointra',
+    description:
+      'CoinTra provides real-time information on the top 200 cryptocurrencies, including their current value, market cap, volume, and other key metrics. Users can search for specific coins using the search function.',
     thumbnail: '/assets/images/cointra/thumbnail.png',
     image: '/assets/images/cointra/thumbnail.png',
     source: 'https://github.com/rupam-seal/CoinTra',
     live: 'https://cointra.netlify.app/',
     status: 'Future plans: Add a top 5 coins carousel and chat option.',
-    description:
-      'CoinTra provides real-time information on the top 200 cryptocurrencies, including their current value, market cap, volume, and other key metrics. Users can search for specific coins using the search function.',
-    tools: ['React.js', 'JavaScript', 'HTML', 'CSS'],
+    tools: ['React.js', 'JavaScript', 'CSS', 'Axios'],
     year: '2023',
     category: 'web',
     feature: [
@@ -91,15 +91,15 @@ export const projects = [
   {
     id: 3,
     title: 'ThreeD',
+    description:
+      'This landing page for a drone website is built using React and Three.js, providing a modern and interactive user interface.',
     thumbnail: '/assets/images/threed/thumbnail.png',
     image: '/assets/images/threed/thumbnail.png',
     source: 'https://github.com/rupam-seal/drone-website',
     live: 'https://threedrone.netlify.app/',
     status:
       'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
-    description:
-      'This landing page for a drone website is built using React and Three.js, providing a modern and interactive user interface.',
-    tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'HTML', 'CSS'],
+    tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'CSS'],
     year: '2023',
     category: 'web',
     feature: [
@@ -134,15 +134,15 @@ export const projects = [
   {
     id: 4,
     title: 'Card Printing',
+    description:
+      'This software reduces the hallmarking card generation process from 16 minutes to less than 4 minutes.',
     thumbnail: '/assets/images/cardprinting/thumbnail.png',
     image: '/assets/images/cardprinting/thumbnail.png',
     source: 'https://github.com/rupam-seal/CardPrinting',
     live: '',
     status:
       'This software is designed for use in gold hallmarking centers and is used by over 10 such centers for generating and printing cards with gold hallmarking information.',
-    description:
-      'This software reduces the hallmarking card generation process from 16 minutes to less than 4 minutes.',
-    tools: ['Python', 'Three.js'],
+    tools: ['Python', 'Tkinter'],
     year: '2023',
     category: 'desktop',
     feature: [
@@ -177,14 +177,15 @@ export const projects = [
   {
     id: 5,
     title: 'Portfolio 2022',
+    description:
+      'Portfolio website 2022 made with ReactJs and other technologies',
     thumbnail: '/assets/images/portfolio2022/thumbnail.png',
     image: '/assets/images/portfolio2022/thumbnail.png',
     source: 'https://github.com/rupam-seal/portfolio-2022.git',
     live: 'https://nilax-2022.netlify.app/',
     status:
       'Need to update code, refractor complete project and improve performance.',
-    description: 'Portfolio website 2022 made with reactjs',
-    tools: ['Python', 'Three.js'],
+    tools: ['React.js', 'CSS', 'FramerMotion'],
     year: '2023',
     category: 'web',
     feature: [
@@ -219,14 +220,15 @@ export const projects = [
   {
     id: 6,
     title: 'Orbit',
+    description:
+      'A native Android app that includes login and registration functionality, which can be integrated into any Android application.',
     thumbnail: '/assets/images/orbit/thumbnail.png',
     image: '/assets/images/orbit/thumbnail.png',
     source: 'https://github.com/rupam-seal/portfolio-2022.git',
     live: '',
     status:
-      'Need to update code, refractor complete project and improve performance.',
-    description: 'Portfolio website made with reactjs',
-    tools: ['Python', 'Three.js'],
+      'a native Android app that includes login and registration functionality, which can be integrated into any Android application.',
+    tools: ['AndroidStudio', 'Java', 'XML', 'Firebase'],
     year: '2023',
     category: 'android',
     feature: [

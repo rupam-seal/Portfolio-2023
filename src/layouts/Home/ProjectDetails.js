@@ -105,7 +105,7 @@ export const Tools = ({ tools }) => {
         {tools &&
           tools.map((item, index) => (
             <Text key={index} size="l" variants={textVariant(0.3)}>
-              <Icon icon={item} />
+              <Icon icon={item} className={styles.icon} />
             </Text>
           ))}
       </Container>

@@ -18,6 +18,12 @@
 .tools {
   gap: var(--spaceL);
   margin-bottom: var(--spaceL);
+
+  & :hover {
+    & .icon {
+      color: var(--rgbAccent);
+    }
+  }
 }
 
 .status {

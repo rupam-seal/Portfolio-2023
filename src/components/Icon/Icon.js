@@ -18,6 +18,7 @@ import { SiKotlin } from 'react-icons/si';
 import { SiCplusplus } from 'react-icons/si';
 import { ImHtmlFive2 } from 'react-icons/im';
 import { BsFiletypeCss } from 'react-icons/bs';
+import { BsFiletypeXml } from 'react-icons/bs';
 /**
  * FRAMEWORK
  **/
@@ -48,11 +49,18 @@ import { SiSketch } from 'react-icons/si';
  * LIBRARY
  **/
 import { SiAxios } from 'react-icons/si';
+import { SiTensorflow } from 'react-icons/si';
+import { SiKeras } from 'react-icons/si';
+import { CgFramer } from 'react-icons/cg';
 /**
  * Social
  **/
 import { FaLinkedinIn } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
+/**
+ * Services
+ **/
+import { TbBrandFirebase } from 'react-icons/tb';
 /**
  * OTHERS
  **/
@@ -69,8 +77,13 @@ import { TbMoonFilled } from 'react-icons/tb';
 import { MdDesignServices } from 'react-icons/md';
 import { ImPhone } from 'react-icons/im';
 import { MdEmail } from 'react-icons/md';
+import { GiAstronautHelmet } from 'react-icons/gi';
 
 export const icons = {
+  /**
+   * Default
+   **/
+  Default: GiAstronautHelmet,
   /**
    * LANGUAGE
    **/
@@ -81,6 +94,7 @@ export const icons = {
   'C++': SiCplusplus,
   HTML: ImHtmlFive2,
   CSS: BsFiletypeCss,
+  XML: BsFiletypeXml,
   /**
    * FRAMEWORK
    **/
@@ -111,11 +125,18 @@ export const icons = {
    * LIBRARY
    **/
   Axios: SiAxios,
+  TesorFlow: SiTensorflow,
+  Keras: SiKeras,
+  FramerMotion: CgFramer,
   /**
    * SOCIAL
    **/
   Linkedin: FaLinkedinIn,
   Instagram: AiFillInstagram,
+  /**
+   * Services
+   **/
+  Firebase: TbBrandFirebase,
   /**
    * OTHERS
    **/
@@ -135,7 +156,7 @@ export const icons = {
 };
 
 export const Icon = ({ icon, className, type, ...rest }) => {
-  const IconComponent = icons[icon];
+  const IconComponent = icons[icon] ? icons[icon] : icons.Default;
 
   return (
     <IconComponent
