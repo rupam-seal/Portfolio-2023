@@ -153,7 +153,7 @@ const FeaturedImages = ({ projectData }) => {
 };
 
 const FeatureVideo = ({ projectData }) => {
-  const { video, live } = projectData;
+  const { video, live, source } = projectData;
   return (
     <>
       {video ? (
@@ -181,11 +181,25 @@ const FeatureVideo = ({ projectData }) => {
           </Container>
         </div>
       ) : (
-        <Text size="l" className={styles.visitWebsite}>
-          <A link={live} target="_blank">
-            Visit Website
-          </A>
-        </Text>
+        <>
+          {live ? (
+            <Container variants={textVariant(0.4)}>
+              <Text size="l" className={styles.visitWebsite}>
+                <A link={live} target="_blank">
+                  Visit Website
+                </A>
+              </Text>
+            </Container>
+          ) : (
+            <Container variants={textVariant(0.4)}>
+              <Text size="l" className={styles.visitWebsite}>
+                <A link={source} target="_blank">
+                  Source Code
+                </A>
+              </Text>
+            </Container>
+          )}
+        </>
       )}
     </>
   );

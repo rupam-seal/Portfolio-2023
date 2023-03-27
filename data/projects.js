@@ -254,7 +254,7 @@ export const projects = [
       'A native Android app that includes login and registration functionality, which can be integrated into any Android application.',
     thumbnail: '/assets/images/orbit/thumbnail.png',
     image: '/assets/images/orbit/thumbnail.png',
-    source: 'https://github.com/rupam-seal/portfolio-2022.git',
+    source: 'https://github.com/rupam-seal/Orbit.git',
     live: '',
     status:
       'a native Android app that includes login and registration functionality, which can be integrated into any Android application.',
@@ -264,30 +264,44 @@ export const projects = [
     feature: [
       {
         id: 1,
-        title: 'Login Page',
-        image: '/assets/images/cardprinting/login.png',
+        title: 'Onboarding Activity',
+        image: '/assets/images/orbit/demo1.png',
         description:
-          'User can login from this page and after login user is redirected to home page',
+          'This activity includes a slider that displays all the features of the application and allows the user to navigate to the login page and registration page.',
         status: '',
       },
       {
         id: 2,
-        title: 'Home Page',
-        image: '/assets/images/cardprinting/main.png',
+        title: 'Login Activity',
+        image: '/assets/images/orbit/demo2.png',
         description:
-          'User can enter value and after click on print software will print hardcopy of the card with printer.',
+          'In addition, the user can also reset their password if their account is available.',
         status: '',
       },
       {
         id: 3,
-        title: 'Print page',
-        image: '/assets/images/cardprinting/print.png',
+        title: 'Registration Activity',
+        image: '/assets/images/orbit/demo3.png',
         description:
-          'After clicking on print button it will generate a new card from above information.',
+          'Furthermore, the user can register for an account using a username and email, and the registration form includes password validation as well.',
+        status: '',
+      },
+      {
+        id: 4,
+        title: 'Forgot Password Activity',
+        image: '/assets/images/orbit/demo4.png',
+        description: 'The user can reset their password from within this page.',
+        status: '',
+      },
+      {
+        id: 5,
+        title: 'Project Structure',
+        image: '/assets/images/orbit/demo5.png',
+        description:
+          'The project structure has been designed in a simple manner to facilitate ease of understanding for the code.',
         status: '',
       },
     ],
-    video: 'https://www.youtube.com/embed/CnM-VT5AU4Y',
   },
 ];
 
