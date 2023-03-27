@@ -29,7 +29,6 @@
 
 .feature {
   gap: var(--space6XL);
-  margin-bottom: var(--space6XL);
   margin-top: var(--space4XL);
 
   @media (--mediaTablet) {
@@ -91,6 +90,7 @@
 .videoHeader,
 .featureVideo {
   width: 100%;
+  margin-top: var(--space4XL);
   margin-bottom: var(--space3XL);
 
   @media (--mediaTablet) {
@@ -119,4 +119,9 @@
   height: 100%;
   overflow: auto;
   margin: auto;
+}
+
+.visitWebsite {
+  margin-top: var(--space3XL);
+  margin-bottom: var(--space3XL);
 }

@@ -16,6 +16,7 @@ import { RichText } from '@/components/RichText';
 import { ProjectsData } from '@/layouts/Home/ProjectsSummery';
 import { ImageDetails } from '@/layouts/Home/ImageDetails';
 import { Footer } from '@/components/Footer';
+import { A } from '@/components/A';
 
 const Project = () => {
   const router = useRouter();
@@ -152,7 +153,7 @@ const FeaturedImages = ({ projectData }) => {
 };
 
 const FeatureVideo = ({ projectData }) => {
-  const { video } = projectData;
+  const { video, live } = projectData;
   return (
     <>
       {video ? (
@@ -180,7 +181,9 @@ const FeatureVideo = ({ projectData }) => {
           </Container>
         </div>
       ) : (
-        ''
+        <Text size="l" className={styles.visitWebsite}>
+          <A link={live}>Visit Website</A>
+        </Text>
       )}
     </>
   );
