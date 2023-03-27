@@ -154,26 +154,35 @@ const FeaturedImages = ({ projectData }) => {
 const FeatureVideo = ({ projectData }) => {
   const { video } = projectData;
   return (
-    <div className={styles.featureVideo}>
-      <Container
-        align="center"
-        direction={'column'}
-        className={styles.videoHeader}
-      >
-        <Heading level={1} weight="bold" variants={textVariant(0.3)}>
-          WATCH VIDEO
-        </Heading>
-      </Container>
-      <Container className={styles.iframeContainer} variants={textVariant(0.4)}>
-        <iframe
-          className={styles.iframe}
-          src={video}
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </Container>
-    </div>
+    <>
+      {video ? (
+        <div className={styles.featureVideo}>
+          <Container
+            align="center"
+            direction={'column'}
+            className={styles.videoHeader}
+          >
+            <Heading level={1} weight="bold" variants={textVariant(0.3)}>
+              WATCH VIDEO
+            </Heading>
+          </Container>
+          <Container
+            className={styles.iframeContainer}
+            variants={textVariant(0.4)}
+          >
+            <iframe
+              className={styles.iframe}
+              src={video}
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </Container>
+        </div>
+      ) : (
+        ''
+      )}
+    </>
   );
 };
 

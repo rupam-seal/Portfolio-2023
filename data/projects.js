@@ -98,7 +98,7 @@ export const projects = [
     source: 'https://github.com/rupam-seal/drone-website',
     live: 'https://threedrone.netlify.app/',
     status:
-      'Future plans: Add top 5 coins carousel and add more feature like chat options and more.',
+      'Future plans: At present, the 3D model features an animation that rotates the propeller of the drone. However, I am considering adding more interactive elements such as pan and zoom in the future.',
     tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'CSS'],
     year: '2023',
     category: 'web',
@@ -116,7 +116,7 @@ export const projects = [
         title: 'Rotation of Propeller',
         gif: '/assets/images/threed/fly.gif',
         description:
-          'If a user hovers over the drone GLB model, the propeller rotation will start automatically, enhancing the interactive experience',
+          'If a user hovers over the drone GLB model, the propeller rotation will start automatically, enhancing the interactive experience.',
         status: '',
       },
       {
@@ -191,30 +191,60 @@ export const projects = [
     feature: [
       {
         id: 1,
-        title: 'Login Page',
-        image: '/assets/images/cardprinting/login.png',
+        title: 'About Page',
+        image: '/assets/images/portfolio2022/demo1.png',
         description:
-          'User can login from this page and after login user is redirected to home page',
+          'This page contains information about me and also contains one interactive 3d model.',
         status: '',
       },
       {
         id: 2,
-        title: 'Home Page',
-        image: '/assets/images/cardprinting/main.png',
-        description:
-          'User can enter value and after click on print software will print hardcopy of the card with printer.',
+        title: 'Skills Page',
+        image: '/assets/images/portfolio2022/demo2.png',
+        description: 'List of all the skills and technologies that I know.',
         status: '',
       },
       {
         id: 3,
-        title: 'Print page',
-        image: '/assets/images/cardprinting/print.png',
+        title: 'Projects Page',
+        image: '/assets/images/portfolio2022/demo3.png',
         description:
-          'After clicking on print button it will generate a new card from above information.',
+          'My portfolio includes a section that highlights some of my projects.',
         status: '',
       },
+      {
+        id: 4,
+        title: 'Single Projects Page',
+        image: '/assets/images/portfolio2022/demo4.png',
+        description:
+          'The focus of this page is to provide a detailed overview of one project.',
+        status: '',
+      },
+      {
+        id: 5,
+        title: 'Custom Cursor',
+        gif: '/assets/images/portfolio2022/cursor.gif',
+        description:
+          'The custom cursor is built using CSS and JavaScript. The custom cursor is a blob that has a gradient background that spins and some tweaks in border-radius and transform property. It behaves like a liquid object.',
+        status: '',
+      },
+      {
+        id: 6,
+        title: 'Login Page',
+        gif: '/assets/images/portfolio2022/model.gif',
+        description: 'You can experience an immersive interactive 3D model',
+        status: '',
+      },
+      {
+        id: 7,
+        title: 'Tilt Image',
+        gif: '/assets/images/portfolio2022/tilt.gif',
+        description:
+          'If you hover over the image on the project details page, a JavaScript animation will cause it to tilt and add a 3d effect.',
+        status:
+          'To enhance the tilt animation on the image, I need to modify the code so that the animation continues even after the cursor is removed from the image.',
+      },
     ],
-    video: 'https://www.youtube.com/embed/CnM-VT5AU4Y',
   },
 
   {
