@@ -181,11 +181,7 @@ const FeatureVideo = ({ projectData }) => {
           </Container>
         </div>
       ) : (
-        <Text
-          size="l"
-          className={styles.visitWebsite}
-          variants={textVariant(0.4)}
-        >
+        <Text size="l" className={styles.visitWebsite}>
           <A link={live} target="_blank">
             Visit Website
           </A>

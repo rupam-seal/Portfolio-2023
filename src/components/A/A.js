@@ -67,6 +67,7 @@ export const A = ({
           className={classes(styles.link, className)}
           href={link}
           data-secondary={secondary}
+          {...rest}
         >
           {children}
         </Link>
