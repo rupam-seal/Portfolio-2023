@@ -68,7 +68,7 @@ const Info = ({ projectData }) => {
         <Image
           className={styles.image}
           src={image}
-          href={'/'}
+          href={''}
           variants={textVariant(0.4)}
         />
 

@@ -13,24 +13,17 @@ import { Image } from '@/components/Image';
 import { List } from '@/components/List';
 import { Icon } from '@/components/Icon';
 import { memo, useState } from 'react';
+import useAudio from '@/hooks/useAudio';
 
 export const About = memo(({ visible, sectionRef }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioUrl = '/assets/sounds/about.mp3';
-
-  let audioElement;
-  if (typeof window !== 'undefined') {
-    audioElement = new Audio(audioUrl);
-  }
+  const { isPlaying, play, pause } = useAudio('/assets/sounds/about.mp3');
 
   const handleMouseEnter = () => {
-    setIsPlaying(true);
-    audioElement.play();
+    play();
   };
 
   const handleMouseLeave = () => {
-    setIsPlaying(false);
-    audioElement.pause();
+    pause();
   };
 
   return (
@@ -55,12 +48,12 @@ export const About = memo(({ visible, sectionRef }) => {
               justify="center"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
+              variants={imageVariant('0.4')}
             >
               <Image
                 className={styles.image}
                 src={'/assets/images/p.png'}
                 href="https://unsplash.com/photos/7Y1CI9FCcNM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                variants={imageVariant('0.4')}
                 rounded={true}
                 alt="Photo by Rootnot Studio on Unsplash"
               />

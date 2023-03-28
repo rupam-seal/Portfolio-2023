@@ -9,7 +9,16 @@
   /* &:hover {
     scale: 1.02;
   } */
-  &[data-round='true'] {
+  &[data-rounded='true'] {
     border-radius: var(--borderRadius2);
   }
+}
+
+.image.lazy {
+  filter: blur(20px);
+  transition: filter 0.3s ease;
+}
+
+.image.lazy.loaded {
+  filter: none;
 }
