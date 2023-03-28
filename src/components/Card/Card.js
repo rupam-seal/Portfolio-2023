@@ -43,7 +43,11 @@ export const CardList = ({ items, className }) => {
     >
       {!!items?.length &&
         items?.map((item, index) => (
-          <CardItem icon={item} variants={textVariant(0.1 + index / 10)}>
+          <CardItem
+            key={index}
+            icon={item}
+            variants={textVariant(0.1 + index / 10)}
+          >
             {item}
           </CardItem>
         ))}

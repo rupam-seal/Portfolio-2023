@@ -51,6 +51,7 @@ const index = () => {
             justify=""
             scale="false"
             type="body"
+            variants={textVariant(0.2)}
           >
             +91 9395212761
           </CardItem>
@@ -62,6 +63,7 @@ const index = () => {
             scale="false"
             onClick={handleClick}
             type="body"
+            variants={textVariant(0.2)}
           >
             rupam.x.seal@gmail.com
           </CardItem>
