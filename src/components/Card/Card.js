@@ -20,13 +20,8 @@ import { classes } from '@/utils/styles';
 
 export const Card = ({ title = '', items = [], className }) => {
   return (
-    <Container
-      className={styles.card}
-      direction="column"
-      align="center"
-      variants={textVariant(0.3)}
-    >
-      <Heading level={5} weight="Bold">
+    <Container className={styles.card} direction="column" align="center">
+      <Heading level={5} weight="Bold" variants={textVariant(0.3)}>
         {title}
       </Heading>
       <CardList items={items} />

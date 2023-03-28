@@ -8,11 +8,8 @@
   gap: var(--spaceM);
 
   @media (--mediaMobile) {
+    grid-template-columns: 1fr 1fr;
     gap: var(--spaceS);
-  }
-
-  @media (--mediaMobileS) {
-    grid-template-columns: 1fr;
   }
 }
 
