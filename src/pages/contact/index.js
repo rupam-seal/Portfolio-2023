@@ -2,11 +2,15 @@ import { Container } from '@/components/Container';
 import { Footer } from '@/components/Footer';
 import { Heading } from '@/components/Heading';
 import { Icon } from '@/components/Icon';
+import { Meta } from '@/components/Meta';
 import { Section } from '@/components/Section';
 import { Text } from '@/components/Text';
 import Link from 'next/link';
 import { social } from '../../../data/socialData';
 import styles from './index.module.css';
+
+const title = 'Contact me';
+const description = 'My contact information and social links.';
 
 const index = () => {
   const senderEmail = 'rupam.x.seal@gmail.com';
@@ -23,6 +27,7 @@ const index = () => {
       direction="column"
       className={styles.contact}
     >
+      <Meta title={title} description={description} />
       <Section
         className={styles.section}
         align="center"

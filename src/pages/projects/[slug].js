@@ -14,6 +14,7 @@ import { RichText } from '@/components/RichText';
 import { ProjectsData } from '@/layouts/Home/ProjectsSummery';
 import { Footer } from '@/components/Footer';
 import { A } from '@/components/A';
+import { Meta } from '@/components/Meta';
 
 const Project = () => {
   const router = useRouter();
@@ -26,6 +27,11 @@ const Project = () => {
     <>
       {projectData && (
         <Container className={styles.section} direction="column" align="center">
+          <Meta
+            prefix="Projects"
+            title={projectData.title}
+            description={projectData.description}
+          />
           <Info projectData={projectData} />
           <FeaturedImages projectData={projectData} />
           <FeatureVideo projectData={projectData} />

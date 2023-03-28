@@ -5,6 +5,7 @@ import { Heading } from '@/components/Heading';
 import { Section } from '@/components/Section';
 import { textVariant } from '@/utils/motion';
 import { classes } from '@/utils/styles';
+import { projects } from '../../../data/projects';
 import { Project } from './Project';
 import { memo } from 'react';
 

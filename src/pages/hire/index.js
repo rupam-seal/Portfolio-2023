@@ -2,9 +2,13 @@ import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
 import { Footer } from '@/components/Footer';
 import { Heading } from '@/components/Heading';
+import { Meta } from '@/components/Meta';
 import { Text } from '@/components/Text';
 import { textVariant } from '@/utils/motion';
 import styles from './index.module.css';
+
+const title = 'Hire me';
+const description = 'I am looking for a Web Development job.';
 
 const index = () => {
   return (
@@ -14,6 +18,7 @@ const index = () => {
       className={styles.section}
       direction="column"
     >
+      <Meta title={title} description={description} />
       <Container className={styles.container} direction="column">
         <Heading
           align="center"

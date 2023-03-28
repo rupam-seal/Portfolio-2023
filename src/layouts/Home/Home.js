@@ -9,6 +9,11 @@ import { ProjectsSummery } from './ProjectsSummery';
 import { About } from './About';
 import { motion } from 'framer-motion';
 import { Footer } from '@/components/Footer';
+import { Meta } from '@/components/Meta';
+
+const title = 'Android - Web Developer';
+const description =
+  'NilaX — Android / UI-UX / Web Developer freelance located in India, specializing in the creation of modern and user freindly and unique android and web designs.';
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -45,6 +50,7 @@ export const Home = () => {
 
   return (
     <div className={styles.section}>
+      <Meta title={title} description={description} />
       <Hero
         sectionRef={hero}
         visible={visibleSections.includes(hero.current)}

@@ -7,6 +7,11 @@ import { projects } from '../../../data/projects';
 import Selector from './Selector';
 import Projects from './Projects';
 import { Footer } from '@/components/Footer';
+import { Meta } from '@/components/Meta';
+
+const title = 'Projects';
+const description =
+  'All of the featured projects on this page showcase a variety of my works.';
 
 const Index = () => {
   const [category, setCatagory] = useState('all');
@@ -27,6 +32,7 @@ const Index = () => {
       justify="center"
       direction="column"
     >
+      <Meta title={title} description={description} />
       <Selector category={category} setCatagory={setCatagory} />
       {projects && <Projects projectData={projectData} />}
       <Footer />
