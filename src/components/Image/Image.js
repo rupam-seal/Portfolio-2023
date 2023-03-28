@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Link from 'next/link';
 
 import { classes } from '@/utils/styles';
@@ -26,16 +26,9 @@ export const Image = ({
   variants = {},
   rounded = false,
   target = '_blank',
-  lowResSrc = '/placeholder.jpg',
   ...rest
 }) => {
   const Component = as || motion.div;
-
-  const [loaded, setLoaded] = useState(false);
-
-  const handleLoad = () => {
-    setLoaded(true);
-  };
 
   return (
     <>
@@ -53,7 +46,6 @@ export const Image = ({
               className={styles.image}
               data-rounded={rounded}
               src={src}
-              onLoad={handleLoad}
               alt={''}
             />
           </Link>
@@ -62,16 +54,6 @@ export const Image = ({
             className={styles.image}
             data-rounded={rounded}
             src={src}
-            onLoad={handleLoad}
-            src={src}
-            alt={''}
-          />
-        )}
-        {!loaded && (
-          <img
-            className={styles.image}
-            data-rounded={rounded}
-            src={lowResSrc}
             alt={''}
           />
         )}
