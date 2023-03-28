@@ -73,6 +73,10 @@
     pointer-events: none;
   }
 
+  &:hover {
+    scale: 1.02;
+  }
+
   &[data-animation='rotate'] {
     &:hover {
       scale: 1.02;

@@ -17,4 +17,8 @@
   &[data-type='body'] {
     color: var(--rgbPrimary);
   }
+
+  &[data-type='text'] {
+    color: var(--colorTextBody);
+  }
 }

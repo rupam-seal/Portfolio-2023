@@ -1,3 +1,5 @@
+export const aitools = ['GitHub Copilot', 'OpenAI GPT', 'Bard AI'];
+
 export const language = ['Python', 'Java', 'JavaScript', 'Kotlin', 'C++'];
 
 export const framework = [

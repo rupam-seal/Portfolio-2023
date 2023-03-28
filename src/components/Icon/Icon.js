@@ -37,6 +37,9 @@ import { BsGit } from 'react-icons/bs';
 import { FaGithubAlt } from 'react-icons/fa';
 import { SiGitlab } from 'react-icons/si';
 import { GrDocker } from 'react-icons/gr';
+import { TbBrandGithubCopilot } from 'react-icons/tb';
+import { TbBrandOpenai } from 'react-icons/tb';
+import { AiOutlineGoogle } from 'react-icons/ai';
 /**
  * UI/UX
  **/
@@ -114,6 +117,9 @@ export const icons = {
   Github: FaGithubAlt,
   Gitlab: SiGitlab,
   Docker: GrDocker,
+  'GitHub Copilot': TbBrandGithubCopilot,
+  'OpenAI GPT': TbBrandOpenai,
+  'Bard AI': AiOutlineGoogle,
   /**
    * UI/UX
    **/

@@ -59,7 +59,7 @@ export const Navbar = () => {
             toggleTheme={toggleTheme}
           />
 
-          <Container align="center" justify="center" className={styles.menu}>
+          <div className={styles.menu}>
             {data}
             <Button
               href={'/hire'}
@@ -72,7 +72,7 @@ export const Navbar = () => {
                 <Icon icon="leftCircle" /> hire me
               </span>
             </Button>
-          </Container>
+          </div>
         </Container>
       </motion.header>
       <Menu expand={expand} toggleExpand={toggleExpand} />

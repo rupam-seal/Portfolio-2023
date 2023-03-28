@@ -23,21 +23,44 @@ export const Card = ({ title = '', items = [], className }) => {
       <Heading level={5} weight="Bold" variants={textVariant(0.1)}>
         {title}
       </Heading>
+      <CardList items={items} />
+    </Container>
+  );
+};
 
-      <Container className={styles.items} direction={'column'} align="center">
-        {!!items?.length &&
-          items?.map((item, index) => (
-            <Container
-              className={styles.item}
-              variants={textVariant(0.2)}
-              justify="center"
-              key={index}
-            >
-              <Icon className={styles.icon} icon={item} />
-              <Text className={styles.text}>{item}</Text>
-            </Container>
-          ))}
-      </Container>
+export const CardList = ({ items }) => {
+  return (
+    <Container className={styles.items} direction={'column'} align="center">
+      {!!items?.length &&
+        items?.map((item, index) => <CardItem icon={item}>{item}</CardItem>)}
+    </Container>
+  );
+};
+
+export const CardItem = ({
+  icon,
+  children,
+  justify = 'center',
+  space = 'l',
+  gap = 's',
+  scale = 'true',
+  type = 'text',
+  ...rest
+}) => {
+  return (
+    <Container
+      className={styles.item}
+      variants={textVariant(0.2)}
+      justify={justify}
+      data-space={space}
+      data-gap={gap}
+      data-scale={scale}
+      {...rest}
+    >
+      <Icon className={styles.icon} icon={icon} type={type} />
+      <Text className={styles.text} size="m">
+        {children}
+      </Text>
     </Container>
   );
 };
