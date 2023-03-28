@@ -20,7 +20,6 @@ import styles from './Project.module.css';
 
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
-import { List } from '@/components/List';
 import { Icon } from '@/components/Icon';
 
 import ImageLayer from '@/components/ImageLayer/ImageLayer';

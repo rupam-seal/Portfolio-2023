@@ -6,7 +6,6 @@ import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
 import { Image } from '../../components/Image';
 import { Container } from '../../components/Container';
-import { List } from '../../components/List';
 import { projects } from '../../../data/projects';
 import { textVariant } from '@/utils/motion';
 import { Details, ProjectButtons } from '@/layouts/Home/ProjectDetails';
@@ -15,6 +14,7 @@ import { ProjectsData } from '@/layouts/Home/ProjectsSummery';
 import { Footer } from '@/components/Footer';
 import { A } from '@/components/A';
 import { Meta } from '@/components/Meta';
+import { CardList } from '@/components/Card';
 
 const Project = () => {
   const router = useRouter();
@@ -79,8 +79,10 @@ const Info = ({ projectData }) => {
           className={styles.list}
           variants={textVariant(0.1)}
         >
-          <Text className={styles.tools}>Tool Used</Text>
-          <List tools={tools} />
+          <Text className={styles.tools} size="l">
+            Tool Used
+          </Text>
+          <CardList items={tools} className={styles.toolsList} />
         </Container>
         <RichText projectData={projectData} />
       </Container>

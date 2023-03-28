@@ -22,9 +22,8 @@
   gap: var(--space3XL);
 }
 
-.list {
-  min-width: var(--minWidthS);
-  max-width: 100%;
+.toolsList {
+  margin-top: var(--spaceXL);
 }
 
 .feature {

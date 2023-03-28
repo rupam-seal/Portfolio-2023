@@ -1,10 +1,11 @@
+import { media } from '@/utils/styles';
 import { useEffect, useState } from 'react';
 
 const isMobile = () => {
   if (typeof window === 'undefined') {
     return true;
   }
-  return window.innerWidth <= 696;
+  return window.innerWidth <= media.mobile;
 };
 
 export const useMobileSize = () => {

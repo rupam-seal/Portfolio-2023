@@ -1,18 +1,18 @@
 .card {
   gap: var(--space2XL);
+}
 
-  & .items {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: var(--spaceM);
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--spaceM);
 
-    @media (--mediaMobile) {
-      gap: var(--spaceS);
-    }
+  @media (--mediaMobile) {
+    gap: var(--spaceS);
+  }
 
-    @media (--mediaMobileS) {
-      grid-template-columns: 1fr 1fr;
-    }
+  @media (--mediaMobileS) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -56,6 +56,27 @@
   @media (--mediaMobile) {
     flex-direction: column;
     padding: var(--spaceM);
+  }
+
+  @media (--mediaMobileS) {
+    flex-direction: column;
+    padding: var(--spaceS);
+
+    &[data-space='l'] {
+      padding: var(--spaceM);
+    }
+
+    &[data-space='m'] {
+      padding: var(--spaceS);
+    }
+
+    &[data-gap='l'] {
+      gap: var(--spaceM);
+    }
+
+    &[data-gap='s'] {
+      gap: var(--spaceS);
+    }
   }
 
   & .text,

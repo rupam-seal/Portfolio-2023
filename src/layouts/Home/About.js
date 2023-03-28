@@ -10,7 +10,6 @@ import { Text } from '@/components/Text';
 import { Button } from '@/components/Button';
 import { A } from '@/components/A';
 import { Image } from '@/components/Image';
-import { List } from '@/components/List';
 import { Icon } from '@/components/Icon';
 import { memo, useState } from 'react';
 import useAudio from '@/hooks/useAudio';
@@ -52,14 +51,14 @@ export const About = memo(({ visible, sectionRef }) => {
             >
               <Image
                 className={styles.image}
-                src={'/assets/images/p.png'}
+                src={'/assets/images/profile/profile.png'}
                 href="https://unsplash.com/photos/7Y1CI9FCcNM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
                 rounded={true}
                 alt="Photo by Rootnot Studio on Unsplash"
               />
               <Image
                 className={styles.imageBg}
-                src={'/assets/images/bg.jpg'}
+                src={'/assets/images/profile/background.jpg'}
                 href="https://unsplash.com/photos/7Y1CI9FCcNM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
                 rounded={true}
                 alt="Photo by Rootnot Studio on Unsplash"
