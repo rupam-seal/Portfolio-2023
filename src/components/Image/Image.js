@@ -1,9 +1,12 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
+
 import { classes } from '@/utils/styles';
 import styles from './Image.module.css';
+
 import { motion } from 'framer-motion';
-import LazyLoad from 'react-lazyload';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 /**
  * Image Component.
@@ -42,25 +45,22 @@ export const Image = ({
       >
         {href ? (
           <Link target={target} href={href} {...rest}>
-            <LazyLoad once>
-              <img
-                className={classes(styles.image, styles.lazy)}
-                data-rounded={rounded}
-                src={src}
-                alt={''}
-              />
-            </LazyLoad>
-          </Link>
-        ) : (
-          <LazyLoad once>
-            <img
+            <LazyLoadImage
               effect="blur"
-              className={classes(styles.image, styles.lazy)}
+              className={styles.image}
               data-rounded={rounded}
               src={src}
               alt={''}
             />
-          </LazyLoad>
+          </Link>
+        ) : (
+          <LazyLoadImage
+            effect="blur"
+            className={styles.image}
+            data-rounded={rounded}
+            src={src}
+            alt={''}
+          />
         )}
       </Component>
     </>
