@@ -6,8 +6,6 @@ import styles from './Image.module.css';
 
 import { motion } from 'framer-motion';
 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
 /**
  * Image Component.
  * Renders an image using the 'react-lazy-load-image-component' and 'framer-motion' libraries.
@@ -45,8 +43,7 @@ export const Image = ({
       >
         {href ? (
           <Link target={target} href={href} {...rest}>
-            <LazyLoadImage
-              effect="blur"
+            <img
               className={styles.image}
               data-rounded={rounded}
               src={src}
@@ -54,8 +51,7 @@ export const Image = ({
             />
           </Link>
         ) : (
-          <LazyLoadImage
-            effect="blur"
+          <img
             className={styles.image}
             data-rounded={rounded}
             src={src}
