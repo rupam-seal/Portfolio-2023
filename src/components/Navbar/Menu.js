@@ -47,7 +47,12 @@ export const Menu = ({
             );
           })}
           <SectionBottom className={styles.sectionBottom}>
-            <Text className={styles.talk} weight="medium" size="l">
+            <Text
+              className={styles.talk}
+              weight="medium"
+              size="l"
+              onClick={() => toggleExpand(false)}
+            >
               <A link={'/hire'} icon="arrowRight">
                 Hire me
               </A>
