@@ -32,7 +32,7 @@ export const Image = ({
   const Component = as || motion.div;
 
   return (
-    <div className={classes(styles.container)}>
+    <>
       <Component
         variants={variants}
         initial="hidden"
@@ -59,6 +59,6 @@ export const Image = ({
           />
         )}
       </Component>
-    </div>
+    </>
   );
 };
