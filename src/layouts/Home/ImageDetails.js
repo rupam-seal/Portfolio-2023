@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 import styles from './ImageDetails.module.css';
 
-export const ImageDetails = ({ path, image, year, imageLayer = true }) => {
+export const ImageDetails = ({ path, image, year, alt, imageLayer = true }) => {
   return (
     <Container variants={imageVariant()}>
       <motion.div
@@ -22,7 +22,7 @@ export const ImageDetails = ({ path, image, year, imageLayer = true }) => {
         ) : (
           ''
         )}
-        <Image src={image} rounded={true} />
+        <Image src={image} rounded={true} alt={alt} />
       </motion.div>
     </Container>
   );

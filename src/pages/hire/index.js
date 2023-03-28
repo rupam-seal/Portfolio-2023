@@ -2,7 +2,6 @@ import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
 import { Footer } from '@/components/Footer';
 import { Heading } from '@/components/Heading';
-import { Section } from '@/components/Section';
 import { Text } from '@/components/Text';
 import { textVariant } from '@/utils/motion';
 import styles from './index.module.css';

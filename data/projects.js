@@ -5,6 +5,7 @@ export const projects = [
   {
     id: 1,
     title: 'Imo',
+    alt: '',
     description:
       "Imo is a image classification website. Users can easily upload their images and get instant results about the image's content, allowing them to organize their collections more efficiently.",
     thumbnail: '/assets/images/imo/thumbnail.png',
@@ -52,6 +53,7 @@ export const projects = [
   {
     id: 2,
     title: 'Cointra',
+    alt: '',
     description:
       'CoinTra provides real-time information on the top 200 cryptocurrencies, including their current value, market cap, volume, and other key metrics. Users can search for specific coins using the search function.',
     thumbnail: '/assets/images/cointra/thumbnail.png',
@@ -98,6 +100,7 @@ export const projects = [
   {
     id: 3,
     title: 'ThreeD',
+    alt: '',
     description:
       'This landing page for a drone website is built using React and Three.js, providing a modern and interactive user interface.',
     thumbnail: '/assets/images/threed/thumbnail.png',
@@ -143,6 +146,7 @@ export const projects = [
   {
     id: 4,
     title: 'Card Printing',
+    alt: '',
     description:
       'This software reduces the hallmarking card generation process from 16 minutes to less than 4 minutes.',
     thumbnail: '/assets/images/cardprinting/thumbnail.png',
@@ -188,6 +192,7 @@ export const projects = [
   {
     id: 5,
     title: 'Portfolio 2022',
+    alt: '',
     description:
       'Portfolio website 2022 made with ReactJs and other technologies',
     thumbnail: '/assets/images/portfolio2022/thumbnail.png',
@@ -263,6 +268,7 @@ export const projects = [
   {
     id: 6,
     title: 'Orbit',
+    alt: '',
     description:
       'A native Android app that includes login and registration functionality, which can be integrated into any Android application.',
     thumbnail: '/assets/images/orbit/thumbnail.png',
@@ -323,6 +329,7 @@ export const projects = [
   {
     id: 7,
     title: 'Cros',
+    alt: '',
     description:
       'Cros is a customer relationship management (CRM) software built with Django, specifically designed for shop owners to help manage and track customer interactions, sales, and inventory. The application offers features such as sales reporting, customer analytics, and inventory management to help shop owners streamline their operations and improve their customer service.',
     thumbnail: '/assets/images/orbit/thumbnail.png',
@@ -343,6 +350,7 @@ export const projects = [
   {
     id: 8,
     title: 'Tsks',
+    alt: '',
     description:
       'Cros is a customer relationship management (CRM) software built with Django, specifically designed for shop owners to help manage and track customer interactions, sales, and inventory. The application offers features such as sales reporting, customer analytics, and inventory management to help shop owners streamline their operations and improve their customer service.',
     thumbnail: '/assets/images/orbit/thumbnail.png',
@@ -363,6 +371,7 @@ export const projects = [
   {
     id: 9,
     title: 'Proxo',
+    alt: '',
     description:
       'Cros is a customer relationship management (CRM) software built with Django, specifically designed for shop owners to help manage and track customer interactions, sales, and inventory. The application offers features such as sales reporting, customer analytics, and inventory management to help shop owners streamline their operations and improve their customer service.',
     thumbnail: '/assets/images/orbit/thumbnail.png',

@@ -36,7 +36,6 @@ export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
           disabled={false}
           tooltip={false}
           target2='"_blank"'
-          projectData={projectData}
           animation1={'rotate'}
           animation2={'bounce'}
         ></ProjectButtons>
@@ -55,7 +54,7 @@ export const Details = ({
 }) => {
   const SLICE_LENGTH = 250;
   const PROJECT_NO = projectNo + 1;
-  const { id, title, description, status, tools } = projectData;
+  const { title, description, status, tools } = projectData;
 
   const sliceStr = slice(description, SLICE_LENGTH);
 
@@ -140,8 +139,6 @@ export const ProjectButtons = ({
   title2,
   icon1,
   icon2,
-  projectData,
-  live,
   href1,
   href2,
   target1,

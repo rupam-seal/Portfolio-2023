@@ -21,6 +21,7 @@ import { motion } from 'framer-motion';
 export const Image = ({
   as,
   src,
+  alt = '',
   className,
   href,
   variants = {},
@@ -46,16 +47,16 @@ export const Image = ({
               className={styles.image}
               data-rounded={rounded}
               src={src}
-              alt={''}
-            />
+              alt={alt}
+            ></img>
           </Link>
         ) : (
           <img
             className={styles.image}
             data-rounded={rounded}
             src={src}
-            alt={''}
-          />
+            alt={alt}
+          ></img>
         )}
       </Component>
     </>

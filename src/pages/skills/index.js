@@ -1,13 +1,11 @@
 import styles from './index.module.css';
 
-import { memo } from 'react';
 import { Container } from '@/components/Container';
-import { staggerContainer, textVariant } from '@/utils/motion';
 import { framework, language, tools, ui } from '../../../data/skillData';
 import { Card } from '@/components/Card';
 import { Footer } from '@/components/Footer';
 
-const index = ({ visible, sectionRef }) => {
+const index = () => {
   return (
     <Container
       className={styles.section}

@@ -5,16 +5,13 @@ import { Section } from '../../components/Section';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
 import { Image } from '../../components/Image';
-import { Button } from '../../components/Button';
 import { Container } from '../../components/Container';
 import { List } from '../../components/List';
 import { projects } from '../../../data/projects';
-import { scaleVariant, textVariant } from '@/utils/motion';
-import { Buttons } from '@/layouts/Home/Project';
+import { textVariant } from '@/utils/motion';
 import { Details, ProjectButtons } from '@/layouts/Home/ProjectDetails';
 import { RichText } from '@/components/RichText';
 import { ProjectsData } from '@/layouts/Home/ProjectsSummery';
-import { ImageDetails } from '@/layouts/Home/ImageDetails';
 import { Footer } from '@/components/Footer';
 import { A } from '@/components/A';
 
@@ -40,9 +37,7 @@ const Project = () => {
 };
 
 const Info = ({ projectData }) => {
-  const totalProjects = projects.length;
-
-  const { image, source, live, tools } = projectData;
+  const { image, source, live, tools, alt } = projectData;
   return (
     <Container className={styles.wrapper} direction="column">
       <Container className={styles.info}>
@@ -69,6 +64,7 @@ const Info = ({ projectData }) => {
           className={styles.image}
           src={image}
           href={''}
+          alt={alt}
           variants={textVariant(0.4)}
         />
 
@@ -87,7 +83,7 @@ const Info = ({ projectData }) => {
 };
 
 const FeaturedImages = ({ projectData }) => {
-  const { feature, video } = projectData;
+  const { feature } = projectData;
 
   const totalDemoItem = feature.length;
 
@@ -110,6 +106,7 @@ const FeaturedImages = ({ projectData }) => {
         justify="center"
       >
         {feature.map((item, index) => {
+          const { image, gif, title } = item;
           return (
             <Section
               key={index}
@@ -125,21 +122,23 @@ const FeaturedImages = ({ projectData }) => {
                   totalProjects={filteredDemoItemsLength()}
                 />
               </Container>
-              {item.image ? (
+              {image ? (
                 <Image
-                  src={item.image}
+                  src={image}
                   className={styles.featureImage}
                   variants={textVariant(0.3)}
+                  alt={title}
                 />
               ) : (
                 ''
               )}
 
-              {item.gif ? (
+              {gif ? (
                 <Image
-                  src={item.gif}
+                  src={gif}
                   className={styles.featureGif}
                   variants={textVariant(0.3)}
+                  alt={title}
                 />
               ) : (
                 ''

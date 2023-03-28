@@ -1,6 +1,5 @@
 import { Container } from '@/components/Container';
 import { Text } from '@/components/Text';
-import { useState } from 'react';
 import { categories } from '../../../data/categoriesData';
 import styles from './Selector.module.css';
 

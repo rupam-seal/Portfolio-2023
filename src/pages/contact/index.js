@@ -1,4 +1,3 @@
-import { A } from '@/components/A';
 import { Container } from '@/components/Container';
 import { Footer } from '@/components/Footer';
 import { Heading } from '@/components/Heading';
@@ -59,7 +58,7 @@ export const TextItem = ({ icon, children, handleClick }) => {
   );
 };
 
-export const SocialItem = ({ icon, link }) => {
+export const SocialItem = () => {
   return (
     <>
       {social.map((item, index) => {

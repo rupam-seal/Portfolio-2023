@@ -2,11 +2,9 @@ import styles from './ProjectsSummery.module.css';
 
 import { Container } from '@/components/Container';
 import { Heading } from '@/components/Heading';
-import { Image } from '@/components/Image';
 import { Section } from '@/components/Section';
-import { staggerContainer, textVariant } from '@/utils/motion';
+import { textVariant } from '@/utils/motion';
 import { classes } from '@/utils/styles';
-import { projects } from '../../../data/projects';
 import { Project } from './Project';
 import { memo } from 'react';
 
