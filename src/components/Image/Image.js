@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { classes } from '@/utils/styles';
@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 
 /**
  * Image Component.
- * Renders an image using the 'react-lazy-load-image-component' and 'framer-motion' libraries.
  *
  * @param {Component} as - The HTML element type for the component.
  * @param {String} src - The image source URL.
@@ -27,9 +26,16 @@ export const Image = ({
   variants = {},
   rounded = false,
   target = '_blank',
+  lowResSrc = '/placeholder.jpg',
   ...rest
 }) => {
   const Component = as || motion.div;
+
+  const [loaded, setLoaded] = useState(false);
+
+  const handleLoad = () => {
+    setLoaded(true);
+  };
 
   return (
     <>
@@ -47,6 +53,7 @@ export const Image = ({
               className={styles.image}
               data-rounded={rounded}
               src={src}
+              onLoad={handleLoad}
               alt={''}
             />
           </Link>
@@ -55,6 +62,16 @@ export const Image = ({
             className={styles.image}
             data-rounded={rounded}
             src={src}
+            onLoad={handleLoad}
+            src={src}
+            alt={''}
+          />
+        )}
+        {!loaded && (
+          <img
+            className={styles.image}
+            data-rounded={rounded}
+            src={lowResSrc}
             alt={''}
           />
         )}
