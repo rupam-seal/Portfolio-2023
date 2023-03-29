@@ -18,6 +18,7 @@ export default function Document() {
 
         <link rel="preload" href={GothamMedium} as="font" crossOrigin="true" />
         <link rel="preload" href={GothamBook} as="font" crossOrigin="true" />
+        <link rel="preload" href={Impact} as="font" crossOrigin="true" />
       </Head>
       <body>
         <Main />
