@@ -16,7 +16,7 @@ export const Logo = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_27_166)">
+          <g clipPath="url(#clip0_27_166)">
             <path
               d="M23.687 1.12381L51.891 29.2137V44.2936H38.7291V34.6347L18.2442 14.2324H13.9888V44.2936H0.826904V1.12381H23.687Z"
               fill="var(--colorTextTitle)"

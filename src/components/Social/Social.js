@@ -21,28 +21,21 @@ export const Social = ({ level, className, roundedIcon = false }) => {
     <Container className={classes(styles.container, className)}>
       {social.map((item, index) => {
         return (
-          <>
-            <Link key={index} href={item.link} target={item.target}>
-              {roundedIcon ? (
-                <Container
-                  className={styles.social}
-                  align="center"
-                  justify="center"
-                >
-                  <Icon icon={item.label} className={styles.icon} />
-                </Container>
-              ) : (
-                <Heading
-                  key={index}
-                  className={styles.heading}
-                  level={level}
-                  secondary
-                >
-                  <Icon icon={item.label} className={styles.icon} />
-                </Heading>
-              )}
-            </Link>
-          </>
+          <Link href={item.link} target={item.target} key={item.label || index}>
+            {roundedIcon ? (
+              <Container
+                className={styles.social}
+                align="center"
+                justify="center"
+              >
+                <Icon icon={item.label} className={styles.icon} />
+              </Container>
+            ) : (
+              <Heading className={styles.heading} level={level} secondary>
+                <Icon icon={item.label} className={styles.icon} />
+              </Heading>
+            )}
+          </Link>
         );
       })}
     </Container>
