@@ -5,6 +5,7 @@ import { classes } from '@/utils/styles';
 import styles from './Img.module.css';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 /**
  * Img Component.
@@ -15,6 +16,7 @@ import { motion } from 'framer-motion';
  * @param {String} href - The URL for the link, if the image should be clickable.
  * @param {Object} variants - The animation variants for the motion component.
  * @param {Boolean} rounded - Whether the image should have rounded corners.
+ * @param {String} placeholder - The URL for the placeholder image.
  * @returns {Component} The Image component.
  */
 
@@ -43,20 +45,30 @@ export const Img = ({
       >
         {href ? (
           <Link target={target} href={href} {...rest}>
-            <img
+            <Image
               className={styles.image}
               data-rounded={rounded}
+              width={560}
+              height={321.38}
+              layout="responsive"
               src={src}
               alt={alt}
-            ></img>
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGg...QmCC"
+            ></Image>
           </Link>
         ) : (
-          <img
+          <Image
             className={styles.image}
             data-rounded={rounded}
+            width={560}
+            height={321.38}
+            layout="responsive"
             src={src}
             alt={alt}
-          ></img>
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGg...QmCC"
+          ></Image>
         )}
       </Component>
     </>
