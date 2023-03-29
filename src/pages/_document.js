@@ -13,7 +13,7 @@ export default function Document() {
           href="https://prod.spline.design/MYdCFyAC5T06Rt9l/scene.splinecode"
         />
 
-        <link
+        {/* <link
           rel="preload"
           href={'../assets/fonts/gotham-medium.woff2'}
           as="font"
@@ -30,7 +30,7 @@ export default function Document() {
           href={'../assets/fonts/impact.woff'}
           as="font"
           crossOrigin="true"
-        />
+        /> */}
       </Head>
       <body>
         <Main />
