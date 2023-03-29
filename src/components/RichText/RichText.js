@@ -1,7 +1,7 @@
 import { createRef, useEffect, useState } from 'react';
 import { Container } from '../Container';
 import { Heading } from '../Heading';
-import { Image } from '../Image';
+import { Img } from '../Img';
 import { Text } from '../Text';
 import styles from './RichText.module.css';
 
@@ -57,7 +57,7 @@ const HeadingItem = ({ level, children }) => {
 };
 
 const ImageItem = ({ children }) => {
-  return <Image src={children} className={styles.image}></Image>;
+  return <Img src={children} className={styles.image}></Img>;
 };
 
 const PargraphItem = ({ children }) => {

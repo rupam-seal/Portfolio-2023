@@ -1,6 +1,6 @@
 import { Container } from '@/components/Container';
 import { Heading } from '@/components/Heading';
-import { Image } from '@/components/Image';
+import { Img } from '@/components/Img';
 import { Section } from '@/components/Section';
 import { Text } from '@/components/Text';
 import { Button } from '@/components/Button';

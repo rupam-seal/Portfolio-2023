@@ -9,7 +9,7 @@ import { imageVariant, staggerContainer, textVariant } from '@/utils/motion';
 import { Text } from '@/components/Text';
 import { Button } from '@/components/Button';
 import { A } from '@/components/A';
-import { Image } from '@/components/Image';
+import { Img } from '@/components/Img';
 import { Icon } from '@/components/Icon';
 import { memo, useState } from 'react';
 import useAudio from '@/hooks/useAudio';
@@ -49,14 +49,14 @@ export const About = memo(({ visible, sectionRef }) => {
               onMouseLeave={handleMouseLeave}
               variants={imageVariant('0.4')}
             >
-              <Image
+              <Img
                 className={styles.image}
                 src={'/assets/images/profile/profile.png'}
                 href="https://unsplash.com/photos/7Y1CI9FCcNM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
                 rounded={true}
                 alt="Photo by Rootnot Studio on Unsplash"
               />
-              <Image
+              <Img
                 className={styles.imageBg}
                 src={'/assets/images/profile/background.jpg'}
                 href="https://unsplash.com/photos/7Y1CI9FCcNM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"

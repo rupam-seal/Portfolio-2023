@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 
 import { classes } from '@/utils/styles';
-import styles from './Image.module.css';
+import styles from './Img.module.css';
 
 import { motion } from 'framer-motion';
 
 /**
- * Image Component.
+ * Img Component.
  *
  * @param {Component} as - The HTML element type for the component.
  * @param {String} src - The image source URL.
@@ -18,7 +18,7 @@ import { motion } from 'framer-motion';
  * @returns {Component} The Image component.
  */
 
-export const Image = ({
+export const Img = ({
   as,
   src,
   alt = '',

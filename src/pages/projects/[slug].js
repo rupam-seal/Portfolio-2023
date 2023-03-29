@@ -4,7 +4,7 @@ import styles from './Project.module.css';
 import { Section } from '../../components/Section';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
-import { Image } from '../../components/Image';
+import { Img } from '../../components/Img';
 import { Container } from '../../components/Container';
 import { projects } from '../../../data/projects';
 import { textVariant } from '@/utils/motion';
@@ -66,7 +66,7 @@ const Info = ({ projectData }) => {
           ></ProjectButtons>
         </Container>
 
-        <Image
+        <Img
           className={styles.image}
           src={image}
           href={''}
@@ -131,7 +131,7 @@ const FeaturedImages = ({ projectData }) => {
                 />
               </Container>
               {image ? (
-                <Image
+                <Img
                   src={image}
                   className={styles.featureImage}
                   variants={textVariant(0.3)}
@@ -142,7 +142,7 @@ const FeaturedImages = ({ projectData }) => {
               )}
 
               {gif ? (
-                <Image
+                <Img
                   src={gif}
                   className={styles.featureGif}
                   variants={textVariant(0.3)}

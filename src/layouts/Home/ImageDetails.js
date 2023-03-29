@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container';
-import { Image } from '@/components/Image';
+import { Img } from '@/components/Img';
 import ImageLayer from '@/components/ImageLayer/ImageLayer';
 import { imageVariant } from '@/utils/motion';
 import { motion } from 'framer-motion';
@@ -22,7 +22,7 @@ export const ImageDetails = ({ path, image, year, alt, imageLayer = true }) => {
         ) : (
           ''
         )}
-        <Image src={image} rounded={true} alt={alt} />
+        <Img src={image} rounded={true} alt={alt} />
       </motion.div>
     </Container>
   );

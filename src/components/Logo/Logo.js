@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Container } from '../Container';
 import { Heading } from '../Heading';
-import { Image } from '../Image';
 
 import styles from './Logo.module.css';
 
