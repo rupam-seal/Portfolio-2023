@@ -335,7 +335,7 @@ export const projects = [
     thumbnail: '/assets/images/orbit/thumbnail.png',
     image: '/assets/images/orbit/thumbnail.png',
     source: 'https://github.com/rupam-seal/Cros.git',
-    live: '',
+    live: 'https://cros-crm.vercel.app/',
     status:
       'To enable users to access the project without the need for login or signup, a guest user feature will need to be implemented. This feature will allow anyone to use the project with limited access, providing a seamless user experience. By incorporating the guest user feature, users can quickly access the project and perform basic tasks, such as viewing content or submitting forms, without creating an account or providing personal information.',
     tools: ['Django', 'HTML', 'CSS', 'JavaScript', 'Charts.js'],
