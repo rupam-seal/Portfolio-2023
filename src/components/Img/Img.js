@@ -61,7 +61,6 @@ export const Img = ({
             data-rounded={rounded}
             width={560}
             height={321.38}
-            layout="responsive"
             src={src}
             alt={alt}
           ></Image>
