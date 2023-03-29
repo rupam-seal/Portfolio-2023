@@ -14,8 +14,12 @@ import { Icon } from '@/components/Icon';
 import { memo, useState } from 'react';
 import useAudio from '@/hooks/useAudio';
 
+import profileImage from '../../assets/images/profile/profile.png';
+import backgroundImage from '../../assets/images/profile/background.jpg';
+import audio from '../../assets/sounds/about.mp3';
+
 export const About = memo(({ visible, sectionRef }) => {
-  const { isPlaying, play, pause } = useAudio('/assets/sounds/about.mp3');
+  const { isPlaying, play, pause } = useAudio(audio);
 
   const handleMouseEnter = () => {
     play();
@@ -51,14 +55,14 @@ export const About = memo(({ visible, sectionRef }) => {
             >
               <Img
                 className={styles.image}
-                src={'/assets/images/profile/profile.png'}
+                src={profileImage}
                 href="https://unsplash.com/photos/7Y1CI9FCcNM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
                 rounded={true}
                 alt="Photo by Rootnot Studio on Unsplash"
               />
               <Img
                 className={styles.imageBg}
-                src={'/assets/images/profile/background.jpg'}
+                src={backgroundImage}
                 href="https://unsplash.com/photos/7Y1CI9FCcNM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
                 rounded={true}
                 alt="Photo by Rootnot Studio on Unsplash"

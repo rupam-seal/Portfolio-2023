@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   webpack: (config, { isServer }) => {
     config.module.rules.push({
-      test: /\.(woff|woff2)$/i,
+      test: /\.(mp3|woff|woff2)$/i,
       type: 'asset/resource',
     });
 
