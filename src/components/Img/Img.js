@@ -54,7 +54,6 @@ export const Img = ({
               src={src}
               alt={alt}
               placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGg...QmCC"
             ></Image>
           </Link>
         ) : (
@@ -67,7 +66,6 @@ export const Img = ({
             src={src}
             alt={alt}
             placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGg...QmCC"
           ></Image>
         )}
       </Component>
