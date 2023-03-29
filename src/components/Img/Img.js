@@ -53,7 +53,6 @@ export const Img = ({
               layout="responsive"
               src={src}
               alt={alt}
-              placeholder="blur"
             ></Image>
           </Link>
         ) : (
@@ -65,7 +64,6 @@ export const Img = ({
             layout="responsive"
             src={src}
             alt={alt}
-            placeholder="blur"
           ></Image>
         )}
       </Component>

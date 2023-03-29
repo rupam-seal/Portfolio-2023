@@ -1,63 +1,17 @@
+import thumbnail from './placeholder.jpg';
+
 export const projects = [
-  // /**
-  // ===================================== PROJECT 1 =====================================
-  // **/
-  // {
-  //   id: 1,
-  //   title: 'Imo',
-  //   alt: '',
-  //   description:
-  //     "Imo is a image classification website. Users can easily upload their images and get instant results about the image's content, allowing them to organize their collections more efficiently.",
-  //   thumbnail: '/assets/images/imo/thumbnail.png',
-  //   image: '/assets/images/imo/thumbnail.png',
-  //   source: 'https://github.com/rupam-seal/imo',
-  //   live: '',
-  //   status:
-  //     "Future plans: Add new features, such as image details and image sharing options, to enhance users' experience.",
-  //   tools: ['Django', 'TesorFlow', 'Keras', 'JavaScript', 'HTML', 'CSS'],
-  //   year: '2023',
-  //   category: 'web',
-  //   feature: [
-  //     {
-  //       id: 1,
-  //       title: 'Upload Image',
-  //       image: '/assets/images/imo/demo1.png',
-  //       description:
-  //         'Users can upload one or more images to Imo, and the website will classify them into their respective categories using the VGG-16 convolutional neural network. VGG-16 is a deep neural network that consists of 16 layers and is commonly used for image recognition tasks due to its high accuracy and performance.',
-  //       status: '',
-  //     },
-
-  //     {
-  //       id: 2,
-  //       title: 'Category',
-  //       image: '/assets/images/imo/demo2.png',
-  //       description:
-  //         'Imo will categorize all the uploaded images into their respective categories, and users can view the items in each category individually by selecting the desired category. This feature will allow users to easily organize their images and quickly locate specific items of interest.',
-  //       status: '',
-  //     },
-
-  //     {
-  //       id: 3,
-  //       title: 'Images',
-  //       image: '/assets/images/imo/demo3.png',
-  //       description:
-  //         'This page displays the images belonging to a particular category, enabling users to browse through them easily.',
-  //       status: '',
-  //     },
-  //   ],
-  //   video: 'https://www.youtube.com/embed/w7nT0l8yMFk',
-  // },
-  /** 
-  ===================================== PROJECT 2 =====================================
-  **/
   {
+    /** 
+    ===================================== PROJECT 2 =====================================
+    **/
     id: 2,
     title: 'Cointra',
     alt: '',
     description:
       'CoinTra provides real-time information on the top 200 cryptocurrencies, including their current value, market cap, volume, and other key metrics. Users can search for specific coins using the search function.',
-    thumbnail: '/assets/images/cointra/thumbnail.png',
-    image: '/assets/images/cointra/thumbnail.png',
+    thumbnail: thumbnail,
+    image: thumbnail,
     source: 'https://github.com/rupam-seal/CoinTra',
     live: 'https://cointra.netlify.app/',
     status: 'Future plans: Add a top 5 coins carousel and chat option.',
@@ -94,6 +48,55 @@ export const projects = [
     ],
     video: 'https://www.youtube.com/embed/xHz6DkeAF44',
   },
+  /**
+  ===================================== PROJECT 1 =====================================
+  **/
+  {
+    id: 1,
+    title: 'Imo',
+    alt: '',
+    description:
+      "Imo is a image classification website. Users can easily upload their images and get instant results about the image's content, allowing them to organize their collections more efficiently.",
+    thumbnail: '/assets/images/imo/thumbnail.png',
+    image: '/assets/images/imo/thumbnail.png',
+    source: 'https://github.com/rupam-seal/imo',
+    live: '',
+    status:
+      "Future plans: Add new features, such as image details and image sharing options, to enhance users' experience.",
+    tools: ['Django', 'TesorFlow', 'Keras', 'JavaScript', 'HTML', 'CSS'],
+    year: '2023',
+    category: 'web',
+    feature: [
+      {
+        id: 1,
+        title: 'Upload Image',
+        image: '/assets/images/imo/demo1.png',
+        description:
+          'Users can upload one or more images to Imo, and the website will classify them into their respective categories using the VGG-16 convolutional neural network. VGG-16 is a deep neural network that consists of 16 layers and is commonly used for image recognition tasks due to its high accuracy and performance.',
+        status: '',
+      },
+
+      {
+        id: 2,
+        title: 'Category',
+        image: '/assets/images/imo/demo2.png',
+        description:
+          'Imo will categorize all the uploaded images into their respective categories, and users can view the items in each category individually by selecting the desired category. This feature will allow users to easily organize their images and quickly locate specific items of interest.',
+        status: '',
+      },
+
+      {
+        id: 3,
+        title: 'Images',
+        image: '/assets/images/imo/demo3.png',
+        description:
+          'This page displays the images belonging to a particular category, enabling users to browse through them easily.',
+        status: '',
+      },
+    ],
+    video: 'https://www.youtube.com/embed/w7nT0l8yMFk',
+  },
+
   /** 
   ===================================== PROJECT 3 =====================================
   **/
