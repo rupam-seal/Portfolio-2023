@@ -1,4 +1,4 @@
-import thumbnail from './placeholder.jpg';
+import thumbnail from '/assets/images/cointra/thumbnail.png';
 
 export const projects = [
   {
