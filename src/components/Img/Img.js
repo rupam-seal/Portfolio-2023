@@ -20,6 +20,9 @@ import Image from 'next/image';
  * @returns {Component} The Image component.
  */
 
+const IMAGE_WIDTH = 560;
+const IMAGE_HEIGHT = 321.38;
+
 export const Img = ({
   as,
   src,
@@ -48,8 +51,8 @@ export const Img = ({
             <Image
               className={styles.image}
               data-rounded={rounded}
-              width={560}
-              height={321.38}
+              width={IMAGE_WIDTH}
+              height={IMAGE_HEIGHT}
               layout="responsive"
               src={src}
               alt={alt}
@@ -59,8 +62,8 @@ export const Img = ({
           <Image
             className={styles.image}
             data-rounded={rounded}
-            width={560}
-            height={321.38}
+            width={IMAGE_WIDTH}
+            height={IMAGE_HEIGHT}
             src={src}
             alt={alt}
           ></Image>
