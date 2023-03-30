@@ -55,6 +55,8 @@ import cros_staff5 from '../src/assets/images/cros/staff5.png';
 import cros_staff6 from '../src/assets/images/cros/staff6.png';
 import cros_staff7 from '../src/assets/images/cros/staff7.png';
 
+import placeholder from '../src/assets/images/placeholder.jpg';
+
 export const projects = [
   {
     /** 
@@ -67,6 +69,7 @@ export const projects = [
       'CoinTra provides real-time information on the top 200 cryptocurrencies, including their current value, market cap, volume, and other key metrics. Users can search for specific coins using the search function.',
     thumbnail: cointra_thumbnail,
     image: cointra_thumbnail,
+    placeholder: placeholder,
     source: 'https://github.com/rupam-seal/CoinTra',
     live: 'https://cointra.netlify.app/',
     status: 'Future plans: Add a top 5 coins carousel and chat option.',
@@ -114,6 +117,7 @@ export const projects = [
       "Imo is a image classification website. Users can easily upload their images and get instant results about the image's content, allowing them to organize their collections more efficiently.",
     thumbnail: imo_thumbnail,
     image: imo_thumbnail,
+    placeholder: placeholder,
     source: 'https://github.com/rupam-seal/imo',
     live: '',
     status:
@@ -163,6 +167,7 @@ export const projects = [
       'This landing page for a drone website is built using React and Three.js, providing a modern and interactive user interface.',
     thumbnail: threed_thumbnail,
     image: threed_thumbnail,
+    placeholder: placeholder,
     source: 'https://github.com/rupam-seal/drone-website',
     live: 'https://threedrone.netlify.app/',
     status:
@@ -209,6 +214,7 @@ export const projects = [
       'This software reduces the hallmarking card generation process from 16 minutes to less than 4 minutes.',
     thumbnail: cardprinting_thumbnail,
     image: cardprinting_thumbnail,
+    placeholder: placeholder,
     source: 'https://github.com/rupam-seal/CardPrinting',
     live: '',
     status:
@@ -255,6 +261,7 @@ export const projects = [
       'Portfolio website 2022 made with ReactJs and other technologies',
     thumbnail: portfolio2022_thumbnail,
     image: portfolio2022_thumbnail,
+    placeholder: placeholder,
     source: 'https://github.com/rupam-seal/portfolio-2022.git',
     live: 'https://nilax-2022.netlify.app/',
     status:
@@ -331,6 +338,7 @@ export const projects = [
       'A native Android app that includes login and registration functionality, which can be integrated into any Android application.',
     thumbnail: orbit_thumbnail,
     image: orbit_thumbnail,
+    placeholder: placeholder,
     source: 'https://github.com/rupam-seal/Orbit.git',
     live: '',
     status:
@@ -392,6 +400,7 @@ export const projects = [
       'Cros is a customer relationship management (CRM) software built with Django, specifically designed for shop owners to help manage and track customer interactions, sales, and inventory. The application offers features such as sales reporting, customer analytics, and inventory management to help shop owners streamline their operations and improve their customer service.',
     thumbnail: cros_thumbnail,
     image: cros_thumbnail,
+    placeholder: placeholder,
     source: 'https://github.com/rupam-seal/Cros.git',
     live: 'https://cros-crm.vercel.app/',
     status:

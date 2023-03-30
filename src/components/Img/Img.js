@@ -7,6 +7,8 @@ import styles from './Img.module.css';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
+import placeholder from '../../assets/images/placeholder.jpg';
+
 /**
  * Img Component.
  *
@@ -49,6 +51,8 @@ export const Img = ({
         {href ? (
           <Link target={target} href={href} {...rest}>
             <Image
+              blurDataURL={placeholder}
+              placeholder={placeholder}
               className={styles.image}
               data-rounded={rounded}
               width={IMAGE_WIDTH}
@@ -60,6 +64,8 @@ export const Img = ({
           </Link>
         ) : (
           <Image
+            blurDataURL={placeholder}
+            placeholder={placeholder}
             className={styles.image}
             data-rounded={rounded}
             width={IMAGE_WIDTH}
