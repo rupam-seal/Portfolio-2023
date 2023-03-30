@@ -12,9 +12,12 @@ import styles from './ProjectDetails.module.css';
 import { A } from '@/components/A';
 
 export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
-  const { id, live, source } = projectData;
+  const { title, live, source } = projectData;
 
-  const path = `/projects/${id - 1}`;
+  console.log(projectData);
+
+  // const path = `/projects/${id - 1}`;
+  const path = `/projects/${title}`;
   return (
     <Section className={styles.section} align="center" justify="center">
       <Container direction="column">

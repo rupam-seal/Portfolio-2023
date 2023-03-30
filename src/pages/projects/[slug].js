@@ -21,7 +21,7 @@ const Project = () => {
 
   const { slug } = router.query;
 
-  const projectData = projects[slug];
+  const projectData = projects.filter((item) => item.title === slug)[0];
 
   return (
     <>
