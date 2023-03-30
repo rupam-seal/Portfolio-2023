@@ -76,7 +76,7 @@ export const Details = ({
           variants={textVariant(0.1)}
           secondary
         >
-          0{PROJECT_NO}/{totalProjects}
+          {projectNo < 9 ? `0${PROJECT_NO}` : PROJECT_NO}/{totalProjects}
         </Text>
       )}
       <Heading
