@@ -12,12 +12,21 @@ import styles from './ProjectDetails.module.css';
 import { A } from '@/components/A';
 
 export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
-  const { title, live, source } = projectData;
+  const { id, title, live, source, category } = projectData;
 
   console.log(projectData);
 
   // const path = `/projects/${id - 1}`;
-  const path = `/projects/${title}`;
+  // const path = `/projects/${title}`;
+
+  const slug = title;
+  const queryParams = { id: id, category: category };
+
+  const href = {
+    pathname: `/projects/${slug}`,
+    query: queryParams,
+  };
+
   return (
     <Section className={styles.section} align="center" justify="center">
       <Container direction="column">
@@ -27,14 +36,14 @@ export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
           totalProjects={totalProjects}
           showStatus={false}
           sliceDetails={true}
-          href1={path}
+          href1={href}
         />
         <ProjectButtons
           title1="View Project"
           title2={live === '' ? 'Github' : 'Live Site'}
           icon1="arrowRight"
           icon2={live === '' ? 'Github' : 'web'}
-          href1={path}
+          href1={href}
           href2={live === '' ? source : live}
           disabled={false}
           tooltip={false}
