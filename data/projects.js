@@ -56,6 +56,8 @@ import cros_staff6 from '../src/assets/images/cros/staff6.png';
 import cros_staff7 from '../src/assets/images/cros/staff7.png';
 
 import tsks_thumbnail from '../src/assets/images/tsks/thumbnail.png';
+import tsks_figma from '../src/assets/images/tsks/figma1.png';
+import tsks_developement1 from '../src/assets/images/tsks/developement1.png';
 import tsks_demo1 from '../src/assets/images/tsks/demo1.png';
 import tsks_demo2 from '../src/assets/images/tsks/demo2.png';
 import tsks_demo3 from '../src/assets/images/tsks/demo3.png';
@@ -615,81 +617,101 @@ export const projects = [
     category: 'web',
     feature: [
       {
-        title: 'About Page',
+        title: 'Figma Design',
+        image: tsks_figma,
+        description:
+          'Some of the pages have not been built yet as I am currently working on this project. The image I am referring to is my Figma design file for Tsks.',
+        status: 'figma design',
+      },
+      {
+        title: 'Figma Design - Dashboard',
         image: tsks_demo1,
         description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
+          'On this dashboard, users can view all their tasks, search for specific tasks using a search bar, and click on a task to view its details.',
+        status: 'Developement stage',
       },
       {
-        title: 'About Page',
-        image: tsks_demo2,
+        title: 'Developement - Dashboard',
+        image: tsks_developement1,
         description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
+          'On this dashboard, users can view all their tasks, search for specific tasks using a search bar, and click on a task to view its details.',
+        status: 'Developement stage',
       },
       {
-        title: 'About Page',
-        image: tsks_demo3,
+        title: 'Dashboard - Task Status',
+        image: tsks_developement1,
         description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
+          "Each task on the dashboard includes subtasks. Users can create subtasks under a task to organize their work. The status of a task can be not-started, in-progress, or completed. For instance, if a user wants to learn Physics, they can create a task named 'Physics' and add subtasks for different topics. View below Images",
+        status: 'Developement stage',
       },
       {
-        title: 'About Page',
-        image: tsks_demo4,
-        description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
-      },
-      {
-        title: 'About Page',
-        image: tsks_demo5,
-        description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
-      },
-      {
-        title: 'About Page',
-        image: tsks_demo6,
-        description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
-      },
-      {
-        title: 'About Page',
-        image: tsks_demo7,
-        description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
-      },
-      {
-        title: 'About Page',
-        image: tsks_demo8,
-        description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
-      },
-      {
-        title: 'About Page',
+        title: 'Status Header Click',
         image: tsks_demo9,
         description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
+          "Users can view and add comments on a particular task's status by clicking on its header. This allows users to provide additional information or updates related to the task's status.",
+        status: 'Not yet built',
       },
       {
-        title: 'About Page',
+        title: 'Not Started Tasks',
+        image: tsks_demo4,
+        description:
+          "On this dashboard, users can view and edit all their not-started tasks. A not-started task displays its status, due date, and a link to its details. If a user starts working on a subtask under a not-started task, the task's status is changed to in-progress.",
+        status: 'Not yet built',
+      },
+      {
+        title: 'In Progress Tasks',
+        image: tsks_demo2,
+        description:
+          'Users can view and edit all their in-progress tasks on this dashboard. Each in-progress task contains status, due-date, and a item link.',
+        status: 'Not yet built',
+      },
+      {
+        title: 'Completed Tasks',
+        image: tsks_demo3,
+        description:
+          'To complete a task, users must complete all of its subtasks that are marked as in-progress. Once a task is marked as completed, users cannot edit it. However, they can still view its details on the dashboard.',
+        status: 'Not yet built',
+      },
+      {
+        title: 'Sidebar Create Task Clicked Page',
+        image: tsks_demo6,
+        description:
+          'Users can create new tasks and add subtasks to them. See Below Image...',
+        status: 'Not yet built',
+      },
+      {
+        title: 'Subtask',
+        image: tsks_demo7,
+        description:
+          'Subtasks can be used to break down a task into smaller, manageable pieces of work.',
+        status: 'Not yet built',
+      },
+      {
+        title: 'Sidebar Tasks Item Clicked Page',
+        image: tsks_demo5,
+        description:
+          'The left sidebar of the dashboard displays a list of recently created tasks. Users can quickly click on a task in the list to view its subtask details.',
+        status: 'Not yet built',
+      },
+      {
+        title: "Sidebar Label Create '+' Button",
+        image: tsks_demo8,
+        description: "User can also create a label using sidebar '+' button",
+        status: 'Not yet built',
+      },
+      {
+        title: 'Search Page',
         image: tsks_demo10,
         description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
+          'Although the application includes a search bar to find specific tasks, I have also added a search button to the sidebar. This provides users with additional search features and options as the development progresses.',
+        status: 'Not yet built',
       },
       {
-        title: 'About Page',
+        title: 'User Profile Page',
         image: tsks_demo11,
         description:
-          'This page contains information about me and also contains one interactive 3d model.',
-        status: '',
+          "On this page, users can update their profile information and perform actions such as logging out or registering for the application. If a user clicks the 'logout' button, they will be redirected to the login page.",
+        status: 'Not yet built',
       },
     ],
   },

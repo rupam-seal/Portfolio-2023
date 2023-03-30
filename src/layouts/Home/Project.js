@@ -33,8 +33,16 @@ export const Project = ({
   totalProjects = '05',
   projectNo,
 }) => {
-  const { id, thumbnail, year, alt } = projectData;
-  const path = `/projects/${id - 1}`;
+  const { id, title, category, thumbnail, year, alt } = projectData;
+  // const path = `/projects/${id - 1}`;
+
+  const slug = title;
+  const queryParams = { id: id, category: category };
+
+  const path = {
+    pathname: `/projects/${slug}`,
+    query: queryParams,
+  };
 
   return (
     <Section
@@ -48,6 +56,7 @@ export const Project = ({
         projectData={projectData}
         projectNo={projectNo}
         totalProjects={totalProjects}
+        path={path}
       />
     </Section>
   );
