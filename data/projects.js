@@ -55,6 +55,19 @@ import cros_staff5 from '../src/assets/images/cros/staff5.png';
 import cros_staff6 from '../src/assets/images/cros/staff6.png';
 import cros_staff7 from '../src/assets/images/cros/staff7.png';
 
+import tsks_thumbnail from '../src/assets/images/tsks/thumbnail.png';
+import tsks_demo1 from '../src/assets/images/tsks/demo1.png';
+import tsks_demo2 from '../src/assets/images/tsks/demo2.png';
+import tsks_demo3 from '../src/assets/images/tsks/demo3.png';
+import tsks_demo4 from '../src/assets/images/tsks/demo4.png';
+import tsks_demo5 from '../src/assets/images/tsks/demo5.png';
+import tsks_demo6 from '../src/assets/images/tsks/demo6.png';
+import tsks_demo7 from '../src/assets/images/tsks/demo7.png';
+import tsks_demo8 from '../src/assets/images/tsks/demo8.png';
+import tsks_demo9 from '../src/assets/images/tsks/demo9.png';
+import tsks_demo10 from '../src/assets/images/tsks/demo10.png';
+import tsks_demo11 from '../src/assets/images/tsks/demo11.png';
+
 import placeholder from '../src/assets/images/placeholder.jpg';
 
 export const projects = [
@@ -569,6 +582,113 @@ export const projects = [
         image: cros_staff7,
         description:
           'The staff can create only order from this page. Admin has the permission to create all the other things.',
+        status: '',
+      },
+    ],
+  },
+
+  /** 
+  ===================================== PROJECT 8 =====================================
+  **/
+  {
+    id: 8,
+    title: 'Tsks',
+    alt: '',
+    description:
+      "When I want to learn something, I don't have an application that helps me set a clear study path. While I like applications such as Notion, it has too many features that can be overwhelming. Therefore, I am building an application that can manage all my course materials and tasks while providing a minimalistic study path.",
+    thumbnail: tsks_thumbnail,
+    image: tsks_thumbnail,
+    placeholder: placeholder,
+    source: 'https://github.com/rupam-seal/Tsks.git',
+    live: '',
+    status: 'Currently, it is in a development stage',
+    tools: [
+      'React.js',
+      'Django',
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'Vercel',
+      'Railway',
+    ],
+    year: '2023',
+    category: 'web',
+    feature: [
+      {
+        title: 'About Page',
+        image: tsks_demo1,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo2,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo3,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo4,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo5,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo6,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo7,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo8,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo9,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo10,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'About Page',
+        image: tsks_demo11,
+        description:
+          'This page contains information about me and also contains one interactive 3d model.',
         status: '',
       },
     ],

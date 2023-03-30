@@ -44,6 +44,8 @@ const Project = () => {
 
 const Info = ({ projectData }) => {
   const { image, source, live, tools, alt } = projectData;
+  const IMAGE_WIDTH = 850;
+  const IMAGE_HEIGHT = 487.41;
   return (
     <Container className={styles.wrapper} direction="column">
       <Container className={styles.info}>
@@ -71,6 +73,8 @@ const Info = ({ projectData }) => {
           src={image}
           href={''}
           alt={alt}
+          width={IMAGE_WIDTH}
+          height={IMAGE_HEIGHT}
           variants={textVariant(0.4)}
         />
 

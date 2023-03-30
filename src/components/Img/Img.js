@@ -22,8 +22,8 @@ import placeholder from '../../assets/images/placeholder.jpg';
  * @returns {Component} The Image component.
  */
 
-const IMAGE_WIDTH = 560;
-const IMAGE_HEIGHT = 321.38;
+const IMAGE_WIDTH = 800;
+const IMAGE_HEIGHT = 459;
 
 export const Img = ({
   as,
@@ -34,6 +34,8 @@ export const Img = ({
   variants = {},
   rounded = false,
   target = '_blank',
+  width = IMAGE_WIDTH,
+  height = IMAGE_HEIGHT,
   ...rest
 }) => {
   const Component = as || motion.div;
@@ -55,8 +57,8 @@ export const Img = ({
               placeholder={placeholder}
               className={styles.image}
               data-rounded={rounded}
-              width={IMAGE_WIDTH}
-              height={IMAGE_HEIGHT}
+              width={width}
+              height={height}
               layout="responsive"
               src={src}
               alt={alt}
@@ -68,8 +70,8 @@ export const Img = ({
             placeholder={placeholder}
             className={styles.image}
             data-rounded={rounded}
-            width={IMAGE_WIDTH}
-            height={IMAGE_HEIGHT}
+            width={width}
+            height={height}
             src={src}
             alt={alt}
           ></Image>
