@@ -12,7 +12,7 @@ import styles from './ProjectDetails.module.css';
 import { A } from '@/components/A';
 
 export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
-  const { id, title, live, source, category } = projectData;
+  const { id, title, live, source, category, description } = projectData;
 
   console.log(projectData);
 
@@ -20,7 +20,7 @@ export const ProjectDetails = ({ projectData, totalProjects, projectNo }) => {
   // const path = `/projects/${title}`;
 
   const slug = title;
-  const queryParams = { id: id, category: category };
+  const queryParams = { id: id, category: category, description: description };
 
   const href = {
     pathname: `/projects/${slug}`,
