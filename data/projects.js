@@ -33,6 +33,28 @@ import orbit_img3 from '../src/assets/images/orbit/demo3.png';
 import orbit_img4 from '../src/assets/images/orbit/demo4.png';
 import orbit_img5 from '../src/assets/images/orbit/demo5.png';
 
+import cros_thumbnail from '../src/assets/images/cros/thumbnail.png';
+import cros_figma1 from '../src/assets/images/cros/figma1.png';
+import cros_figma2 from '../src/assets/images/cros/figma2.png';
+import cros_demo1 from '../src/assets/images/cros/demo1.png';
+import cros_demo2 from '../src/assets/images/cros/demo2.png';
+import cros_demo3 from '../src/assets/images/cros/demo3.png';
+import cros_demo4 from '../src/assets/images/cros/demo4.png';
+import cros_admin1 from '../src/assets/images/cros/admin1.png';
+import cros_admin2 from '../src/assets/images/cros/admin2.png';
+import cros_admin3 from '../src/assets/images/cros/admin3.png';
+import cros_admin4 from '../src/assets/images/cros/admin4.png';
+import cros_admin5 from '../src/assets/images/cros/admin5.png';
+import cros_admin6 from '../src/assets/images/cros/admin6.png';
+import cros_admin7 from '../src/assets/images/cros/admin7.png';
+import cros_staff1 from '../src/assets/images/cros/staff1.png';
+import cros_staff2 from '../src/assets/images/cros/staff2.png';
+import cros_staff3 from '../src/assets/images/cros/staff3.png';
+import cros_staff4 from '../src/assets/images/cros/staff4.png';
+import cros_staff5 from '../src/assets/images/cros/staff5.png';
+import cros_staff6 from '../src/assets/images/cros/staff6.png';
+import cros_staff7 from '../src/assets/images/cros/staff7.png';
+
 export const projects = [
   {
     /** 
@@ -48,7 +70,7 @@ export const projects = [
     source: 'https://github.com/rupam-seal/CoinTra',
     live: 'https://cointra.netlify.app/',
     status: 'Future plans: Add a top 5 coins carousel and chat option.',
-    tools: ['React.js', 'JavaScript', 'CSS', 'Axios'],
+    tools: ['React.js', 'JavaScript', 'CSS', 'Axios', 'Netlify'],
     year: '2023',
     category: 'web',
     feature: [
@@ -145,7 +167,7 @@ export const projects = [
     live: 'https://threedrone.netlify.app/',
     status:
       'Future plans: At present, the 3D model features an animation that rotates the propeller of the drone. However, I am considering adding more interactive elements such as pan and zoom in the future.',
-    tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'CSS'],
+    tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'CSS', 'Netlify'],
     year: '2023',
     category: 'web',
     feature: [
@@ -237,7 +259,7 @@ export const projects = [
     live: 'https://nilax-2022.netlify.app/',
     status:
       'Need to update code, refractor complete project and improve performance.',
-    tools: ['React.js', 'CSS', 'FramerMotion'],
+    tools: ['React.js', 'CSS', 'FramerMotion', 'Netlify'],
     year: '2023',
     category: 'web',
     feature: [
@@ -368,16 +390,179 @@ export const projects = [
     alt: '',
     description:
       'Cros is a customer relationship management (CRM) software built with Django, specifically designed for shop owners to help manage and track customer interactions, sales, and inventory. The application offers features such as sales reporting, customer analytics, and inventory management to help shop owners streamline their operations and improve their customer service.',
-    thumbnail: cointra_thumbnail,
-    image: cointra_thumbnail,
+    thumbnail: cros_thumbnail,
+    image: cros_thumbnail,
     source: 'https://github.com/rupam-seal/Cros.git',
     live: 'https://cros-crm.vercel.app/',
     status:
       'To enable users to access the project without the need for login or signup, a guest user feature will need to be implemented. This feature will allow anyone to use the project with limited access, providing a seamless user experience. By incorporating the guest user feature, users can quickly access the project and perform basic tasks, such as viewing content or submitting forms, without creating an account or providing personal information.',
-    tools: ['Django', 'HTML', 'CSS', 'JavaScript', 'Charts.js'],
+    tools: [
+      'Django',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Charts.js',
+      'Figma',
+      'Vercel',
+      'Railway',
+    ],
     year: '2023',
     category: 'web',
-    feature: [],
+    feature: [
+      {
+        title: 'Figma Design1',
+        image: cros_figma1,
+        description:
+          'After creating a prototype in Figma, I proceeded with the development phase where I changed the color palette. Therefore, there may be differences between the color palette used in Figma and the one used in the final development.',
+        status: '',
+      },
+      {
+        title: 'Figma Design2',
+        image: cros_figma2,
+        description:
+          "The login and signup page design used in the current development phase is based on my previous project's design. However, there are still some features and design elements that need to be implemented in order to ensure that the login and signup pages match the design in Figma.",
+        status: '',
+      },
+      {
+        title: 'Guest',
+        image: cros_demo1,
+        description:
+          'Users who want to try the application can access it using the guest feature, which allows them to explore the application without creating an account or logging in.',
+        status: '',
+      },
+      {
+        title: 'Login',
+        image: cros_demo2,
+        description:
+          'Users can login with username or email and password credentials.',
+        status: '',
+      },
+      {
+        title: 'Register',
+        image: cros_demo3,
+        description:
+          'Any user who registers using this page will be assigned staff permissions and will not be allowed to have admin permissions.',
+        status: '',
+      },
+      {
+        title: 'Reset Password',
+        image: cros_demo4,
+        description: 'Reset password using email and django auth_views.',
+        status: '',
+      },
+      {
+        title: 'Admin Dashboard',
+        image: cros_admin1,
+        description:
+          'This page is only visible to people with administrative privileges other users cannot access it. The page contains all the relevant information about stocks, orders, pending orders count, and paid orders count. Additionally, there are two charts on the page; one displays the current stock levels with item sales, and the other shows the number of paid and pending orders. The admin can quickly view ongoing orders in real-time on this page.',
+        status: '',
+      },
+      {
+        title: 'Admin Dashboard',
+        image: cros_admin1,
+        description:
+          'This page is only visible to people with administrative privileges other users cannot access it. The page contains all the relevant information about stocks, orders, pending orders count, and paid orders count. Additionally, there are two charts on the page; one displays the current stock levels with item sales, and the other shows the number of paid and pending orders. The admin can quickly view ongoing orders in real-time on this page.',
+        status: '',
+      },
+      {
+        title: 'Admin Dashboard',
+        image: cros_admin1,
+        description:
+          'This page is only visible to people with administrative privileges other users cannot access it. The page contains all the relevant information about stocks, orders, pending orders count, and paid orders count. Additionally, there are two charts on the page; one displays the current stock levels with item sales, and the other shows the number of paid and pending orders. The admin can quickly view ongoing orders in real-time on this page.',
+        status: '',
+      },
+      {
+        title: 'Admin Orders',
+        image: cros_admin2,
+        description:
+          "This page features two categories for orders: 'paid' and 'pending.' All orders are sorted into either of these two categories.",
+        status: '',
+      },
+      {
+        title: 'Admin Orders Pending',
+        image: cros_admin3,
+        description:
+          'This page exclusively displays all pending orders on the shop, and users have the option to remove or edit pending orders.',
+        status: '',
+      },
+      {
+        title: 'Admin Orders Paid',
+        image: cros_admin4,
+        description:
+          "This page exclusively displays all paid orders on the shop, and users doesn't have the option to remove or edit pending orders.",
+        status: '',
+      },
+      {
+        title: 'Admin Category',
+        image: cros_admin5,
+        description:
+          "This page displays all item categories, such as the 'iPhone' item which belongs to the 'smartphone' category. The page categorizes items, and clicking on a category shows all relevant items that belong to that category.",
+        status: '',
+      },
+      {
+        title: 'Admin Stuffs',
+        image: cros_admin6,
+        description:
+          'From this page, the admin can create staff users, and also view all the staff information, including profile pictures.',
+        status: '',
+      },
+      {
+        title: 'Admin Create',
+        image: cros_admin7,
+        description:
+          'The admin can create all stock items from this page, such as category, brand, item, and order.',
+        status: '',
+      },
+      {
+        title: 'Staff Dashboard',
+        image: cros_staff1,
+        description:
+          'This page displays all the statistics for a single staff member, including how many items they have sold, how many items they have pending, and the total amount of sales.',
+        status: '',
+      },
+      {
+        title: 'Staff Orders',
+        image: cros_staff2,
+        description:
+          "This page features two categories for orders: 'paid' and 'pending.' All orders are sorted into either of these two categories.",
+        status: '',
+      },
+      {
+        title: 'Staff Orders Pending',
+        image: cros_staff3,
+        description:
+          'This page displays all the pending orders, and staff have the option to remove or edit pending orders.',
+        status: '',
+      },
+      {
+        title: 'Staff Orders Paid',
+        image: cros_staff4,
+        description:
+          'This page displays all the pending orders that have been sold by the current staff member. Paid orders cannot be edited.',
+        status: '',
+      },
+      {
+        title: 'Staff Category',
+        image: cros_staff5,
+        description:
+          "This page displays all item categories, such as the 'iPhone' item which belongs to the 'smartphone' category. The page categorizes items, and clicking on a category shows all relevant items that belong to that category.",
+        status: '',
+      },
+      {
+        title: 'Staff Customers',
+        image: cros_staff6,
+        description:
+          'This page allows the staff to create customers and view the information of only those customers for whom they have sold items.',
+        status: '',
+      },
+      {
+        title: 'Staff Create',
+        image: cros_staff7,
+        description:
+          'The staff can create only order from this page. Admin has the permission to create all the other things.',
+        status: '',
+      },
+    ],
   },
 ];
 

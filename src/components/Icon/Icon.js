@@ -66,6 +66,15 @@ import { AiFillInstagram } from 'react-icons/ai';
  **/
 import { TbBrandFirebase } from 'react-icons/tb';
 /**
+ * Database
+ **/
+import { SiRailway } from 'react-icons/si';
+/**
+ * Server
+ **/
+import { SiVercel } from 'react-icons/si';
+import { SiNetlify } from 'react-icons/si';
+/**
  * OTHERS
  **/
 import { BsArrowDownLeftCircleFill } from 'react-icons/bs';
@@ -145,6 +154,15 @@ export const icons = {
    * Services
    **/
   Firebase: TbBrandFirebase,
+  /**
+   * Database
+   **/
+  Railway: SiRailway,
+  /**
+   * Server
+   **/
+  Vercel: SiVercel,
+  Netlify: SiNetlify,
   /**
    * OTHERS
    **/
