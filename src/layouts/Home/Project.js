@@ -30,7 +30,7 @@ export const Project = ({
   direction,
   value,
   projectData,
-  totalProjects = '05',
+  totalProjects = '06',
   projectNo,
 }) => {
   const { id, title, category, thumbnail, year, alt } = projectData;

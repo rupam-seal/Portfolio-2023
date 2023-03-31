@@ -43,7 +43,7 @@ export const Title = () => {
 
 export const ProjectsData = () => {
   // Only show 5 projects that have a featured image
-  const projectsData = projects.slice(0, 5).map((project, index) => {
+  const projectsData = projects.slice(0, 6).map((project, index) => {
     return (
       <Container key={index}>
         {index % 2 === 0 ? (

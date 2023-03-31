@@ -618,6 +618,34 @@ export const projects = [
   **/
   {
     id: 5,
+    title: 'Proxo',
+    alt: '',
+    description:
+      'Proxo is a social media application built natively for Android using Java.',
+    thumbnail: threed_thumbnail,
+    image: threed_thumbnail,
+    placeholder: placeholder,
+    source: 'https://github.com/rupam-seal/drone-website',
+    live: 'https://threedrone.netlify.app/',
+    status:
+      'Future plans: At present, the 3D model features an animation that ' +
+      'rotates the propeller of the drone. However, I am considering ' +
+      'adding more interactive elements such as pan and zoom in the future.',
+    tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'CSS', 'Netlify'],
+    year: '2023',
+    category: 'web',
+    feature: [],
+    video: 'https://www.youtube.com/embed/NCiPE6CgJy8',
+  },
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: THREED - END ::::::::::::::::::::::::::::::::::::::::
+  **/
+
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: THREED - START ::::::::::::::::::::::::::::::::::::::::
+  **/
+  {
+    id: 6,
     title: 'ThreeD',
     alt: '',
     description:
@@ -672,7 +700,7 @@ export const projects = [
   :::::::::::::::::::::::::::::::::::::::: CARD PRINTING - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 6,
+    id: 7,
     title: 'Card Printing',
     alt: '',
     description:
@@ -726,7 +754,7 @@ export const projects = [
     :::::::::::::::::::::::::::::::::::::::: COINTRA - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 7,
+    id: 8,
     title: 'Cointra',
     alt: '',
     description:
@@ -788,7 +816,7 @@ export const projects = [
   :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2022 - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 8,
+    id: 9,
     title: 'Portfolio 2022',
     alt: '',
     description:
@@ -868,7 +896,7 @@ export const projects = [
   :::::::::::::::::::::::::::::::::::::::: ORBIT - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 9,
+    id: 10,
     title: 'Orbit',
     alt: '',
     description:
