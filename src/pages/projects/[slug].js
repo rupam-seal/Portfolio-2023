@@ -33,7 +33,7 @@ const Project = () => {
             description={projectData.description}
           />
           <Info projectData={projectData} />
-          <FeaturedImages projectData={projectData} />
+          {projectData.feature && <FeaturedImages projectData={projectData} />}
           <FeatureVideo projectData={projectData} />
           <Footer />
         </Container>
