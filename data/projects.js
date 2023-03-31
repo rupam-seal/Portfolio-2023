@@ -90,6 +90,10 @@ import tsks_demo11 from '../src/assets/images/tsks/demo11.png';
   PORTFOLIO 2023
 **/
 import portfolio2023_thumbnail from '../src/assets/images/portfolio2023/thumbnail.png';
+import portfolio2023_components1 from '../src/assets/images/portfolio2023/components1.png';
+import portfolio2023_components2 from '../src/assets/images/portfolio2023/components2.png';
+import portfolio2023_components3 from '../src/assets/images/portfolio2023/components3.png';
+import portfolio2023_components4 from '../src/assets/images/portfolio2023/components4.png';
 /** 
   PLACEHOLDER
 **/
@@ -117,7 +121,36 @@ export const projects = [
     tools: ['React.js', 'JavaScript', 'CSS', 'Axios', 'Netlify'],
     year: '2023',
     category: 'web',
-    info: [{ id: 'heading', content: 'Problem', level: '4' }],
+    feature: [
+      {
+        title: 'Components',
+        image: portfolio2023_components1,
+        description:
+          'I separated the logic and presentation of the components like button, container, and section in my React.js application for easier maintenance and reuse, as they appear multiple times throughout the app.',
+        status: '',
+      },
+      {
+        title: 'Component files structure',
+        image: portfolio2023_components2,
+        description:
+          "The 'components/' folder has a subfolder called 'Button/' that contains three files, 'Button.js', 'Button.module.css', and 'index.js', to keep the code and styles of each component separate, enabling easier maintenance and reuse. This structure also follows the convention of using an index.js file to export the component, simplifying imports by allowing you to use the folder name.",
+        status: '',
+      },
+      {
+        title: 'Container js file',
+        image: portfolio2023_components3,
+        description:
+          'This React functional component, called Container, uses motion.div from Framer Motion to wrap child components, and provides props for controlling flexbox direction, alignment, justification, motion variants, and z-index, including as, show, className, children, direction, align, justify, variants, and z.',
+        status: '',
+      },
+      {
+        title: 'Other components js file',
+        image: portfolio2023_components4,
+        description:
+          'Most of the components in the application are following the aforementioned file structure convention.',
+        status: '',
+      },
+    ],
   },
   /** 
       :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2023 - END ::::::::::::::::::::::::::::::::::::::::

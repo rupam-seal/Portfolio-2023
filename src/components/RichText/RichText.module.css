@@ -8,6 +8,14 @@
   height: var(--minWidthM);
 }
 
+.heading {
+  margin-top: var(--space3XL);
+}
+
+.image {
+  margin-top: var(--space2XL);
+}
+
 .paragraph {
-  margin-bottom: var(--space3XL);
+  margin-top: var(--space2XL);
 }

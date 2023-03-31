@@ -83,9 +83,9 @@ const Info = ({ projectData }) => {
           className={styles.list}
           variants={textVariant(0.1)}
         >
-          <Text className={styles.tools} size="l">
+          <Heading className={styles.tools} level={4}>
             Tool Used
-          </Text>
+          </Heading>
           <CardList items={tools} className={styles.toolsList} />
         </Container>
         <RichText projectData={projectData} />
