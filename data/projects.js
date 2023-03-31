@@ -97,65 +97,30 @@ import placeholder from '../src/assets/images/placeholder.jpg';
 
 export const projects = [
   /** 
-    :::::::::::::::::::::::::::::::::::::::: COINTRA - START ::::::::::::::::::::::::::::::::::::::::
+    :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2023 - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
     id: 1,
-    title: 'Cointra',
+    title: 'Portfolio 2023',
     alt: '',
     description:
-      'CoinTra provides real-time information on the top 200 cryptocurrencies, ' +
-      'including their current value, market cap, volume, and other key metrics. ' +
-      'Users can search for specific coins using the search function.',
-    thumbnail: cointra_thumbnail,
-    image: cointra_thumbnail,
+      'This project showcases the structure and code of my current React ' +
+      'project, which utilizes several best practices such as component-based ' +
+      'architecture, separation of concerns, and the use of state management ' +
+      'libraries. The project is designed to be modular, scalable, and maintainable.',
+    thumbnail: portfolio2023_thumbnail,
+    image: portfolio2023_thumbnail,
     placeholder: placeholder,
-    source: 'https://github.com/rupam-seal/CoinTra',
-    live: 'https://cointra.netlify.app/',
+    source: 'https://github.com/rupam-seal/portfolio-2023',
+    live: '',
     status: 'Future plans: Add a top 5 coins carousel and chat option.',
     tools: ['React.js', 'JavaScript', 'CSS', 'Axios', 'Netlify'],
     year: '2023',
     category: 'web',
-    feature: [
-      {
-        id: 1,
-        title: 'Main page',
-        image: cointra_img1,
-        description:
-          'Users can view the real-time status of all cryptocurrencies, ' +
-          'as well as use the search function to quickly locate information ' +
-          'on a specific coin.',
-        status: '',
-      },
-
-      {
-        id: 2,
-        title: 'Single Coin page',
-        image: cointra_img2,
-        description:
-          'The website provides a single coin page that displays key ' +
-          'metrics such as price change percentage, market cap value, ' +
-          'and volume, along with a historical chart to track price trends. ' +
-          'To fetch historical data, the website uses the Axios library, ' +
-          'which enables efficient and reliable data retrieval.',
-        status: '',
-      },
-
-      {
-        id: 3,
-        title: 'Pagination',
-        image: cointra_img3,
-        description:
-          'To enable seamless navigation between pages, the website ' +
-          'utilizes a component built using Material UI, a popular ' +
-          'React-based design framework.',
-        status: '',
-      },
-    ],
-    video: 'https://www.youtube.com/embed/xHz6DkeAF44',
+    info: [{ id: 'heading', content: 'Problem', level: '4' }],
   },
   /** 
-    :::::::::::::::::::::::::::::::::::::::: COINTRA - END ::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2023 - END ::::::::::::::::::::::::::::::::::::::::
   **/
 
   /**
@@ -221,266 +186,10 @@ export const projects = [
   **/
 
   /** 
-  :::::::::::::::::::::::::::::::::::::::: THREED - START ::::::::::::::::::::::::::::::::::::::::
-  **/
-  {
-    id: 3,
-    title: 'ThreeD',
-    alt: '',
-    description:
-      'This landing page for a drone website is built using React and ' +
-      'Three.js, providing a modern and interactive user interface.',
-    thumbnail: threed_thumbnail,
-    image: threed_thumbnail,
-    placeholder: placeholder,
-    source: 'https://github.com/rupam-seal/drone-website',
-    live: 'https://threedrone.netlify.app/',
-    status:
-      'Future plans: At present, the 3D model features an animation that ' +
-      'rotates the propeller of the drone. However, I am considering ' +
-      'adding more interactive elements such as pan and zoom in the future.',
-    tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'CSS', 'Netlify'],
-    year: '2023',
-    category: 'web',
-    feature: [
-      {
-        title: 'Main page',
-        image: threed_thumbnail,
-        description:
-          'Currently, this website has only one page. However iam ' +
-          'planning to add more features and pages to this website.',
-        status: '',
-      },
-      {
-        title: 'Rotation of Propeller',
-        gif: threed_gif1,
-        description:
-          'If a user hovers over the drone GLB model, the propeller ' +
-          'rotation will start automatically, enhancing the interactive experience.',
-        status: '',
-      },
-      {
-        title: 'Change color',
-        gif: threed_gif2,
-        description:
-          'User can click a button to change the color of the drone ' +
-          'to blue, red, yellow, or green, providing a customizable ' +
-          'and interactive experience.',
-        status: '',
-      },
-    ],
-    video: 'https://www.youtube.com/embed/NCiPE6CgJy8',
-  },
-  /** 
-  :::::::::::::::::::::::::::::::::::::::: THREED - END ::::::::::::::::::::::::::::::::::::::::
-  **/
-
-  /** 
-  :::::::::::::::::::::::::::::::::::::::: CARD PRINTING - START ::::::::::::::::::::::::::::::::::::::::
-  **/
-  {
-    id: 4,
-    title: 'Card Printing',
-    alt: '',
-    description:
-      'This software reduces the hallmarking card generation process ' +
-      'from 16 minutes to less than 4 minutes.',
-    thumbnail: cardprinting_thumbnail,
-    image: cardprinting_thumbnail,
-    placeholder: placeholder,
-    source: 'https://github.com/rupam-seal/CardPrinting',
-    live: '',
-    status:
-      'This software is designed for use in gold hallmarking centers ' +
-      'and is used by over 10 such centers for generating and printing ' +
-      'cards with gold hallmarking information.',
-    tools: ['Python', 'Tkinter'],
-    year: '2023',
-    category: 'desktop',
-    feature: [
-      {
-        title: 'Login Page',
-        image: cardprinting_img1,
-        description:
-          'Users can log in from this page, and after logging in, they ' +
-          'will be redirected to the home page.',
-        status: '',
-      },
-      {
-        title: 'Home Page',
-        image: cardprinting_img2,
-        description:
-          "The user can input information, and upon clicking the 'Gold' " +
-          'button, the software will generate a card with the entered information.',
-        status: '',
-      },
-      {
-        title: 'Print page',
-        image: cardprinting_img3,
-        description:
-          "After the user clicks on the 'Print' button, the software will " +
-          'Sprint a hardcopy of the generated card.',
-        status: '',
-      },
-    ],
-    video: 'https://www.youtube.com/embed/CnM-VT5AU4Y',
-  },
-  /** 
-  :::::::::::::::::::::::::::::::::::::::: CARD PRINTING - END ::::::::::::::::::::::::::::::::::::::::
-  **/
-
-  /** 
-  :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2022 - START ::::::::::::::::::::::::::::::::::::::::
-  **/
-  {
-    id: 5,
-    title: 'Portfolio 2022',
-    alt: '',
-    description:
-      'Portfolio website 2022 made with ReactJs and other technologies',
-    thumbnail: portfolio2022_thumbnail,
-    image: portfolio2022_thumbnail,
-    placeholder: placeholder,
-    source: 'https://github.com/rupam-seal/portfolio-2022.git',
-    live: 'https://nilax-2022.netlify.app/',
-    status:
-      'Need to update code, refractor complete project and improve performance.',
-    tools: ['React.js', 'CSS', 'FramerMotion', 'Netlify'],
-    year: '2023',
-    category: 'web',
-    feature: [
-      {
-        title: 'About Page',
-        image: portfolio2022_img1,
-        description:
-          'This page contains information about me and also contains ' +
-          'one interactive 3d model.',
-        status: '',
-      },
-      {
-        title: 'Skills Page',
-        image: portfolio2022_img2,
-        description: 'List of all the skills and technologies that I know.',
-        status: '',
-      },
-      {
-        title: 'Projects Page',
-        image: portfolio2022_img3,
-        description:
-          'My portfolio includes a section that highlights some of my projects.',
-        status: '',
-      },
-      {
-        title: 'Single Projects Page',
-        image: portfolio2022_img4,
-        description:
-          'The focus of this page is to provide a detailed overview of one project.',
-        status: '',
-      },
-      {
-        title: 'Custom Cursor',
-        gif: portfolio2022_gif5,
-        description:
-          'The custom cursor is built using CSS and JavaScript. The custom ' +
-          'cursor is a blob that has a gradient background that spins and ' +
-          'some tweaks in border-radius and transform property. It behaves ' +
-          'like a liquid object.',
-        status: '',
-      },
-      {
-        title: '3d Model',
-        gif: portfolio2022_gif6,
-        description: 'You can experience an immersive interactive 3D model',
-        status: '',
-      },
-      {
-        title: 'Tilt Image',
-        gif: portfolio2022_gif7,
-        description:
-          'If you hover over the image on the project details page, a JavaScript ' +
-          'animation will cause it to tilt and add a 3d effect.',
-        status:
-          'To enhance the tilt animation on the image, I need to modify the code ' +
-          'so that the animation continues even after the cursor is removed from the image.',
-      },
-    ],
-  },
-  /** 
-  :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2022 - END ::::::::::::::::::::::::::::::::::::::::
-  **/
-
-  /** 
-  :::::::::::::::::::::::::::::::::::::::: ORBIT - START ::::::::::::::::::::::::::::::::::::::::
-  **/
-  {
-    id: 6,
-    title: 'Orbit',
-    alt: '',
-    description:
-      'A native Android app that includes login and registration functionality, ' +
-      'which can be integrated into any Android application.',
-    thumbnail: orbit_thumbnail,
-    image: orbit_thumbnail,
-    placeholder: placeholder,
-    source: 'https://github.com/rupam-seal/Orbit.git',
-    live: '',
-    status:
-      'a native Android app that includes login and registration functionality, ' +
-      'which can be integrated into any Android application.',
-    tools: ['AndroidStudio', 'Java', 'XML', 'Firebase'],
-    year: '2023',
-    category: 'android',
-    feature: [
-      {
-        title: 'Onboarding Activity',
-        image: orbit_img1,
-        description:
-          'This activity includes a slider that displays all the features ' +
-          'of the application and allows the user to navigate to the login ' +
-          'page and registration page.',
-        status: '',
-      },
-      {
-        title: 'Login Activity',
-        image: orbit_img2,
-        description:
-          'In addition, the user can also reset their password if their ' +
-          'account is available.',
-        status: '',
-      },
-      {
-        title: 'Registration Activity',
-        image: orbit_img3,
-        description:
-          'Furthermore, the user can register for an account using a username ' +
-          'and email, and the registration form includes password validation as well.',
-        status: '',
-      },
-      {
-        title: 'Forgot Password Activity',
-        image: orbit_img4,
-        description: 'The user can reset their password from within this page.',
-        status: '',
-      },
-      {
-        title: 'Project Structure',
-        image: orbit_img5,
-        description:
-          'The project structure has been designed in a simple manner to ' +
-          'facilitate ease of understanding for the code.',
-        status: '',
-      },
-    ],
-  },
-  /** 
-  :::::::::::::::::::::::::::::::::::::::: ORBIT - END ::::::::::::::::::::::::::::::::::::::::
-  **/
-
-  /** 
   :::::::::::::::::::::::::::::::::::::::: CROS - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 7,
+    id: 3,
     title: 'Cros',
     alt: '',
     description:
@@ -722,7 +431,7 @@ export const projects = [
   :::::::::::::::::::::::::::::::::::::::: TSKS - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 8,
+    id: 4,
     title: 'Tsks',
     alt: '',
     description:
@@ -872,30 +581,321 @@ export const projects = [
   **/
 
   /** 
-    :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2023 - START ::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::: THREED - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 9,
-    title: 'Portfolio 2023',
+    id: 5,
+    title: 'ThreeD',
     alt: '',
     description:
-      'This project showcases the structure and code of my current React ' +
-      'project, which utilizes several best practices such as component-based ' +
-      'architecture, separation of concerns, and the use of state management ' +
-      'libraries. The project is designed to be modular, scalable, and maintainable.',
-    thumbnail: portfolio2023_thumbnail,
-    image: portfolio2023_thumbnail,
+      'This landing page for a drone website is built using React and ' +
+      'Three.js, providing a modern and interactive user interface.',
+    thumbnail: threed_thumbnail,
+    image: threed_thumbnail,
     placeholder: placeholder,
-    source: 'https://github.com/rupam-seal/portfolio-2023',
+    source: 'https://github.com/rupam-seal/drone-website',
+    live: 'https://threedrone.netlify.app/',
+    status:
+      'Future plans: At present, the 3D model features an animation that ' +
+      'rotates the propeller of the drone. However, I am considering ' +
+      'adding more interactive elements such as pan and zoom in the future.',
+    tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'CSS', 'Netlify'],
+    year: '2023',
+    category: 'web',
+    feature: [
+      {
+        title: 'Main page',
+        image: threed_thumbnail,
+        description:
+          'Currently, this website has only one page. However iam ' +
+          'planning to add more features and pages to this website.',
+        status: '',
+      },
+      {
+        title: 'Rotation of Propeller',
+        gif: threed_gif1,
+        description:
+          'If a user hovers over the drone GLB model, the propeller ' +
+          'rotation will start automatically, enhancing the interactive experience.',
+        status: '',
+      },
+      {
+        title: 'Change color',
+        gif: threed_gif2,
+        description:
+          'User can click a button to change the color of the drone ' +
+          'to blue, red, yellow, or green, providing a customizable ' +
+          'and interactive experience.',
+        status: '',
+      },
+    ],
+    video: 'https://www.youtube.com/embed/NCiPE6CgJy8',
+  },
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: THREED - END ::::::::::::::::::::::::::::::::::::::::
+  **/
+
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: CARD PRINTING - START ::::::::::::::::::::::::::::::::::::::::
+  **/
+  {
+    id: 6,
+    title: 'Card Printing',
+    alt: '',
+    description:
+      'This software reduces the hallmarking card generation process ' +
+      'from 16 minutes to less than 4 minutes.',
+    thumbnail: cardprinting_thumbnail,
+    image: cardprinting_thumbnail,
+    placeholder: placeholder,
+    source: 'https://github.com/rupam-seal/CardPrinting',
     live: '',
+    status:
+      'This software is designed for use in gold hallmarking centers ' +
+      'and is used by over 10 such centers for generating and printing ' +
+      'cards with gold hallmarking information.',
+    tools: ['Python', 'Tkinter'],
+    year: '2023',
+    category: 'desktop',
+    feature: [
+      {
+        title: 'Login Page',
+        image: cardprinting_img1,
+        description:
+          'Users can log in from this page, and after logging in, they ' +
+          'will be redirected to the home page.',
+        status: '',
+      },
+      {
+        title: 'Home Page',
+        image: cardprinting_img2,
+        description:
+          "The user can input information, and upon clicking the 'Gold' " +
+          'button, the software will generate a card with the entered information.',
+        status: '',
+      },
+      {
+        title: 'Print page',
+        image: cardprinting_img3,
+        description:
+          "After the user clicks on the 'Print' button, the software will " +
+          'Sprint a hardcopy of the generated card.',
+        status: '',
+      },
+    ],
+    video: 'https://www.youtube.com/embed/CnM-VT5AU4Y',
+  },
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: CARD PRINTING - END ::::::::::::::::::::::::::::::::::::::::
+  **/
+
+  /** 
+    :::::::::::::::::::::::::::::::::::::::: COINTRA - START ::::::::::::::::::::::::::::::::::::::::
+  **/
+  {
+    id: 7,
+    title: 'Cointra',
+    alt: '',
+    description:
+      'CoinTra provides real-time information on the top 200 cryptocurrencies, ' +
+      'including their current value, market cap, volume, and other key metrics. ' +
+      'Users can search for specific coins using the search function.',
+    thumbnail: cointra_thumbnail,
+    image: cointra_thumbnail,
+    placeholder: placeholder,
+    source: 'https://github.com/rupam-seal/CoinTra',
+    live: 'https://cointra.netlify.app/',
     status: 'Future plans: Add a top 5 coins carousel and chat option.',
     tools: ['React.js', 'JavaScript', 'CSS', 'Axios', 'Netlify'],
     year: '2023',
     category: 'web',
-    info: [{ id: 'heading', content: 'Problem', level: '4' }],
+    feature: [
+      {
+        id: 1,
+        title: 'Main page',
+        image: cointra_img1,
+        description:
+          'Users can view the real-time status of all cryptocurrencies, ' +
+          'as well as use the search function to quickly locate information ' +
+          'on a specific coin.',
+        status: '',
+      },
+
+      {
+        id: 2,
+        title: 'Single Coin page',
+        image: cointra_img2,
+        description:
+          'The website provides a single coin page that displays key ' +
+          'metrics such as price change percentage, market cap value, ' +
+          'and volume, along with a historical chart to track price trends. ' +
+          'To fetch historical data, the website uses the Axios library, ' +
+          'which enables efficient and reliable data retrieval.',
+        status: '',
+      },
+
+      {
+        id: 3,
+        title: 'Pagination',
+        image: cointra_img3,
+        description:
+          'To enable seamless navigation between pages, the website ' +
+          'utilizes a component built using Material UI, a popular ' +
+          'React-based design framework.',
+        status: '',
+      },
+    ],
+    video: 'https://www.youtube.com/embed/xHz6DkeAF44',
   },
   /** 
-    :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2023 - END ::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::: COINTRA - END ::::::::::::::::::::::::::::::::::::::::
+  **/
+
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2022 - START ::::::::::::::::::::::::::::::::::::::::
+  **/
+  {
+    id: 8,
+    title: 'Portfolio 2022',
+    alt: '',
+    description:
+      'Portfolio website 2022 made with ReactJs and other technologies',
+    thumbnail: portfolio2022_thumbnail,
+    image: portfolio2022_thumbnail,
+    placeholder: placeholder,
+    source: 'https://github.com/rupam-seal/portfolio-2022.git',
+    live: 'https://nilax-2022.netlify.app/',
+    status:
+      'Need to update code, refractor complete project and improve performance.',
+    tools: ['React.js', 'CSS', 'FramerMotion', 'Netlify'],
+    year: '2023',
+    category: 'web',
+    feature: [
+      {
+        title: 'About Page',
+        image: portfolio2022_img1,
+        description:
+          'This page contains information about me and also contains ' +
+          'one interactive 3d model.',
+        status: '',
+      },
+      {
+        title: 'Skills Page',
+        image: portfolio2022_img2,
+        description: 'List of all the skills and technologies that I know.',
+        status: '',
+      },
+      {
+        title: 'Projects Page',
+        image: portfolio2022_img3,
+        description:
+          'My portfolio includes a section that highlights some of my projects.',
+        status: '',
+      },
+      {
+        title: 'Single Projects Page',
+        image: portfolio2022_img4,
+        description:
+          'The focus of this page is to provide a detailed overview of one project.',
+        status: '',
+      },
+      {
+        title: 'Custom Cursor',
+        gif: portfolio2022_gif5,
+        description:
+          'The custom cursor is built using CSS and JavaScript. The custom ' +
+          'cursor is a blob that has a gradient background that spins and ' +
+          'some tweaks in border-radius and transform property. It behaves ' +
+          'like a liquid object.',
+        status: '',
+      },
+      {
+        title: '3d Model',
+        gif: portfolio2022_gif6,
+        description: 'You can experience an immersive interactive 3D model',
+        status: '',
+      },
+      {
+        title: 'Tilt Image',
+        gif: portfolio2022_gif7,
+        description:
+          'If you hover over the image on the project details page, a JavaScript ' +
+          'animation will cause it to tilt and add a 3d effect.',
+        status:
+          'To enhance the tilt animation on the image, I need to modify the code ' +
+          'so that the animation continues even after the cursor is removed from the image.',
+      },
+    ],
+  },
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2022 - END ::::::::::::::::::::::::::::::::::::::::
+  **/
+
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: ORBIT - START ::::::::::::::::::::::::::::::::::::::::
+  **/
+  {
+    id: 9,
+    title: 'Orbit',
+    alt: '',
+    description:
+      'A native Android app that includes login and registration functionality, ' +
+      'which can be integrated into any Android application.',
+    thumbnail: orbit_thumbnail,
+    image: orbit_thumbnail,
+    placeholder: placeholder,
+    source: 'https://github.com/rupam-seal/Orbit.git',
+    live: '',
+    status:
+      'a native Android app that includes login and registration functionality, ' +
+      'which can be integrated into any Android application.',
+    tools: ['AndroidStudio', 'Java', 'XML', 'Firebase'],
+    year: '2023',
+    category: 'android',
+    feature: [
+      {
+        title: 'Onboarding Activity',
+        image: orbit_img1,
+        description:
+          'This activity includes a slider that displays all the features ' +
+          'of the application and allows the user to navigate to the login ' +
+          'page and registration page.',
+        status: '',
+      },
+      {
+        title: 'Login Activity',
+        image: orbit_img2,
+        description:
+          'In addition, the user can also reset their password if their ' +
+          'account is available.',
+        status: '',
+      },
+      {
+        title: 'Registration Activity',
+        image: orbit_img3,
+        description:
+          'Furthermore, the user can register for an account using a username ' +
+          'and email, and the registration form includes password validation as well.',
+        status: '',
+      },
+      {
+        title: 'Forgot Password Activity',
+        image: orbit_img4,
+        description: 'The user can reset their password from within this page.',
+        status: '',
+      },
+      {
+        title: 'Project Structure',
+        image: orbit_img5,
+        description:
+          'The project structure has been designed in a simple manner to ' +
+          'facilitate ease of understanding for the code.',
+        status: '',
+      },
+    ],
+  },
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: ORBIT - END ::::::::::::::::::::::::::::::::::::::::
   **/
 ];
 
