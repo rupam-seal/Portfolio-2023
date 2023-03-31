@@ -715,6 +715,27 @@ export const projects = [
       },
     ],
   },
+
+  {
+    /** 
+    ===================================== PROJECT 9 =====================================
+    **/
+    id: 9,
+    title: 'Proxo',
+    alt: '',
+    description:
+      'CoinTra provides real-time information on the top 200 cryptocurrencies, including their current value, market cap, volume, and other key metrics. Users can search for specific coins using the search function.',
+    thumbnail: cointra_thumbnail,
+    image: cointra_thumbnail,
+    placeholder: placeholder,
+    source: 'https://github.com/rupam-seal/CoinTra',
+    live: 'https://cointra.netlify.app/',
+    status: 'Future plans: Add a top 5 coins carousel and chat option.',
+    tools: ['React.js', 'JavaScript', 'CSS', 'Axios', 'Netlify'],
+    year: '2023',
+    category: 'android',
+    feature: [],
+  },
 ];
 
 // info: [

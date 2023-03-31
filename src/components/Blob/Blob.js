@@ -33,10 +33,10 @@ export const Blob = ({
       {/* https://prod.spline.design/MYdCFyAC5T06Rt9l/scene.splinecode */}
       {isMobileSize ? (
         // Larger Blob
-        <Spline scene="https://prod.spline.design/MYdCFyAC5T06Rt9l/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/WgQn1dqcmRgGVdzD/scene.splinecode" />
       ) : (
         // Small Blob
-        <Spline scene="https://prod.spline.design/wW0KvxCQ2buZDdji/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/buePHeyxCjC-rxJk/scene.splinecode" />
       )}
     </Component>
   );
