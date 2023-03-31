@@ -899,6 +899,8 @@ export const projects = [
   **/
 ];
 
-// info: [
-//   // { id: 'heading', content: 'Problem', level: '4' }
-// ],
+/**
+ * Rich Text Component.
+ * To use this component you have to add an array of info []
+ * info: [{ id: 'heading', content: 'Problem', level: '4' }],
+ */
