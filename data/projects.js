@@ -97,7 +97,7 @@ import portfolio2023_components4 from '../src/assets/images/portfolio2023/compon
 /** 
   PLACEHOLDER
 **/
-import placeholder from '../src/assets/images/placeholder.jpg';
+import placeholder from '../src/assets/images/placeholder.png';
 
 export const projects = [
   /** 

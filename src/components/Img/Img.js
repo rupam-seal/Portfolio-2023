@@ -7,7 +7,7 @@ import styles from './Img.module.css';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-import placeholder from '../../assets/images/placeholder.jpg';
+import placeholder from '../../assets/images/placeholder.png';
 
 /**
  * Img Component.
@@ -22,8 +22,8 @@ import placeholder from '../../assets/images/placeholder.jpg';
  * @returns {Component} The Image component.
  */
 
-const IMAGE_WIDTH = 800;
-const IMAGE_HEIGHT = 459;
+const IMAGE_WIDTH = 600;
+const IMAGE_HEIGHT = 344.74;
 
 export const Img = ({
   as,
