@@ -16,8 +16,11 @@ import styles from './index.module.css';
 const title = 'Contact me';
 const description = 'My contact information and social links.';
 
+const phone = '+91 6000814899';
+const email = 'nilaxseal@gmail.com';
+
 const index = () => {
-  const senderEmail = 'rupam.x.seal@gmail.com';
+  const senderEmail = email ? email : '';
 
   const handleClick = () => {
     window.open(`mailto:${senderEmail}`, '_blank');
@@ -53,7 +56,7 @@ const index = () => {
             type="body"
             variants={textVariant(0.2)}
           >
-            +91 9395212761
+            {phone}
           </CardItem>
           <CardItem
             icon="email"
@@ -65,7 +68,7 @@ const index = () => {
             type="body"
             variants={textVariant(0.2)}
           >
-            rupam.x.seal@gmail.com
+            {email}
           </CardItem>
         </Container>
 

@@ -712,8 +712,7 @@ export const projects = [
     source: 'https://github.com/rupam-seal/CardPrinting',
     live: '',
     status:
-      'This software is designed for use in gold hallmarking centers ' +
-      'and is used by over 10 such centers for generating and printing ' +
+      'This software is used by over 10 such centers for generating and printing ' +
       'cards with gold hallmarking information.',
     tools: ['Python', 'Tkinter'],
     year: '2023',
