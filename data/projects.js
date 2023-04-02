@@ -95,6 +95,10 @@ import portfolio2023_components2 from '../src/assets/images/portfolio2023/compon
 import portfolio2023_components3 from '../src/assets/images/portfolio2023/components3.png';
 import portfolio2023_components4 from '../src/assets/images/portfolio2023/components4.png';
 /** 
+  PROXO
+**/
+import proxo_thumbnail from '../src/assets/images/proxo/thumbnail.png';
+/** 
   PLACEHOLDER
 **/
 import placeholder from '../src/assets/images/placeholder.png';
@@ -614,7 +618,7 @@ export const projects = [
   **/
 
   /** 
-  :::::::::::::::::::::::::::::::::::::::: THREED - START ::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::: PROXO - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
     id: 5,
@@ -622,23 +626,144 @@ export const projects = [
     alt: '',
     description:
       'Proxo is a social media application built natively for Android using Java.',
-    thumbnail: threed_thumbnail,
-    image: threed_thumbnail,
+    thumbnail: proxo_thumbnail,
+    image: proxo_thumbnail,
     placeholder: placeholder,
     source: 'https://github.com/rupam-seal/drone-website',
-    live: 'https://threedrone.netlify.app/',
+    live: '',
     status:
       'Future plans: At present, the 3D model features an animation that ' +
       'rotates the propeller of the drone. However, I am considering ' +
       'adding more interactive elements such as pan and zoom in the future.',
     tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'CSS', 'Netlify'],
-    year: '2023',
+    year: '2021',
     category: 'web',
-    feature: [],
-    video: 'https://www.youtube.com/embed/NCiPE6CgJy8',
+    feature: [
+      {
+        title: 'Registration Page',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Login Page',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Setup Fragment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Home Fragment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Home Fragment Shimmer Effect',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Home Fragment Illustration',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Home Fragment Like',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Home Fragment Comment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Home Fragment Share',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Home Fragment Edit',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Create Fragment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Status Fragment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Search Fragment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Search Fragment Simmer Effect',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Search Fragment Illustration Effect',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Search Fragment Keyboard',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Message Fragment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Message Connection Fragment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Current user profile Fragment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+      {
+        title: 'Clicked user profile Fragment',
+        image: portfolio2023_components1,
+        description: '',
+        status: '',
+      },
+    ],
+    video: '',
   },
   /** 
-  :::::::::::::::::::::::::::::::::::::::: THREED - END ::::::::::::::::::::::::::::::::::::::::
+  :::::::::::::::::::::::::::::::::::::::: PROXO - END ::::::::::::::::::::::::::::::::::::::::
   **/
 
   /** 
