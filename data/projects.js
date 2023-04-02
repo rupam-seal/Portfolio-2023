@@ -111,7 +111,7 @@ export const projects = [
   :::::::::::::::::::::::::::::::::::::::: CROS - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 3,
+    id: 1,
     title: 'Cros',
     alt: '',
     description:
@@ -358,7 +358,7 @@ export const projects = [
   :::::::::::::::::::::::::::::::::::::::: CARD PRINTING - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 7,
+    id: 2,
     title: 'Card Printing',
     alt: '',
     description:
@@ -432,7 +432,7 @@ export const projects = [
   :::::::::::::::::::::::::::::::::::::::: PROXO - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 5,
+    id: 3,
     title: 'Proxo',
     alt: '',
     description:
@@ -578,10 +578,66 @@ export const projects = [
   **/
 
   /** 
-  :::::::::::::::::::::::::::::::::::::::: TSKS - START ::::::::::::::::::::::::::::::::::::::::
+    :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2023 - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
     id: 4,
+    title: 'Portfolio 2023',
+    alt: '',
+    description:
+      'This project showcases the structure and code of my current React ' +
+      'project, which utilizes several best practices such as component-based ' +
+      'architecture, separation of concerns, and the use of state management ' +
+      'libraries. The project is designed to be modular, scalable, and maintainable.',
+    thumbnail: portfolio2023_thumbnail,
+    image: portfolio2023_thumbnail,
+    placeholder: placeholder,
+    source: 'https://github.com/rupam-seal/portfolio-2023',
+    live: '',
+    status: '',
+    tools: ['React.js', 'JavaScript', 'CSS', 'Axios', 'Netlify'],
+    year: '2023',
+    category: 'web',
+    feature: [
+      {
+        title: 'Components',
+        image: portfolio2023_components1,
+        description:
+          'I separated the logic and presentation of the components like button, container, and section in my React.js application for easier maintenance and reuse, as they appear multiple times throughout the app.',
+        status: '',
+      },
+      {
+        title: 'Component files structure',
+        image: portfolio2023_components2,
+        description:
+          "The 'components/' folder has a subfolder called 'Button/' that contains three files, 'Button.js', 'Button.module.css', and 'index.js', to keep the code and styles of each component separate, enabling easier maintenance and reuse. This structure also follows the convention of using an index.js file to export the component, simplifying imports by allowing you to use the folder name.",
+        status: '',
+      },
+      {
+        title: 'Container js file',
+        image: portfolio2023_components3,
+        description:
+          'This React functional component, called Container, uses motion.div from Framer Motion to wrap child components, and provides props for controlling flexbox direction, alignment, justification, motion variants, and z-index, including as, show, className, children, direction, align, justify, variants, and z.',
+        status: '',
+      },
+      {
+        title: 'Other components js file',
+        image: portfolio2023_components4,
+        description:
+          'Most of the components in the application are following the aforementioned file structure convention.',
+        status: '',
+      },
+    ],
+  },
+  /** 
+          :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2023 - END ::::::::::::::::::::::::::::::::::::::::
+    **/
+
+  /** 
+  :::::::::::::::::::::::::::::::::::::::: TSKS - START ::::::::::::::::::::::::::::::::::::::::
+  **/
+  {
+    id: 5,
     title: 'Tsks',
     alt: '',
     description:
@@ -734,7 +790,7 @@ export const projects = [
   :::::::::::::::::::::::::::::::::::::::: IMO - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 2,
+    id: 6,
     title: 'Imo',
     alt: '',
     description:
@@ -793,66 +849,10 @@ export const projects = [
   **/
 
   /** 
-    :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2023 - START ::::::::::::::::::::::::::::::::::::::::
-  **/
-  {
-    id: 1,
-    title: 'Portfolio 2023',
-    alt: '',
-    description:
-      'This project showcases the structure and code of my current React ' +
-      'project, which utilizes several best practices such as component-based ' +
-      'architecture, separation of concerns, and the use of state management ' +
-      'libraries. The project is designed to be modular, scalable, and maintainable.',
-    thumbnail: portfolio2023_thumbnail,
-    image: portfolio2023_thumbnail,
-    placeholder: placeholder,
-    source: 'https://github.com/rupam-seal/portfolio-2023',
-    live: '',
-    status: 'Future plans: Add a top 5 coins carousel and chat option.',
-    tools: ['React.js', 'JavaScript', 'CSS', 'Axios', 'Netlify'],
-    year: '2023',
-    category: 'web',
-    feature: [
-      {
-        title: 'Components',
-        image: portfolio2023_components1,
-        description:
-          'I separated the logic and presentation of the components like button, container, and section in my React.js application for easier maintenance and reuse, as they appear multiple times throughout the app.',
-        status: '',
-      },
-      {
-        title: 'Component files structure',
-        image: portfolio2023_components2,
-        description:
-          "The 'components/' folder has a subfolder called 'Button/' that contains three files, 'Button.js', 'Button.module.css', and 'index.js', to keep the code and styles of each component separate, enabling easier maintenance and reuse. This structure also follows the convention of using an index.js file to export the component, simplifying imports by allowing you to use the folder name.",
-        status: '',
-      },
-      {
-        title: 'Container js file',
-        image: portfolio2023_components3,
-        description:
-          'This React functional component, called Container, uses motion.div from Framer Motion to wrap child components, and provides props for controlling flexbox direction, alignment, justification, motion variants, and z-index, including as, show, className, children, direction, align, justify, variants, and z.',
-        status: '',
-      },
-      {
-        title: 'Other components js file',
-        image: portfolio2023_components4,
-        description:
-          'Most of the components in the application are following the aforementioned file structure convention.',
-        status: '',
-      },
-    ],
-  },
-  /** 
-        :::::::::::::::::::::::::::::::::::::::: PORTFOLIO 2023 - END ::::::::::::::::::::::::::::::::::::::::
-  **/
-
-  /** 
   :::::::::::::::::::::::::::::::::::::::: THREED - START ::::::::::::::::::::::::::::::::::::::::
   **/
   {
-    id: 6,
+    id: 7,
     title: 'ThreeD',
     alt: '',
     description:
