@@ -63,7 +63,7 @@ export const Details = ({
 }) => {
   const SLICE_LENGTH = 250;
   const PROJECT_NO = projectNo + 1;
-  const { title, description, status, tools } = projectData;
+  const { title, description, status, tools, statusVisible } = projectData;
 
   const sliceStr = slice(description, SLICE_LENGTH);
 
@@ -115,7 +115,16 @@ export const Details = ({
           {status}
         </Text>
       ) : (
-        <Tools tools={tools} />
+        <>
+          {statusVisible ? (
+            <Text className={styles.status} variants={textVariant(0.25)}>
+              {status}
+            </Text>
+          ) : (
+            ''
+          )}
+          <Tools tools={tools} />
+        </>
       )}
     </Container>
   );
