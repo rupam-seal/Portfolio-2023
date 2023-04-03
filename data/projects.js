@@ -441,7 +441,7 @@ export const projects = [
     thumbnail: proxo_thumbnail,
     image: proxo_thumbnail,
     placeholder: placeholder,
-    source: 'https://github.com/rupam-seal/drone-website',
+    source: 'https://github.com/rupam-seal/Proxo',
     live: '',
     status:
       'Future plans: At present, the 3D model features an animation that ' +
