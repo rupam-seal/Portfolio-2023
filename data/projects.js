@@ -447,7 +447,7 @@ export const projects = [
       'Future plans: At present, the 3D model features an animation that ' +
       'rotates the propeller of the drone. However, I am considering ' +
       'adding more interactive elements such as pan and zoom in the future.',
-    tools: ['React.js', 'Three.js', 'Blender', 'JavaScript', 'CSS', 'Netlify'],
+    tools: ['Java', 'XML', 'Firebase'],
     year: '2021',
     category: 'web',
     feature: [
