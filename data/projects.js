@@ -979,7 +979,7 @@ export const projects = [
     image: portfolio2022_thumbnail,
     placeholder: placeholder,
     source: 'https://github.com/rupam-seal/portfolio-2022.git',
-    live: 'https://nilax-2022.netlify.app/',
+    live: 'https://nilax-portfolio-2022.netlify.app/',
     status:
       'Need to update code, refractor complete project and improve performance.',
     tools: ['React.js', 'CSS', 'FramerMotion', 'Netlify'],
