@@ -1,31 +1,31 @@
-import React, { useEffect } from 'react';
-import Link from 'next/link';
+import React, { useEffect } from "react";
+import Link from "next/link";
 
 import {
   closeVariants,
   navVariants,
   opacityVariants,
   themeVariants,
-} from '@/utils/motion';
+} from "@/utils/motion";
 
-import styles from './Navbar.module.css';
+import styles from "./Navbar.module.css";
 
-import { Container } from '../Container';
-import { Heading } from '../Heading';
-import { navLinks } from '../../../data/navData';
-import { A } from '../A';
-import { Button } from '../Button';
-import { Icon } from '../Icon';
-import { Text } from '../Text';
-import { motion } from 'framer-motion';
-import { useToggle } from '@/hooks/useToggle';
-import { Menu } from './Menu';
-import { ToggleButton } from '../ToggleButton';
-import { Logo } from '../Logo';
+import { Container } from "../Container";
+import { Heading } from "../Heading";
+import { navLinks } from "../../../data/navData";
+import { A } from "../A";
+import { Button } from "../Button";
+import { Icon } from "../Icon";
+import { Text } from "../Text";
+import { motion } from "framer-motion";
+import { useToggle } from "@/hooks/useToggle";
+import { Menu } from "./Menu";
+import { ToggleButton } from "../ToggleButton";
+import { Logo } from "../Logo";
 
 export const Navbar = () => {
-  const lightTheme = 'light';
-  const darkTheme = 'dark';
+  const lightTheme = "light";
+  const darkTheme = "dark";
 
   const { status: expand, toggleStatus: toggleExpand } = useToggle();
   const { status: theme, toggleStatus: toggleTheme } = useToggle();
@@ -62,14 +62,14 @@ export const Navbar = () => {
           <div className={styles.menu}>
             {data}
             <Button
-              href={'/hire'}
+              href={"/hire"}
               size="s"
               weight="regular"
               align="center"
               className={styles.button}
             >
               <span className={styles.buttonText}>
-                <Icon icon="leftCircle" /> hire me
+                <Icon icon="leftCircle" /> about me
               </span>
             </Button>
           </div>
@@ -98,14 +98,14 @@ export const ToggleButtons = ({ theme, expand, toggleTheme, toggleExpand }) => {
   return (
     <Container align="center" className={styles.buttonContainer}>
       <ToggleButton
-        icon={theme ? 'night' : 'day'}
+        icon={theme ? "night" : "day"}
         toggleStatus={toggleTheme}
         visibility="all"
         variants={themeVariants}
       />
 
       <ToggleButton
-        icon={expand ? 'close' : 'menu'}
+        icon={expand ? "close" : "menu"}
         toggleStatus={toggleExpand}
         visibility="mobile"
         variants={closeVariants(expand ? 180 : -180)}

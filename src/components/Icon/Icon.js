@@ -1,5 +1,5 @@
-import styles from './Icon.module.css';
-import { classes } from '@/utils/styles';
+import styles from "./Icon.module.css";
+import { classes } from "@/utils/styles";
 
 /**
  * ICON COMPONENT
@@ -11,86 +11,90 @@ import { classes } from '@/utils/styles';
 /**
  * LANGUAGE
  **/
-import { FaPython } from 'react-icons/fa';
-import { FaJava } from 'react-icons/fa';
-import { TbBrandJavascript } from 'react-icons/tb';
-import { SiKotlin } from 'react-icons/si';
-import { SiCplusplus } from 'react-icons/si';
-import { ImHtmlFive2 } from 'react-icons/im';
-import { BsFiletypeCss } from 'react-icons/bs';
-import { BsFiletypeXml } from 'react-icons/bs';
+import { FaPython } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiKotlin } from "react-icons/si";
+import { SiCplusplus } from "react-icons/si";
+import { ImHtmlFive2 } from "react-icons/im";
+import { BsFiletypeCss } from "react-icons/bs";
+import { BsFiletypeXml } from "react-icons/bs";
 /**
  * FRAMEWORK
  **/
-import { SiDjango } from 'react-icons/si';
-import { SiThreedotjs } from 'react-icons/si';
-import { FaReact } from 'react-icons/fa';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { FaBootstrap } from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si';
+import { SiDjango } from "react-icons/si";
+import { SiThreedotjs } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaBootstrap } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import { FaAngular } from "react-icons/fa";
+import { SiFastapi } from "react-icons/si";
 /**
  * TOOLS
  **/
-import { SiAndroidstudio } from 'react-icons/si';
-import { TbBrandVscode } from 'react-icons/tb';
-import { BsGit } from 'react-icons/bs';
-import { FaGithubAlt } from 'react-icons/fa';
-import { SiGitlab } from 'react-icons/si';
-import { GrDocker } from 'react-icons/gr';
-import { TbBrandGithubCopilot } from 'react-icons/tb';
-import { TbBrandOpenai } from 'react-icons/tb';
-import { AiOutlineGoogle } from 'react-icons/ai';
+import { SiAndroidstudio } from "react-icons/si";
+import { TbBrandVscode } from "react-icons/tb";
+import { BsGit } from "react-icons/bs";
+import { FaGithubAlt } from "react-icons/fa";
+import { SiGitlab } from "react-icons/si";
+import { GrDocker } from "react-icons/gr";
+import { TbBrandGithubCopilot } from "react-icons/tb";
+import { TbBrandOpenai } from "react-icons/tb";
+import { AiOutlineGoogle } from "react-icons/ai";
+import { FaRust } from "react-icons/fa";
 /**
  * UI/UX
  **/
-import { TbBrandFigma } from 'react-icons/tb';
-import { SiAdobexd } from 'react-icons/si';
-import { SiAdobephotoshop } from 'react-icons/si';
-import { SiBlender } from 'react-icons/si';
-import { SiSketch } from 'react-icons/si';
+import { TbBrandFigma } from "react-icons/tb";
+import { SiAdobexd } from "react-icons/si";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiBlender } from "react-icons/si";
+import { SiSketch } from "react-icons/si";
 /**
  * LIBRARY
  **/
-import { SiAxios } from 'react-icons/si';
-import { SiTensorflow } from 'react-icons/si';
-import { SiKeras } from 'react-icons/si';
-import { CgFramer } from 'react-icons/cg';
-import { HiChartSquareBar } from 'react-icons/hi';
+import { SiAxios } from "react-icons/si";
+import { SiTensorflow } from "react-icons/si";
+import { SiKeras } from "react-icons/si";
+import { CgFramer } from "react-icons/cg";
+import { HiChartSquareBar } from "react-icons/hi";
 /**
  * Social
  **/
-import { FaLinkedinIn } from 'react-icons/fa';
-import { AiFillInstagram } from 'react-icons/ai';
+import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 /**
  * Services
  **/
-import { TbBrandFirebase } from 'react-icons/tb';
+import { TbBrandFirebase } from "react-icons/tb";
 /**
  * Database
  **/
-import { SiRailway } from 'react-icons/si';
+import { SiRailway } from "react-icons/si";
 /**
  * Server
  **/
-import { SiVercel } from 'react-icons/si';
-import { SiNetlify } from 'react-icons/si';
+import { SiVercel } from "react-icons/si";
+import { SiNetlify } from "react-icons/si";
 /**
  * OTHERS
  **/
-import { BsArrowDownLeftCircleFill } from 'react-icons/bs';
-import { ImArrowUpRight2 } from 'react-icons/im';
-import { BsArrowUpRight } from 'react-icons/bs';
-import { RiSendPlaneFill } from 'react-icons/ri';
-import { SlGlobe } from 'react-icons/sl';
-import { HiMenuAlt4 } from 'react-icons/hi';
-import { CgClose } from 'react-icons/cg';
-import { MdWavingHand } from 'react-icons/md';
-import { TbSun } from 'react-icons/tb';
-import { TbMoonFilled } from 'react-icons/tb';
-import { MdDesignServices } from 'react-icons/md';
-import { ImPhone } from 'react-icons/im';
-import { MdEmail } from 'react-icons/md';
-import { GiAstronautHelmet } from 'react-icons/gi';
+import { BsArrowDownLeftCircleFill } from "react-icons/bs";
+import { ImArrowUpRight2 } from "react-icons/im";
+import { BsArrowUpRight } from "react-icons/bs";
+import { RiSendPlaneFill } from "react-icons/ri";
+import { SlGlobe } from "react-icons/sl";
+import { HiMenuAlt4 } from "react-icons/hi";
+import { CgClose } from "react-icons/cg";
+import { MdWavingHand } from "react-icons/md";
+import { TbSun } from "react-icons/tb";
+import { TbMoonFilled } from "react-icons/tb";
+import { MdDesignServices } from "react-icons/md";
+import { ImPhone } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
+import { GiAstronautHelmet } from "react-icons/gi";
 
 export const icons = {
   /**
@@ -104,7 +108,7 @@ export const icons = {
   Java: FaJava,
   JavaScript: TbBrandJavascript,
   Kotlin: SiKotlin,
-  'C++': SiCplusplus,
+  "C++": SiCplusplus,
   HTML: ImHtmlFive2,
   CSS: BsFiletypeCss,
   XML: BsFiletypeXml,
@@ -112,11 +116,15 @@ export const icons = {
    * FRAMEWORK
    **/
   Django: SiDjango,
-  'Three.js': SiThreedotjs,
-  'React.js': FaReact,
-  'Next.js': TbBrandNextjs,
+  "Three.js": SiThreedotjs,
+  "React.js": FaReact,
+  "Next.js": TbBrandNextjs,
   Bootstrap: FaBootstrap,
   TailwindCSS: SiTailwindcss,
+  ReactNative: TbBrandReactNative,
+  Angular: FaAngular,
+  "Rest Framework": SiFastapi,
+  Rust: FaRust,
   /**
    * TOOLS
    **/
@@ -126,9 +134,9 @@ export const icons = {
   Github: FaGithubAlt,
   Gitlab: SiGitlab,
   Docker: GrDocker,
-  'GitHub Copilot': TbBrandGithubCopilot,
-  'OpenAI GPT': TbBrandOpenai,
-  'Bard AI': AiOutlineGoogle,
+  "GitHub Copilot": TbBrandGithubCopilot,
+  "OpenAI GPT": TbBrandOpenai,
+  "Bard AI": AiOutlineGoogle,
   /**
    * UI/UX
    **/
@@ -144,7 +152,7 @@ export const icons = {
   TesorFlow: SiTensorflow,
   Keras: SiKeras,
   FramerMotion: CgFramer,
-  'Charts.js': HiChartSquareBar,
+  "Charts.js": HiChartSquareBar,
   /**
    * SOCIAL
    **/

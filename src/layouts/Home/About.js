@@ -1,22 +1,22 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import styles from './About.module.css';
+import styles from "./About.module.css";
 
-import { Section } from '@/components/Section';
-import { Container } from '@/components/Container';
-import { Heading } from '@/components/Heading';
-import { imageVariant, staggerContainer, textVariant } from '@/utils/motion';
-import { Text } from '@/components/Text';
-import { Button } from '@/components/Button';
-import { A } from '@/components/A';
-import { Img } from '@/components/Img';
-import { Icon } from '@/components/Icon';
-import { memo, useState } from 'react';
-import useAudio from '@/hooks/useAudio';
+import { Section } from "@/components/Section";
+import { Container } from "@/components/Container";
+import { Heading } from "@/components/Heading";
+import { imageVariant, staggerContainer, textVariant } from "@/utils/motion";
+import { Text } from "@/components/Text";
+import { Button } from "@/components/Button";
+import { A } from "@/components/A";
+import { Img } from "@/components/Img";
+import { Icon } from "@/components/Icon";
+import { memo, useState } from "react";
+import useAudio from "@/hooks/useAudio";
 
-import profileImage from '../../assets/images/profile/profile.png';
-import backgroundImage from '../../assets/images/profile/background.jpg';
-import audio from '../../assets/sounds/about.mp3';
+import profileImage from "../../assets/images/profile/profile.png";
+import backgroundImage from "../../assets/images/profile/background.jpg";
+import audio from "../../assets/sounds/about.mp3";
 
 export const About = memo(({ visible, sectionRef }) => {
   const { isPlaying, play, pause } = useAudio(audio);
@@ -31,10 +31,10 @@ export const About = memo(({ visible, sectionRef }) => {
 
   return (
     <Section
-      direction={'column'}
+      direction={"column"}
       className={styles.section}
-      align={'center'}
-      justify={'center'}
+      align={"center"}
+      justify={"center"}
       ref={sectionRef}
     >
       {visible && (
@@ -51,7 +51,7 @@ export const About = memo(({ visible, sectionRef }) => {
               justify="center"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              variants={imageVariant('0.4')}
+              variants={imageVariant("0.4")}
             >
               <Img
                 className={styles.image}
@@ -87,30 +87,21 @@ export const About = memo(({ visible, sectionRef }) => {
                 secondary
                 variants={textVariant(0.3)}
               >
-                I&lsquo;m a self-taught android and web developer with a passion
-                for coding and creating engaging web experiences. I started
-                learning to code when I was a teenager. I&lsquo;ve taught myself
-                various programming languages, frameworks, and technologies, and
-                I have hands-on experience in both{' '}
-                <A link={'/projects'}>front-end</A> and{' '}
-                <A link={'/projects'}>back-end</A> development and deployment.
-              </Text>
-              <Text
-                size="m"
-                weight="regular"
-                secondary
-                variants={textVariant(0.3)}
-              >
-                I&lsquo;m a fast learner and a problem-solver, always looking
-                for innovative solutions to complex problems. I love what I do
-                and am excited about the endless possibilities for innovation
-                and creativity in software development.
+                As a full-stack developer specializing in both Android and web
+                development, I bring a versatile skill set and a passion for
+                crafting seamless digital experiences. With expertise in{" "}
+                <A link={"/projects"}>front-end</A> and{" "}
+                <A link={"/projects"}>back-end</A> technologies, I thrive in
+                creating engaging user interfaces and robust backend
+                architectures. My journey in software development has been
+                fueled by a blend of self-learning, hands-on experience, and a
+                relentless drive to stay abreast of emerging technologies.
               </Text>
               <Button
                 variants={textVariant(0.35)}
-                href={'/contact'}
+                href={"/contact"}
                 size="m"
-                icon={'send'}
+                icon={"send"}
               >
                 Send message
               </Button>
@@ -122,4 +113,4 @@ export const About = memo(({ visible, sectionRef }) => {
   );
 });
 
-About.displayName = 'About';
+About.displayName = "About";

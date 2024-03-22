@@ -1,16 +1,16 @@
-import { menuItemVariants, menuVariants } from '@/utils/motion';
-import { AnimatePresence, motion } from 'framer-motion';
-import Link from 'next/link';
-import { A } from '../A';
-import { Heading } from '../Heading';
-import { SectionBottom } from '../SectionBottom';
-import { Social } from '../Social';
-import { Text } from '../Text';
-import styles from './Menu.module.css';
-import { navLinks } from '../../../data/navData';
+import { menuItemVariants, menuVariants } from "@/utils/motion";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { A } from "../A";
+import { Heading } from "../Heading";
+import { SectionBottom } from "../SectionBottom";
+import { Social } from "../Social";
+import { Text } from "../Text";
+import styles from "./Menu.module.css";
+import { navLinks } from "../../../data/navData";
 
 export const Menu = ({
-  as: Component = 'motion.div',
+  as: Component = "motion.div",
   expand,
   toggleExpand,
 }) => {
@@ -53,7 +53,7 @@ export const Menu = ({
               size="l"
               onClick={() => toggleExpand(false)}
             >
-              <A link={'/hire'} icon="arrowRight">
+              <A link={"/hire"} icon="arrowRight">
                 Hire me
               </A>
             </Text>
