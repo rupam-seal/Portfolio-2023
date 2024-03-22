@@ -6,8 +6,6 @@ Portfolio website 2023 to showcase my skills and projects
 
 ## 🚨 Live Site
 
-- https://nilax.netlify.app/
-
 ## 🕹️ Demo
 <img src="" width="700"/>
 
