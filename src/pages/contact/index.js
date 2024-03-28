@@ -1,29 +1,29 @@
-import { CardItem } from '@/components/Card';
-import { Container } from '@/components/Container';
-import { Footer } from '@/components/Footer';
-import { Heading } from '@/components/Heading';
-import { Icon } from '@/components/Icon';
-import { Meta } from '@/components/Meta';
-import { Section } from '@/components/Section';
-import { Social } from '@/components/Social';
-import { Text } from '@/components/Text';
-import { scaleVariant, textVariant } from '@/utils/motion';
-import Link from 'next/link';
-import { Component } from 'react';
-import { social } from '../../../data/socialData';
-import styles from './index.module.css';
+import { CardItem } from "@/components/Card";
+import { Container } from "@/components/Container";
+import { Footer } from "@/components/Footer";
+import { Heading } from "@/components/Heading";
+import { Icon } from "@/components/Icon";
+import { Meta } from "@/components/Meta";
+import { Section } from "@/components/Section";
+import { Social } from "@/components/Social";
+import { Text } from "@/components/Text";
+import { scaleVariant, textVariant } from "@/utils/motion";
+import Link from "next/link";
+import { Component } from "react";
+import { social } from "../../../data/socialData";
+import styles from "./index.module.css";
 
-const title = 'Contact me';
-const description = 'My contact information and social links.';
+const title = "Contact me";
+const description = "My contact information and social links.";
 
-const phone = '+91 6000814899';
-const email = 'nilaxseal@gmail.com';
+const phone = "+91 9395212761";
+const email = "rupam.x.seal@gmail.com";
 
 const index = () => {
-  const senderEmail = email ? email : '';
+  const senderEmail = email ? email : "";
 
   const handleClick = () => {
-    window.open(`mailto:${senderEmail}`, '_blank');
+    window.open(`mailto:${senderEmail}`, "_blank");
   };
 
   return (
